@@ -1,1 +1,10 @@
 c:\users\cristian\documents\visual studio 2012\Projects\ProyectoPropietarios\ProyectoPropietarios\bin\Debug\ProyectoPropietarios.exe.config
+C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\bin\Debug\ProyectoPropietarios.exe.config
+C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\bin\Debug\ProyectoPropietarios.exe
+C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\bin\Debug\ProyectoPropietarios.pdb
+C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Properties.Resources.resources
+C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.csproj.GenerateResource.Cache
+C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.exe
+C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.pdb
+C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.csprojResolveAssemblyReference.cache
+C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.PantallaInicial.resources

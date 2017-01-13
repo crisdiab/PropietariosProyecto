@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace ProyectoPropietarios
 {
-    public partial class Form1 : Form
+    public partial class Frm_Administrador : Form
     {
-        public Form1()
+        public Frm_Administrador()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
     }
 }
