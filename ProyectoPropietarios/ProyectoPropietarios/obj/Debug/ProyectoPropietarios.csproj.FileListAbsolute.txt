@@ -1,0 +1,10 @@
+c:\users\cristian\documents\visual studio 2012\Projects\ProyectoPropietarios\ProyectoPropietarios\bin\Debug\ProyectoPropietarios.exe.config
+c:\users\cristian\documents\visual studio 2012\Projects\ProyectoPropietarios\ProyectoPropietarios\bin\Debug\ProyectoPropietarios.exe
+c:\users\cristian\documents\visual studio 2012\Projects\ProyectoPropietarios\ProyectoPropietarios\bin\Debug\ProyectoPropietarios.pdb
+c:\users\cristian\documents\visual studio 2012\Projects\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.csprojResolveAssemblyReference.cache
+c:\users\cristian\documents\visual studio 2012\Projects\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Inicio.resources
+c:\users\cristian\documents\visual studio 2012\Projects\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Properties.Resources.resources
+c:\users\cristian\documents\visual studio 2012\Projects\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.csproj.GenerateResource.Cache
+c:\users\cristian\documents\visual studio 2012\Projects\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.exe
+c:\users\cristian\documents\visual studio 2012\Projects\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.pdb
+c:\users\cristian\documents\visual studio 2012\Projects\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Login.resources
