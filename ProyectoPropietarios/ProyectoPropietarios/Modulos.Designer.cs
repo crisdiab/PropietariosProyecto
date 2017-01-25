@@ -41,12 +41,15 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::ProyectoPropietarios.Properties.Resources.Usuario;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Location = new System.Drawing.Point(80, 95);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 87);
+            this.button1.Size = new System.Drawing.Size(100, 107);
             this.button1.TabIndex = 0;
             this.button1.Text = "Pacientes";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -87,12 +90,15 @@
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.BackgroundImage = global::ProyectoPropietarios.Properties.Resources.config;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.Location = new System.Drawing.Point(168, 235);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(108, 80);
+            this.button6.Size = new System.Drawing.Size(120, 119);
             this.button6.TabIndex = 5;
-            this.button6.Text = "Configuracion del Sistema";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -125,6 +131,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ProyectoPropietarios.Properties.Resources.fondo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(930, 448);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
