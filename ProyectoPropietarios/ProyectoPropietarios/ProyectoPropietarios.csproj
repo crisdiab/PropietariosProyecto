@@ -44,11 +44,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AyudaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyudaAdmin.Designer.cs">
+      <DependentUpon>AyudaAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_AcercaDe.Designer.cs">
+      <DependentUpon>FRM_AcercaDe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Administrador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Administrador.Designer.cs">
       <DependentUpon>Frm_Administrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DatosProfesional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DatosProfesional.Designer.cs">
+      <DependentUpon>FRM_DatosProfesional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_DatosPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DatosPaciente.Designer.cs">
+      <DependentUpon>FRM_DatosPaciente.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Profesor.cs">
       <SubType>Form</SubType>
@@ -70,6 +94,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AyudaAdmin.resx">
+      <DependentUpon>AyudaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Administrador.resx">
+      <DependentUpon>Frm_Administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DatosProfesional.resx">
+      <DependentUpon>FRM_DatosProfesional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DatosPaciente.resx">
+      <DependentUpon>FRM_DatosPaciente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaInicial.resx">
       <DependentUpon>PantallaInicial.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +117,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -94,6 +131,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\imagenes\logSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\imagenes\logBig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo-nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
