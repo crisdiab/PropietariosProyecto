@@ -29,10 +29,34 @@ namespace ProyectoPropietarios
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            TalentoHumano th = new TalentoHumano();
+            th.Show();
+            this.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Facturacion_Click(object sender, EventArgs e)
+        {
+            Facturacion facturacion = new Facturacion();
+            facturacion.Show();
+            this.Hide();
+        }
+
+        private void btn_servicios_Click(object sender, EventArgs e)
         {
 
         }

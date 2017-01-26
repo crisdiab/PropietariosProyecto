@@ -44,6 +44,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsignarServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignarServicio.Designer.cs">
+      <DependentUpon>AsignarServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion.Designer.cs">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarFactura.Designer.cs">
+      <DependentUpon>EliminarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarProfesional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarProfesional.Designer.cs">
+      <DependentUpon>EliminarProfesional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Factura.Designer.cs">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion.Designer.cs">
+      <DependentUpon>Facturacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,8 +98,44 @@
     <Compile Include="Modulos.Designer.cs">
       <DependentUpon>Modulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Profesional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesional.Designer.cs">
+      <DependentUpon>Profesional.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recibo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recibo.Designer.cs">
+      <DependentUpon>Recibo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TalentoHumano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TalentoHumano.Designer.cs">
+      <DependentUpon>TalentoHumano.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AsignarServicio.resx">
+      <DependentUpon>AsignarServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion.resx">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarFactura.resx">
+      <DependentUpon>EliminarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarProfesional.resx">
+      <DependentUpon>EliminarProfesional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Factura.resx">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion.resx">
+      <DependentUpon>Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -72,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos.resx">
       <DependentUpon>Modulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesional.resx">
+      <DependentUpon>Profesional.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,6 +158,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Recibo.resx">
+      <DependentUpon>Recibo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TalentoHumano.resx">
+      <DependentUpon>TalentoHumano.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -116,6 +197,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagenCentro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grisCentro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reporte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talentoHumano.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servicios.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seguimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salirExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
