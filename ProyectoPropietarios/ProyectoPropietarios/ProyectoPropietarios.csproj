@@ -63,11 +63,23 @@
     <Compile Include="Configuracion.Designer.cs">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </Compile>
+    <Compile Include="EliminarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarCliente.Designer.cs">
+      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="EliminarFactura.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EliminarFactura.Designer.cs">
       <DependentUpon>EliminarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarPaciente.Designer.cs">
+      <DependentUpon>EliminarPaciente.cs</DependentUpon>
     </Compile>
     <Compile Include="EliminarProfesional.cs">
       <SubType>Form</SubType>
@@ -99,6 +111,18 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarCliente.Designer.cs">
+      <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarPaciente.Designer.cs">
+      <DependentUpon>ModificarPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +143,30 @@
     <Compile Include="Recibo.Designer.cs">
       <DependentUpon>Recibo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paciente.Designer.cs">
+      <DependentUpon>Paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarCliente.Designer.cs">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarPaciente.Designer.cs">
+      <DependentUpon>RegistrarPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Seguimiento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +179,12 @@
     <Compile Include="TalentoHumano.Designer.cs">
       <DependentUpon>TalentoHumano.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AsignarServicio.resx">
       <DependentUpon>AsignarServicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,8 +194,14 @@
     <EmbeddedResource Include="Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EliminarCliente.resx">
+      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EliminarFactura.resx">
       <DependentUpon>EliminarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarPaciente.resx">
+      <DependentUpon>EliminarPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarProfesional.resx">
       <DependentUpon>EliminarProfesional.cs</DependentUpon>
@@ -157,6 +217,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarCliente.resx">
+      <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarPaciente.resx">
+      <DependentUpon>ModificarPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos.resx">
       <DependentUpon>Modulos.cs</DependentUpon>
@@ -177,11 +243,26 @@
     <EmbeddedResource Include="Recibo.resx">
       <DependentUpon>Recibo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paciente.resx">
+      <DependentUpon>Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarCliente.resx">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarPaciente.resx">
+      <DependentUpon>RegistrarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Seguimiento.resx">
       <DependentUpon>Seguimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TalentoHumano.resx">
       <DependentUpon>TalentoHumano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -264,6 +345,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eliminar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paciente2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_paciente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retroceso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevoPaciente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminarUsuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_generamos-clientes-con-tu-web2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoDatosPersonales.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
