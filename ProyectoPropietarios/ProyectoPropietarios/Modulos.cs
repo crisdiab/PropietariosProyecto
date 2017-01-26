@@ -36,7 +36,9 @@ namespace ProyectoPropietarios
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            Configuracion conf = new Configuracion();
+            conf.Show();
+            this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -59,6 +61,13 @@ namespace ProyectoPropietarios
         private void btn_servicios_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_controlEstudiantes_Click(object sender, EventArgs e)
+        {
+            Seguimiento seg = new Seguimiento();
+            seg.Show();
+            this.Hide();
         }
     }
 }

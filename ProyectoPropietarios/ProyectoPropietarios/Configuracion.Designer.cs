@@ -36,6 +36,8 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label4
@@ -91,7 +93,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(91, 280);
+            this.button1.Location = new System.Drawing.Point(90, 307);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 51);
             this.button1.TabIndex = 19;
@@ -100,7 +102,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(217, 280);
+            this.button2.Location = new System.Drawing.Point(217, 307);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 51);
             this.button2.TabIndex = 20;
@@ -108,11 +110,30 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(28, 252);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(178, 25);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Numero de factura:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(212, 252);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(157, 22);
+            this.textBox4.TabIndex = 22;
+            // 
             // Configuracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 419);
+            this.ClientSize = new System.Drawing.Size(395, 477);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
@@ -138,5 +159,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }

@@ -27,3 +27,5 @@ C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\Pro
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Profesional.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Recibo.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.TalentoHumano.resources
+C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Configuracion.resources
+C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Seguimiento.resources

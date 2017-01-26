@@ -148,6 +148,7 @@
             this.btn_controlEstudiantes.Size = new System.Drawing.Size(145, 111);
             this.btn_controlEstudiantes.TabIndex = 8;
             this.btn_controlEstudiantes.UseVisualStyleBackColor = true;
+            this.btn_controlEstudiantes.Click += new System.EventHandler(this.btn_controlEstudiantes_Click);
             // 
             // pictureBox1
             // 

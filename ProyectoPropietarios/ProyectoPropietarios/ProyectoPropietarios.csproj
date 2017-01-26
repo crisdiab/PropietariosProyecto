@@ -112,6 +112,12 @@
     <Compile Include="Recibo.Designer.cs">
       <DependentUpon>Recibo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Seguimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguimiento.Designer.cs">
+      <DependentUpon>Seguimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="TalentoHumano.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </Compile>
     <EmbeddedResource Include="Recibo.resx">
       <DependentUpon>Recibo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguimiento.resx">
+      <DependentUpon>Seguimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TalentoHumano.resx">
       <DependentUpon>TalentoHumano.cs</DependentUpon>
