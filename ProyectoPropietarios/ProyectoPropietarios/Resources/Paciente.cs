@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoPropietarios
+namespace ProyectoPropietarios.Resources
 {
-    public partial class Usuarios : Form
+    public partial class Paciente : Form
     {
-        public Usuarios()
+        public Paciente()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            s
         }
     }
 }
