@@ -16,12 +16,5 @@ namespace ProyectoPropietarios
         {
             InitializeComponent();
         }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            Paciente pacienteM = new Paciente();
-            pacienteM.Show();
-            this.Hide();
-        }
     }
 }
