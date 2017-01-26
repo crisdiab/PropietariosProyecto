@@ -50,6 +50,12 @@
     <Compile Include="AsignarServicio.Designer.cs">
       <DependentUpon>AsignarServicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda.Designer.cs">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Configuracion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="AsignarServicio.resx">
       <DependentUpon>AsignarServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda.resx">
+      <DependentUpon>Ayuda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>

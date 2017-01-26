@@ -29,3 +29,4 @@ C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\Pro
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.TalentoHumano.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Configuracion.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Seguimiento.resources
+C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Ayuda.resources

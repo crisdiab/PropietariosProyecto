@@ -126,6 +126,7 @@
             this.btn_Ayuda.Size = new System.Drawing.Size(126, 119);
             this.btn_Ayuda.TabIndex = 6;
             this.btn_Ayuda.UseVisualStyleBackColor = true;
+            this.btn_Ayuda.Click += new System.EventHandler(this.btn_Ayuda_Click);
             // 
             // btn_servicios
             // 
@@ -248,9 +249,9 @@
             this.label9.Font = new System.Drawing.Font("Modern No. 20", 18F);
             this.label9.Location = new System.Drawing.Point(555, 439);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 31);
+            this.label9.Size = new System.Drawing.Size(138, 31);
             this.label9.TabIndex = 19;
-            this.label9.Text = "Ayuda";
+            this.label9.Text = "Acerca De";
             // 
             // Modulos
             // 

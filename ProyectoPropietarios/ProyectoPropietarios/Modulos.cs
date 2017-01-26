@@ -15,6 +15,7 @@ namespace ProyectoPropietarios
         public Modulos()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void Modulos_Load(object sender, EventArgs e)
@@ -67,6 +68,13 @@ namespace ProyectoPropietarios
         {
             Seguimiento seg = new Seguimiento();
             seg.Show();
+            this.Hide();
+        }
+
+        private void btn_Ayuda_Click(object sender, EventArgs e)
+        {
+            Ayuda ay = new Ayuda();
+            ay.Show();
             this.Hide();
         }
     }
