@@ -153,6 +153,16 @@ namespace ProyectoPropietarios.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eliminarUsuario {
+            get {
+                object obj = ResourceManager.GetObject("eliminarUsuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit {
             get {
                 object obj = ResourceManager.GetObject("exit", resourceCulture);
@@ -236,6 +246,26 @@ namespace ProyectoPropietarios.Properties {
         internal static System.Drawing.Bitmap ico_paciente {
             get {
                 object obj = ResourceManager.GetObject("ico_paciente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icono_generamos_clientes_con_tu_web2 {
+            get {
+                object obj = ResourceManager.GetObject("icono_generamos-clientes-con-tu-web2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconoDatosPersonales {
+            get {
+                object obj = ResourceManager.GetObject("iconoDatosPersonales", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

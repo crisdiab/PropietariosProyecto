@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoPropietarios.Resources
+namespace ProyectoPropietarios
 {
-    public partial class Paciente : Form
+    public partial class RegistrarPaciente : Form
     {
-        public Paciente()
+        public RegistrarPaciente()
         {
             InitializeComponent();
         }
