@@ -85,6 +85,7 @@
             this.Controls.Add(this.btn_crearFact);
             this.Name = "Facturacion";
             this.Text = "Facturacion";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Facturacion_FormClosing);
             this.ResumeLayout(false);
 
         }

@@ -193,6 +193,7 @@
             this.Controls.Add(this.label1);
             this.Name = "EliminarFactura";
             this.Text = "EliminarFactura";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EliminarFactura_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

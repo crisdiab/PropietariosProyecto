@@ -144,6 +144,7 @@
             this.Controls.Add(this.label4);
             this.Name = "Configuracion";
             this.Text = "Configuracion";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Configuracion_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

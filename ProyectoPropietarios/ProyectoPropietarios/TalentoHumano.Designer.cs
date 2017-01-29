@@ -85,6 +85,7 @@
             this.Controls.Add(this.button1);
             this.Name = "TalentoHumano";
             this.Text = "TalentoHumano";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TalentoHumano_FormClosing);
             this.ResumeLayout(false);
 
         }

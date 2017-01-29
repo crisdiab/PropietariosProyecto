@@ -45,5 +45,12 @@ namespace ProyectoPropietarios
             mod.Show();
             this.Hide();
         }
+
+        private void TalentoHumano_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Modulos md = new Modulos();
+            md.Show();
+            this.Hide();
+        }
     }
 }

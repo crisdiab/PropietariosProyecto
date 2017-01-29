@@ -24,5 +24,12 @@ namespace ProyectoPropietarios
             fact.Show();
             this.Hide();
         }
+
+        private void EliminarFactura_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Modulos md = new Modulos();
+            md.Show();
+            this.Hide();
+        }
     }
 }

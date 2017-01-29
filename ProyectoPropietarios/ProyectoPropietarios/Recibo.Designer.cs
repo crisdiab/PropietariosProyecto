@@ -320,6 +320,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Recibo";
             this.Text = "Recibo";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Recibo_FormClosing);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);

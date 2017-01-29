@@ -46,5 +46,12 @@ namespace ProyectoPropietarios
             ef.Show();
             this.Hide();
         }
+
+        private void Facturacion_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Modulos md = new Modulos();
+            md.Show();
+            this.Hide();
+        }
     }
 }

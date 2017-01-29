@@ -15,11 +15,46 @@ namespace ProyectoPropietarios
         public Usuarios()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            s
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ClienteForm cliente = new ClienteForm();
+            cliente.Show();
+
+            this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PacienteForm paciente = new PacienteForm();
+            paciente.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Modulos md = new Modulos();
+            md.Show();
+            this.Hide();
+        }
+
+        private void Usuarios_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Modulos md = new Modulos();
+            md.Show();
+            this.Hide();
         }
     }
 }

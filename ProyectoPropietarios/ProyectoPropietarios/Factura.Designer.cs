@@ -426,6 +426,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Factura";
             this.Text = "Factura";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Factura_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

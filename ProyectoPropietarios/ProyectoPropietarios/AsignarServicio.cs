@@ -24,5 +24,12 @@ namespace ProyectoPropietarios
             this.Hide();
 
         }
+
+        private void AsignarServicio_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Modulos md = new Modulos();
+            md.Show();
+            this.Hide();
+        }
     }
 }

@@ -21,5 +21,19 @@ namespace ProyectoPropietarios
         {
 
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            ClienteForm cf = new ClienteForm();
+            cf.Show();
+            this.Hide();
+        }
+
+        private void RegistrarCliente_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Modulos md = new Modulos();
+            md.Show();
+            this.Hide();
+        }
     }
 }

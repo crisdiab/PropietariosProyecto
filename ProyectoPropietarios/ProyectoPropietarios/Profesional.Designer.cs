@@ -169,6 +169,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Profesional";
             this.Text = "Profesional";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Profesional_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

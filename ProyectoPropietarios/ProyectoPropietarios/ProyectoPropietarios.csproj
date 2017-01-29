@@ -57,11 +57,23 @@
     <Compile Include="Ayuda.Designer.cs">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClienteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteForm.Designer.cs">
+      <DependentUpon>ClienteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Configuracion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Configuracion.Designer.cs">
       <DependentUpon>Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar Servicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar Servicio.Designer.cs">
+      <DependentUpon>Eliminar Servicio.cs</DependentUpon>
     </Compile>
     <Compile Include="EliminarCliente.cs">
       <SubType>Form</SubType>
@@ -123,11 +135,23 @@
     <Compile Include="ModificarPaciente.Designer.cs">
       <DependentUpon>ModificarPaciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarServicio.Designer.cs">
+      <DependentUpon>ModificarServicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modulos.Designer.cs">
       <DependentUpon>Modulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PacienteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PacienteForm.Designer.cs">
+      <DependentUpon>PacienteForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Profesional.cs">
       <SubType>Form</SubType>
@@ -167,11 +191,41 @@
     <Compile Include="RegistrarPaciente.Designer.cs">
       <DependentUpon>RegistrarPaciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReporteAcademico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteAcademico.Designer.cs">
+      <DependentUpon>ReporteAcademico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteFinanciero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteFinanciero.Designer.cs">
+      <DependentUpon>ReporteFinanciero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Seguimiento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Seguimiento.Designer.cs">
       <DependentUpon>Seguimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SerivcioPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerivcioPrincipal.Designer.cs">
+      <DependentUpon>SerivcioPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios.Designer.cs">
+      <DependentUpon>Servicios.cs</DependentUpon>
     </Compile>
     <Compile Include="TalentoHumano.cs">
       <SubType>Form</SubType>
@@ -191,8 +245,14 @@
     <EmbeddedResource Include="Ayuda.resx">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClienteForm.resx">
+      <DependentUpon>ClienteForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar Servicio.resx">
+      <DependentUpon>Eliminar Servicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarCliente.resx">
       <DependentUpon>EliminarCliente.cs</DependentUpon>
@@ -224,8 +284,14 @@
     <EmbeddedResource Include="ModificarPaciente.resx">
       <DependentUpon>ModificarPaciente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModificarServicio.resx">
+      <DependentUpon>ModificarServicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulos.resx">
       <DependentUpon>Modulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PacienteForm.resx">
+      <DependentUpon>PacienteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Profesional.resx">
       <DependentUpon>Profesional.cs</DependentUpon>
@@ -255,8 +321,23 @@
     <EmbeddedResource Include="RegistrarPaciente.resx">
       <DependentUpon>RegistrarPaciente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteAcademico.resx">
+      <DependentUpon>ReporteAcademico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteFinanciero.resx">
+      <DependentUpon>ReporteFinanciero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Seguimiento.resx">
       <DependentUpon>Seguimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SerivcioPrincipal.resx">
+      <DependentUpon>SerivcioPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios.resx">
+      <DependentUpon>Servicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TalentoHumano.resx">
       <DependentUpon>TalentoHumano.cs</DependentUpon>
@@ -384,6 +465,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconoDatosPersonales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16343719_1233317770049679_369468188_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16358851_1233317776716345_1018061812_n.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

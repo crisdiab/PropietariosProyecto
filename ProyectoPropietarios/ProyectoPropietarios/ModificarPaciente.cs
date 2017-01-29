@@ -16,5 +16,19 @@ namespace ProyectoPropietarios
         {
             InitializeComponent();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            PacienteForm pf = new PacienteForm();
+            pf.Show();
+            this.Hide();
+        }
+
+        private void ModificarPaciente_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Modulos md = new Modulos();
+            md.Show();
+            this.Hide();
+        }
     }
 }

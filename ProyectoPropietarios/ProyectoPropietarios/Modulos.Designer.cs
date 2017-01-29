@@ -60,6 +60,7 @@
             this.btn_paciente.Size = new System.Drawing.Size(100, 107);
             this.btn_paciente.TabIndex = 0;
             this.btn_paciente.UseVisualStyleBackColor = false;
+            this.btn_paciente.Click += new System.EventHandler(this.btn_paciente_Click);
             // 
             // btn_Facturacion
             // 
@@ -82,6 +83,7 @@
             this.btn_reporte.Size = new System.Drawing.Size(106, 107);
             this.btn_reporte.TabIndex = 2;
             this.btn_reporte.UseVisualStyleBackColor = true;
+            this.btn_reporte.Click += new System.EventHandler(this.btn_reporte_Click);
             // 
             // btn_talentoHumano
             // 

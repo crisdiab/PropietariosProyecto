@@ -16,5 +16,19 @@ namespace ProyectoPropietarios
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ClienteForm cf = new ClienteForm();
+            cf.Show();
+            this.Hide();
+        }
+
+        private void EliminarCliente_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Modulos md = new Modulos();
+            md.Show();
+            this.Hide();
+        }
     }
 }

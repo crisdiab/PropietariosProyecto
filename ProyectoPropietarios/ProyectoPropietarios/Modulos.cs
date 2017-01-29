@@ -61,7 +61,9 @@ namespace ProyectoPropietarios
 
         private void btn_servicios_Click(object sender, EventArgs e)
         {
-
+            SerivcioPrincipal sp = new SerivcioPrincipal();
+            sp.Show();
+            this.Hide();
         }
 
         private void btn_controlEstudiantes_Click(object sender, EventArgs e)
@@ -75,6 +77,20 @@ namespace ProyectoPropietarios
         {
             Ayuda ay = new Ayuda();
             ay.Show();
+            this.Hide();
+        }
+
+        private void btn_paciente_Click(object sender, EventArgs e)
+        {
+            Usuarios user = new Usuarios();
+            user.Show();
+            this.Hide();
+        }
+
+        private void btn_reporte_Click(object sender, EventArgs e)
+        {
+            Reportes reportes = new Reportes();
+            reportes.Show();
             this.Hide();
         }
     }

@@ -63,6 +63,26 @@ namespace ProyectoPropietarios.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _16343719_1233317770049679_369468188_n {
+            get {
+                object obj = ResourceManager.GetObject("16343719_1233317770049679_369468188_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _16358851_1233317776716345_1018061812_n {
+            get {
+                object obj = ResourceManager.GetObject("16358851_1233317776716345_1018061812_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aceptar {
             get {
                 object obj = ResourceManager.GetObject("aceptar", resourceCulture);

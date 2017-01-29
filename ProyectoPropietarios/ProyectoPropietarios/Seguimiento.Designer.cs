@@ -31,21 +31,21 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -81,6 +81,15 @@
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(34, 22);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(149, 22);
+            this.dateTimePicker1.TabIndex = 24;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -104,35 +113,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(345, 150);
             this.dataGridView1.TabIndex = 24;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(26, 173);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(480, 180);
-            this.groupBox2.TabIndex = 25;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "ESTUDIANTES";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(34, 22);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(149, 22);
-            this.dateTimePicker1.TabIndex = 24;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(374, 64);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 49);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Seleccionar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "Nombre";
@@ -149,6 +129,26 @@
             this.Column2.HeaderText = "Seguimiento";
             this.Column2.Name = "Column2";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Location = new System.Drawing.Point(26, 173);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(480, 180);
+            this.groupBox2.TabIndex = 25;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "ESTUDIANTES";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(374, 64);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 49);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "Seleccionar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.button3);
@@ -163,33 +163,22 @@
             this.groupBox3.TabIndex = 26;
             this.groupBox3.TabStop = false;
             // 
-            // label6
+            // button3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(29, 33);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 25);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Nombre:";
+            this.button3.Location = new System.Drawing.Point(397, 85);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 45);
+            this.button3.TabIndex = 28;
+            this.button3.Text = "Agregar";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // textBox3
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(122, 37);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(122, 22);
-            this.textBox2.TabIndex = 25;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(320, 37);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(71, 21);
-            this.checkBox1.TabIndex = 26;
-            this.checkBox1.Text = "Asistio";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.textBox3.Location = new System.Drawing.Point(164, 85);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(227, 86);
+            this.textBox3.TabIndex = 25;
             // 
             // label1
             // 
@@ -201,22 +190,33 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Observacion:";
             // 
-            // textBox3
+            // checkBox1
             // 
-            this.textBox3.Location = new System.Drawing.Point(164, 85);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(227, 86);
-            this.textBox3.TabIndex = 25;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(320, 37);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(71, 21);
+            this.checkBox1.TabIndex = 26;
+            this.checkBox1.Text = "Asistio";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // textBox2
             // 
-            this.button3.Location = new System.Drawing.Point(397, 85);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 45);
-            this.button3.TabIndex = 28;
-            this.button3.Text = "Agregar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(122, 37);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(122, 22);
+            this.textBox2.TabIndex = 25;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(29, 33);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 25);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Nombre:";
             // 
             // button4
             // 
@@ -239,6 +239,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Seguimiento";
             this.Text = "Seguimiento";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Seguimiento_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
