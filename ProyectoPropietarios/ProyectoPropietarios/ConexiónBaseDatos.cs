@@ -88,7 +88,7 @@ namespace ProyectoPropietarios
                 {
 
 
-                    return "DATA SOURCE = localhost; Initial Catalog = BaseDesarrolloV1; Integrated Security = True";
+                    return "DATA SOURCE = localhost; Initial Catalog = GrisGris; Integrated Security = True";
 
                 }
                 catch (Exception)
