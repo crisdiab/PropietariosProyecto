@@ -15,6 +15,7 @@ namespace ProyectoPropietarios
         public Eliminar_Servicio()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void button3_Click(object sender, EventArgs e)

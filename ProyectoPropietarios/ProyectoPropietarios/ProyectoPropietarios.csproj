@@ -167,15 +167,7 @@
     <Compile Include="Recibo.Designer.cs">
       <DependentUpon>Recibo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Cliente.Designer.cs">
-      <DependentUpon>Cliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Paciente.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Paciente.cs" />
     <Compile Include="Paciente.Designer.cs">
       <DependentUpon>Paciente.cs</DependentUpon>
     </Compile>
@@ -221,9 +213,7 @@
     <Compile Include="SerivcioPrincipal.Designer.cs">
       <DependentUpon>SerivcioPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Servicios.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Servicios.cs" />
     <Compile Include="Servicios.Designer.cs">
       <DependentUpon>Servicios.cs</DependentUpon>
     </Compile>
@@ -308,9 +298,6 @@
     </Compile>
     <EmbeddedResource Include="Recibo.resx">
       <DependentUpon>Recibo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Cliente.resx">
-      <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paciente.resx">
       <DependentUpon>Paciente.cs</DependentUpon>

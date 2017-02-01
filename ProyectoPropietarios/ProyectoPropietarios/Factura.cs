@@ -15,6 +15,7 @@ namespace ProyectoPropietarios
         public Factura()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void button5_Click(object sender, EventArgs e)

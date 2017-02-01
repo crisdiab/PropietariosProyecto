@@ -15,6 +15,7 @@ namespace ProyectoPropietarios
         public Reportes()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

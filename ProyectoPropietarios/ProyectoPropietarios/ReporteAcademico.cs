@@ -15,6 +15,7 @@ namespace ProyectoPropietarios
         public ReporteAcademico()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

@@ -166,6 +166,7 @@
             this.Name = "AsignarServicio";
             this.Text = "AsignarServicio";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AsignarServicio_FormClosing);
+            this.Load += new System.EventHandler(this.AsignarServicio_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

@@ -15,6 +15,7 @@ namespace ProyectoPropietarios
         public Profesional()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void btn_salir_Click(object sender, EventArgs e)

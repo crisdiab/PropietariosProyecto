@@ -15,6 +15,7 @@ namespace ProyectoPropietarios
         public ModificarServicio()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void btn_salir_Click(object sender, EventArgs e)

@@ -15,6 +15,7 @@ namespace ProyectoPropietarios
         public AsignarServicio()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void btn_salir_Click(object sender, EventArgs e)
@@ -30,6 +31,11 @@ namespace ProyectoPropietarios
             Modulos md = new Modulos();
             md.Show();
             this.Hide();
+        }
+
+        private void AsignarServicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

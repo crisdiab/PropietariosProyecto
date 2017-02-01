@@ -15,6 +15,7 @@ namespace ProyectoPropietarios
         public RegistrarCliente()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void label5_Click(object sender, EventArgs e)

@@ -15,6 +15,7 @@ namespace ProyectoPropietarios
         public ModificarCliente()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void label7_Click(object sender, EventArgs e)

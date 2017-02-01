@@ -44,7 +44,8 @@ namespace ProyectoPropietarios
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            // Application.Exit();
+            Environment.Exit(0);
         }
 
         private void label8_Click(object sender, EventArgs e)
