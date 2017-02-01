@@ -231,6 +231,7 @@
     <Compile Include="Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Validaciones.cs" />
     <EmbeddedResource Include="AsignarServicio.resx">
       <DependentUpon>AsignarServicio.cs</DependentUpon>
     </EmbeddedResource>
