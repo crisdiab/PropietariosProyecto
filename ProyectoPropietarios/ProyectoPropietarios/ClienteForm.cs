@@ -15,7 +15,7 @@ namespace ProyectoPropietarios
         public ClienteForm()
         {
             InitializeComponent();
-            this.
+            this.CenterToScreen();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

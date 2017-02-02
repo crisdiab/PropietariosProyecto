@@ -113,6 +113,12 @@
     <Compile Include="Facturacion.Designer.cs">
       <DependentUpon>Facturacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Servicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios.Designer.cs">
+      <DependentUpon>Servicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,10 +175,6 @@
     <Compile Include="Recibo.Designer.cs">
       <DependentUpon>Recibo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Paciente.cs" />
-    <Compile Include="Paciente.Designer.cs">
-      <DependentUpon>Paciente.cs</DependentUpon>
-    </Compile>
     <Compile Include="RegistrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,10 +216,6 @@
     </Compile>
     <Compile Include="SerivcioPrincipal.Designer.cs">
       <DependentUpon>SerivcioPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Servicios.cs" />
-    <Compile Include="Servicios.Designer.cs">
-      <DependentUpon>Servicios.cs</DependentUpon>
     </Compile>
     <Compile Include="TalentoHumano.cs">
       <SubType>Form</SubType>
@@ -302,9 +300,6 @@
     <EmbeddedResource Include="Recibo.resx">
       <DependentUpon>Recibo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Paciente.resx">
-      <DependentUpon>Paciente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="RegistrarCliente.resx">
       <DependentUpon>RegistrarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -325,9 +320,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SerivcioPrincipal.resx">
       <DependentUpon>SerivcioPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Servicios.resx">
-      <DependentUpon>Servicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TalentoHumano.resx">
       <DependentUpon>TalentoHumano.cs</DependentUpon>

@@ -56,14 +56,11 @@ C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\Pro
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.EliminarPaciente.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.ModificarCliente.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.ModificarPaciente.resources
-C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Resources.Cliente.resources
-C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Resources.Paciente.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.RegistrarCliente.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.RegistrarPaciente.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Usuarios.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.ClienteForm.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.PacienteForm.resources
-C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Servicios.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Eliminar_Servicio.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.ModificarServicio.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.SerivcioPrincipal.resources
