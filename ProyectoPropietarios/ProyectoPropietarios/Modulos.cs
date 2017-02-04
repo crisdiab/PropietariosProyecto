@@ -94,5 +94,7 @@ namespace ProyectoPropietarios
             reportes.Show();
             this.Hide();
         }
+
+        
     }
 }

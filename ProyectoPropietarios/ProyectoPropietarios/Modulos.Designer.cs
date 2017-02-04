@@ -170,9 +170,9 @@
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(44, 239);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 31);
+            this.label2.Size = new System.Drawing.Size(108, 31);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Usuarios";
+            this.label2.Text = "Clientes";
             // 
             // label3
             // 
@@ -251,9 +251,9 @@
             this.label9.Font = new System.Drawing.Font("Modern No. 20", 18F);
             this.label9.Location = new System.Drawing.Point(555, 439);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(138, 31);
+            this.label9.Size = new System.Drawing.Size(93, 31);
             this.label9.TabIndex = 19;
-            this.label9.Text = "Acerca De";
+            this.label9.Text = "Ayuda";
             // 
             // Modulos
             // 
