@@ -125,6 +125,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GrisGrisDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="loginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginAdmin.Designer.cs">
+      <DependentUpon>loginAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Servicios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -281,6 +287,9 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="loginAdmin.resx">
+      <DependentUpon>loginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -333,6 +342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SerivcioPrincipal.resx">
       <DependentUpon>SerivcioPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios.resx">
+      <DependentUpon>Servicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TalentoHumano.resx">
       <DependentUpon>TalentoHumano.cs</DependentUpon>

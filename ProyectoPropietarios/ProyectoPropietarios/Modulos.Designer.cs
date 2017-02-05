@@ -117,7 +117,7 @@
             this.btn_configuracion.Size = new System.Drawing.Size(120, 119);
             this.btn_configuracion.TabIndex = 5;
             this.btn_configuracion.UseVisualStyleBackColor = false;
-            this.btn_configuracion.Click += new System.EventHandler(this.button6_Click);
+            this.btn_configuracion.Click += new System.EventHandler(this.btn_configuracion_Click);
             // 
             // btn_Ayuda
             // 

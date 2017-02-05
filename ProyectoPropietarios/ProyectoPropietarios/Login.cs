@@ -32,35 +32,82 @@ namespace ProyectoPropietarios
             }
             else
             {
-                string buscarUsuario = "select USUARIO from PARAMETROS where USUARIO = '" + usuario + "'";
 
+                string buscarUltimo = "select top 1 * from PARAMETROS order by IDPARAMETROS desc";
+                DataTable consul;
 
-                DataTable consultarUsuario = consulta.consultar(buscarUsuario);
+                consul = consulta.consultar(buscarUltimo);
 
-                if(consultarUsuario.Rows.Count == 0)
+                DataRow row = consul.Rows[0];
+
+                if(row["USUARIO"].ToString().Trim()=="default")
                 {
-                    MessageBox.Show("El usuario que ingreso no existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    string buscarPassword = "select CONTRASENIA from PARAMETROS where CONTRASENIA = '" + password + "'";
-                    DataTable consultarContrasenia = consulta.consultar(buscarPassword);
-                    if(consultarContrasenia.Rows.Count == 0)
+                    MessageBox.Show("Atencion esta ingresando en la cuenta por default", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    #region buscar usuario y contrasenia
+                    string buscarUsuario1 = "select USUARIO from PARAMETROS where USUARIO = '" + usuario + "'";
+
+
+                    DataTable consultarUsuario1 = consulta.consultar(buscarUsuario1);
+                    if (consultarUsuario1.Rows.Count == 0)
                     {
-                        MessageBox.Show("El password ingresado es inválido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("El usuario que ingreso no existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     else
                     {
-                        MessageBox.Show("Credenciales correctas", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        string buscarPassword1 = "select CONTRASENIA from PARAMETROS where USUARIO = '" + usuario + "' and CONTRASENIA = '" + password + "'";
+                        DataTable consultarContrasenia1 = consulta.consultar(buscarPassword1);
+                        if (consultarContrasenia1.Rows.Count == 0)
+                        {
+                            MessageBox.Show("El password ingresado es inválido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Credenciales correctas", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        Modulos md = new Modulos();
-                        md.Show();
-                        this.Hide();
+                            Modulos md = new Modulos();
+                            md.Show();
+                            this.Hide();
+                        }
+
                     }
-                    
+                    #endregion
+                }
+                else
+                {
+                    #region buscar usuario y contrasenia
+                    string buscarUsuario = "select USUARIO from PARAMETROS where USUARIO = '" + usuario + "'";
+
+
+                    DataTable consultarUsuario = consulta.consultar(buscarUsuario);
+                    if (consultarUsuario.Rows.Count == 0)
+                    {
+                        MessageBox.Show("El usuario que ingreso no existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        string buscarPassword = "select CONTRASENIA from PARAMETROS where USUARIO = '" + usuario + "' and CONTRASENIA = '" + password + "'";
+                        DataTable consultarContrasenia = consulta.consultar(buscarPassword);
+                        if (consultarContrasenia.Rows.Count == 0)
+                        {
+                            MessageBox.Show("El password ingresado es inválido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Credenciales correctas", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            Modulos md = new Modulos();
+                            md.Show();
+                            this.Hide();
+                        }
+
+                    }
+                    #endregion
                 }
 
-                
+
+
+
+
             }
 
         }

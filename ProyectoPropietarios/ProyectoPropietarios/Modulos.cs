@@ -35,12 +35,7 @@ namespace ProyectoPropietarios
             this.Hide();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Configuracion conf = new Configuracion();
-            conf.Show();
-            this.Hide();
-        }
+       
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -95,6 +90,12 @@ namespace ProyectoPropietarios
             this.Hide();
         }
 
-        
+        private void btn_configuracion_Click(object sender, EventArgs e)
+        {
+            loginAdmin ladmin = new loginAdmin();
+            ladmin.Show();
+            this.Hide();
+           
+        }
     }
 }
