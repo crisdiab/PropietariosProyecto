@@ -58,7 +58,6 @@ C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\Pro
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.ModificarPaciente.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.RegistrarCliente.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.RegistrarPaciente.resources
-C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Usuarios.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.ClienteForm.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.PacienteForm.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Eliminar_Servicio.resources
@@ -100,3 +99,4 @@ C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\Pro
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.exe.licenses
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.loginAdmin.resources
 C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Servicios.resources
+C:\Users\Cristian\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.Cliente.resources

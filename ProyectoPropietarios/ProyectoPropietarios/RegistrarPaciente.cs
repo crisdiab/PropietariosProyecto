@@ -16,6 +16,7 @@ namespace ProyectoPropietarios
         {
             InitializeComponent();
             this.CenterToScreen();
+            
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -30,6 +31,16 @@ namespace ProyectoPropietarios
             Modulos md = new Modulos();
             md.Show();
             this.Hide();
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegistrarPaciente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -52,5 +52,7 @@ namespace ProyectoPropietarios
             md.Show();
             this.Hide();
         }
+
+       
     }
 }

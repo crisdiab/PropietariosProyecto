@@ -23,10 +23,7 @@ namespace ProyectoPropietarios
             
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            
-        }
+      
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -45,12 +42,7 @@ namespace ProyectoPropietarios
 
         }
 
-        private void pictureBox2_Click_1(object sender, EventArgs e)
-        {
-            ModificarCliente mc = new ModificarCliente();
-            mc.Show();
-            this.Hide();
-        }
+      
 
         private void pictureBox4_Click_1(object sender, EventArgs e)
         {
@@ -70,6 +62,23 @@ namespace ProyectoPropietarios
         {
             Modulos md = new Modulos();
             md.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            ModificarCliente mc = new ModificarCliente();
+            mc.Show();
             this.Hide();
         }
     }

@@ -78,8 +78,8 @@ namespace ProyectoPropietarios
 
         private void btn_paciente_Click(object sender, EventArgs e)
         {
-            Usuarios user = new Usuarios();
-            user.Show();
+            Cliente cliente = new Cliente();
+            cliente.Show();
             this.Hide();
         }
 
