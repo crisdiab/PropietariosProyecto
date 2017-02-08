@@ -90,15 +90,13 @@ namespace ProyectoPropietarios
                     consultaRepresentante = consulta.consultar(buscarCliente);
                     if (consultaRepresentante.Rows.Count == 0)
                     {
-                        MessageBox.Show("No se encontro al cliente", 'Resultado de busqueda', MessageBoxButtons.OK,
+                        MessageBox.Show("No se encontro al cliente", "Resultado de busqueda", MessageBoxButtons.OK,
                             MessageBoxIcon.Warning);
                     }
                 }
                
 
-                filaRepresentante = consultaRepresentante.Rows[0];
-                idRepresentante = filaRepresentante["IDREPRESENTANTE"].ToString().Trim();
-            }
+                          }
 
             
            
