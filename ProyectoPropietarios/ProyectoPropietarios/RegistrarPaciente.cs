@@ -18,7 +18,7 @@ namespace ProyectoPropietarios
         {
             InitializeComponent();
             this.CenterToScreen();
-            
+
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace ProyectoPropietarios
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             gBdatosPaciente.Enabled = true;
-            
+
         }
 
         private void btnBuscarCliente_Click(object sender, EventArgs e)
@@ -63,9 +63,9 @@ namespace ProyectoPropietarios
             {
                 string recuperarUltimoRepresentante = "select*from REPRESENTANTE WHERE IDREPRESENTANTE =(SELECT MAX(IDREPRESENTANTE) FROM REPRESENTANTE)";
 
-                 consultaRepresentante = consulta.consultar(recuperarUltimoRepresentante);
+                consultaRepresentante = consulta.consultar(recuperarUltimoRepresentante);
 
-                 filaRepresentante = consultaRepresentante.Rows[0];
+                filaRepresentante = consultaRepresentante.Rows[0];
 
                 idRepresentante = filaRepresentante["IDREPRESENTANTE"].ToString().Trim();
 
@@ -79,7 +79,8 @@ namespace ProyectoPropietarios
             #endregion
             else
             {
-                if (validacion.validarCedula(txtcedulaCliente.Text )== false)
+                #region validacion de la cedula ingresada
+                if (validacion.validarCedula(txtcedulaCliente.Text) == false)
                 {
                     MessageBox.Show("Pro favor verifique y vuelva a intentarlo", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtcedulaCliente.Text = "";
@@ -93,13 +94,30 @@ namespace ProyectoPropietarios
                         MessageBox.Show("No se encontro al cliente", "Resultado de busqueda", MessageBoxButtons.OK,
                             MessageBoxIcon.Warning);
                     }
+                    else
+                    {
+                        string recuperarUltimoRepresentante = "select*from REPRESENTANTE WHERE IDREPRESENTANTE =(SELECT MAX(IDREPRESENTANTE) FROM REPRESENTANTE)";
+
+                        consultaRepresentante = consulta.consultar(recuperarUltimoRepresentante);
+
+                        filaRepresentante = consultaRepresentante.Rows[0];
+
+                        idRepresentante = filaRepresentante["IDREPRESENTANTE"].ToString().Trim();
+
+                        txtcedulaCliente.Text = filaRepresentante["CEDULAREPRESENTANTE"].ToString().Trim();
+                        txtNombreEncontrado.Text = filaRepresentante["NOMBREREPRESENTANTE"].ToString().Trim();
+                        btnAceptar.Enabled = true;
+                        txtcedulaCliente.Enabled = false;
+                        btnBuscarCliente.Enabled = false;
+                        btnNuevaBusqueda.Enabled = true;
+                    }
                 }
-               
 
-                          }
+                #endregion
+            }
 
-            
-           
+
+
         }
 
         private void btnNuevaBusqueda_Click(object sender, EventArgs e)
@@ -107,6 +125,7 @@ namespace ProyectoPropietarios
             txtcedulaCliente.Text = "";
             btnBuscarCliente.Enabled = true;
             btnAceptar.Enabled = false;
+            txtcedulaCliente.Enabled = true;
         }
 
         private void txNombrePaciente_KeyPress(object sender, KeyPressEventArgs e)
@@ -152,25 +171,40 @@ namespace ProyectoPropietarios
         private void btnGuardarPaciente_Click(object sender, EventArgs e)
         {
 
-            string fecha = dateFechaNacimiento.Text;
 
-            string[] anio = separarFecha(fecha);
+            MessageBox.Show("3fasdf", "Confirmacion", MessageBoxButtons.OK);
+            if (txtNombrePaciente.Text == "" || txtCedula.Text == "" || txtUEducativa.Text == ""
+                || comboEscolaridad.Text == "")
+            {
+                MessageBox.Show("Hay campos obligatorios que se encuentran vacios, verifique porfavor", "Advertencia",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                string fecha = dateFechaNacimiento.Text;
+                
+                string[] anioNac = separarFecha(fecha, '/');
+                DateTime fechaActual = DateTime.Now;
+                string[] anioActual = separarFecha(fechaActual.ToString("d"),'/');
+                txtEdad.Text = calcularEdad( anioNac[2], anioActual[2]);
+            }
 
-           
-            
-               
-
-
-            MessageBox.Show(anio[2],"Confirmacion", MessageBoxButtons.OK);
-            if (txtNombrePaciente.Text == "" || txtCedula.Text == "" || txtUEducativa.Text == "" 
-                || comboEscolaridad.Text == "") { }
         }
-        private string[] separarFecha(string fecha)
+        private string[] separarFecha(string fecha, char delimiter)
         {
-            Char delimiter = '/';
-            string[] substrings = fecha.Split(delimiter);
+            
 
-            return substrings;
+            return fecha.Split(delimiter);
         }
+        private string calcularEdad(string anioNacimiento, string anioActual)
+        {
+            string edad = "";
+
+
+            edad = (Convert.ToInt32(anioActual) - Convert.ToInt32(anioNacimiento)).ToString();
+
+            return edad;
+        }
+
     }
 }
