@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtNref2 = new System.Windows.Forms.TextBox();
+            this.txtTelref1 = new System.Windows.Forms.TextBox();
+            this.txtNref1 = new System.Windows.Forms.TextBox();
             this.txtCedula = new System.Windows.Forms.TextBox();
-            this.txNombrePaciente = new System.Windows.Forms.TextBox();
+            this.txtNombrePaciente = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -41,46 +41,49 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lbIdRepresentante = new System.Windows.Forms.Label();
-            this.txtIdRepresentante = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnNuevaBusqueda = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnNuevaBusqueda = new System.Windows.Forms.Button();
+            this.label25 = new System.Windows.Forms.Label();
+            this.btnAceptar = new System.Windows.Forms.Button();
+            this.txtNombreEncontrado = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtcedulaCliente = new System.Windows.Forms.TextBox();
             this.gBdatosPaciente = new System.Windows.Forms.GroupBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txttelref2 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.comboEscolaridad = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtEncargadoDECE = new System.Windows.Forms.TextBox();
+            this.txtUEducativa = new System.Windows.Forms.TextBox();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btnGuardarPaciente = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.comboEscolaridad = new System.Windows.Forms.ComboBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.gBdatosPaciente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox9
@@ -91,29 +94,32 @@
             this.textBox9.Size = new System.Drawing.Size(237, 22);
             this.textBox9.TabIndex = 63;
             // 
-            // textBox8
+            // txtNref2
             // 
-            this.textBox8.Location = new System.Drawing.Point(234, 237);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(237, 22);
-            this.textBox8.TabIndex = 62;
+            this.txtNref2.Location = new System.Drawing.Point(234, 237);
+            this.txtNref2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNref2.Name = "txtNref2";
+            this.txtNref2.Size = new System.Drawing.Size(237, 22);
+            this.txtNref2.TabIndex = 62;
+            this.txtNref2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNref2_KeyPress);
             // 
-            // textBox7
+            // txtTelref1
             // 
-            this.textBox7.Location = new System.Drawing.Point(234, 203);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(237, 22);
-            this.textBox7.TabIndex = 61;
+            this.txtTelref1.Location = new System.Drawing.Point(234, 203);
+            this.txtTelref1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelref1.Name = "txtTelref1";
+            this.txtTelref1.Size = new System.Drawing.Size(237, 22);
+            this.txtTelref1.TabIndex = 61;
+            this.txtTelref1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelref1_KeyPress);
             // 
-            // textBox6
+            // txtNref1
             // 
-            this.textBox6.Location = new System.Drawing.Point(234, 163);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(237, 22);
-            this.textBox6.TabIndex = 60;
+            this.txtNref1.Location = new System.Drawing.Point(234, 163);
+            this.txtNref1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNref1.Name = "txtNref1";
+            this.txtNref1.Size = new System.Drawing.Size(237, 22);
+            this.txtNref1.TabIndex = 60;
+            this.txtNref1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNref1_KeyPress);
             // 
             // txtCedula
             // 
@@ -122,14 +128,16 @@
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(237, 22);
             this.txtCedula.TabIndex = 57;
+            this.txtCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCedula_KeyPress);
             // 
-            // txNombrePaciente
+            // txtNombrePaciente
             // 
-            this.txNombrePaciente.Location = new System.Drawing.Point(566, 86);
-            this.txNombrePaciente.Margin = new System.Windows.Forms.Padding(4);
-            this.txNombrePaciente.Name = "txNombrePaciente";
-            this.txNombrePaciente.Size = new System.Drawing.Size(237, 22);
-            this.txNombrePaciente.TabIndex = 55;
+            this.txtNombrePaciente.Location = new System.Drawing.Point(566, 86);
+            this.txtNombrePaciente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombrePaciente.Name = "txtNombrePaciente";
+            this.txtNombrePaciente.Size = new System.Drawing.Size(237, 22);
+            this.txtNombrePaciente.TabIndex = 55;
+            this.txtNombrePaciente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txNombrePaciente_KeyPress);
             // 
             // label9
             // 
@@ -208,26 +216,6 @@
             this.label1.TabIndex = 45;
             this.label1.Text = "Nombres";
             // 
-            // lbIdRepresentante
-            // 
-            this.lbIdRepresentante.AutoSize = true;
-            this.lbIdRepresentante.Location = new System.Drawing.Point(277, 71);
-            this.lbIdRepresentante.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbIdRepresentante.Name = "lbIdRepresentante";
-            this.lbIdRepresentante.Size = new System.Drawing.Size(113, 17);
-            this.lbIdRepresentante.TabIndex = 41;
-            this.lbIdRepresentante.Text = "idRepresentante";
-            this.lbIdRepresentante.Visible = false;
-            // 
-            // txtIdRepresentante
-            // 
-            this.txtIdRepresentante.Location = new System.Drawing.Point(398, 68);
-            this.txtIdRepresentante.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIdRepresentante.Name = "txtIdRepresentante";
-            this.txtIdRepresentante.Size = new System.Drawing.Size(47, 22);
-            this.txtIdRepresentante.TabIndex = 37;
-            this.txtIdRepresentante.Visible = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -240,18 +228,17 @@
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
             // 
-            // dateTimePicker1
+            // dateFechaNacimiento
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(566, 167);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 67;
+            this.dateFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateFechaNacimiento.Location = new System.Drawing.Point(566, 167);
+            this.dateFechaNacimiento.Name = "dateFechaNacimiento";
+            this.dateFechaNacimiento.Size = new System.Drawing.Size(200, 22);
+            this.dateFechaNacimiento.TabIndex = 67;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.btnNuevaBusqueda);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.btnBuscarCliente);
             this.groupBox1.Controls.Add(this.label2);
@@ -263,34 +250,65 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar Cliente";
             // 
-            // btnNuevaBusqueda
-            // 
-            this.btnNuevaBusqueda.Location = new System.Drawing.Point(172, 232);
-            this.btnNuevaBusqueda.Name = "btnNuevaBusqueda";
-            this.btnNuevaBusqueda.Size = new System.Drawing.Size(133, 28);
-            this.btnNuevaBusqueda.TabIndex = 72;
-            this.btnNuevaBusqueda.Text = "Nueva Busqueda";
-            this.btnNuevaBusqueda.UseVisualStyleBackColor = true;
-            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Controls.Add(this.btnNuevaBusqueda);
+            this.groupBox3.Controls.Add(this.label25);
+            this.groupBox3.Controls.Add(this.btnAceptar);
+            this.groupBox3.Controls.Add(this.txtNombreEncontrado);
             this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Location = new System.Drawing.Point(42, 99);
+            this.groupBox3.Location = new System.Drawing.Point(42, 89);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(429, 126);
+            this.groupBox3.Size = new System.Drawing.Size(439, 155);
             this.groupBox3.TabIndex = 71;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Resultados";
             // 
-            // textBox1
+            // btnNuevaBusqueda
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(103, 35);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 22);
-            this.textBox1.TabIndex = 72;
+            this.btnNuevaBusqueda.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnNuevaBusqueda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNuevaBusqueda.Enabled = false;
+            this.btnNuevaBusqueda.Location = new System.Drawing.Point(238, 77);
+            this.btnNuevaBusqueda.Name = "btnNuevaBusqueda";
+            this.btnNuevaBusqueda.Size = new System.Drawing.Size(100, 58);
+            this.btnNuevaBusqueda.TabIndex = 72;
+            this.btnNuevaBusqueda.Text = "Nueva Busqueda";
+            this.btnNuevaBusqueda.UseVisualStyleBackColor = false;
+            this.btnNuevaBusqueda.Click += new System.EventHandler(this.btnNuevaBusqueda_Click);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Location = new System.Drawing.Point(123, 135);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(57, 17);
+            this.label25.TabIndex = 78;
+            this.label25.Text = "Aceptar";
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAceptar.BackgroundImage = global::ProyectoPropietarios.Properties.Resources.aceptar;
+            this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAceptar.Enabled = false;
+            this.btnAceptar.Location = new System.Drawing.Point(115, 77);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(80, 58);
+            this.btnAceptar.TabIndex = 77;
+            this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            // 
+            // txtNombreEncontrado
+            // 
+            this.txtNombreEncontrado.Enabled = false;
+            this.txtNombreEncontrado.Location = new System.Drawing.Point(103, 35);
+            this.txtNombreEncontrado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreEncontrado.Name = "txtNombreEncontrado";
+            this.txtNombreEncontrado.Size = new System.Drawing.Size(237, 22);
+            this.txtNombreEncontrado.TabIndex = 72;
             // 
             // label5
             // 
@@ -313,6 +331,7 @@
             this.btnBuscarCliente.Size = new System.Drawing.Size(66, 48);
             this.btnBuscarCliente.TabIndex = 70;
             this.btnBuscarCliente.UseVisualStyleBackColor = false;
+            this.btnBuscarCliente.Click += new System.EventHandler(this.btnBuscarCliente_Click);
             // 
             // label2
             // 
@@ -341,17 +360,15 @@
             this.gBdatosPaciente.Controls.Add(this.label18);
             this.gBdatosPaciente.Controls.Add(this.label17);
             this.gBdatosPaciente.Controls.Add(this.groupBox2);
-            this.gBdatosPaciente.Controls.Add(this.textBox2);
+            this.gBdatosPaciente.Controls.Add(this.txtEdad);
             this.gBdatosPaciente.Controls.Add(this.label13);
-            this.gBdatosPaciente.Controls.Add(this.lbIdRepresentante);
-            this.gBdatosPaciente.Controls.Add(this.dateTimePicker1);
-            this.gBdatosPaciente.Controls.Add(this.txtIdRepresentante);
+            this.gBdatosPaciente.Controls.Add(this.dateFechaNacimiento);
             this.gBdatosPaciente.Controls.Add(this.pictureBox1);
             this.gBdatosPaciente.Controls.Add(this.label1);
             this.gBdatosPaciente.Controls.Add(this.label3);
             this.gBdatosPaciente.Controls.Add(this.label4);
             this.gBdatosPaciente.Controls.Add(this.txtCedula);
-            this.gBdatosPaciente.Controls.Add(this.txNombrePaciente);
+            this.gBdatosPaciente.Controls.Add(this.txtNombrePaciente);
             this.gBdatosPaciente.Enabled = false;
             this.gBdatosPaciente.Location = new System.Drawing.Point(56, 293);
             this.gBdatosPaciente.Name = "gBdatosPaciente";
@@ -359,6 +376,215 @@
             this.gBdatosPaciente.TabIndex = 69;
             this.gBdatosPaciente.TabStop = false;
             this.gBdatosPaciente.Text = "DATOS PERSONALES DEL PACIENTE";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(25, 18);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(629, 36);
+            this.label20.TabIndex = 80;
+            this.label20.Text = "Los campos marcados con (*) son obligatorios";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Location = new System.Drawing.Point(773, 167);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(13, 17);
+            this.label19.TabIndex = 79;
+            this.label19.Text = "*";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Location = new System.Drawing.Point(811, 127);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(13, 17);
+            this.label18.TabIndex = 78;
+            this.label18.Text = "*";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Location = new System.Drawing.Point(811, 89);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(13, 17);
+            this.label17.TabIndex = 77;
+            this.label17.Text = "*";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label24);
+            this.groupBox2.Controls.Add(this.label23);
+            this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Controls.Add(this.txttelref2);
+            this.groupBox2.Controls.Add(this.label21);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.comboEscolaridad);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.txtEncargadoDECE);
+            this.groupBox2.Controls.Add(this.txtNref1);
+            this.groupBox2.Controls.Add(this.txtTelref1);
+            this.groupBox2.Controls.Add(this.txtUEducativa);
+            this.groupBox2.Controls.Add(this.txtNref2);
+            this.groupBox2.Location = new System.Drawing.Point(351, 248);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(614, 302);
+            this.groupBox2.TabIndex = 76;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Datos Extras";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Location = new System.Drawing.Point(477, 124);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(13, 17);
+            this.label24.TabIndex = 83;
+            this.label24.Text = "*";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Location = new System.Drawing.Point(362, 74);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(13, 17);
+            this.label23.TabIndex = 82;
+            this.label23.Text = "*";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Location = new System.Drawing.Point(477, 31);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(13, 17);
+            this.label22.TabIndex = 81;
+            this.label22.Text = "*";
+            // 
+            // txttelref2
+            // 
+            this.txttelref2.Location = new System.Drawing.Point(234, 279);
+            this.txttelref2.Margin = new System.Windows.Forms.Padding(4);
+            this.txttelref2.Name = "txttelref2";
+            this.txttelref2.Size = new System.Drawing.Size(237, 22);
+            this.txttelref2.TabIndex = 77;
+            this.txttelref2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelref2_KeyPress);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Location = new System.Drawing.Point(48, 282);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(149, 17);
+            this.label21.TabIndex = 76;
+            this.label21.Text = "Telefono Referencia 2";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Location = new System.Drawing.Point(48, 39);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(119, 17);
+            this.label14.TabIndex = 70;
+            this.label14.Text = "Unidad Educativa";
+            // 
+            // comboEscolaridad
+            // 
+            this.comboEscolaridad.FormattingEnabled = true;
+            this.comboEscolaridad.Items.AddRange(new object[] {
+            "Inicial",
+            "Escuela",
+            "Colegio",
+            "Universidad"});
+            this.comboEscolaridad.Location = new System.Drawing.Point(234, 75);
+            this.comboEscolaridad.Name = "comboEscolaridad";
+            this.comboEscolaridad.Size = new System.Drawing.Size(121, 24);
+            this.comboEscolaridad.TabIndex = 75;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Location = new System.Drawing.Point(48, 82);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(82, 17);
+            this.label16.TabIndex = 74;
+            this.label16.Text = "Escolaridad";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Location = new System.Drawing.Point(48, 124);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(141, 17);
+            this.label15.TabIndex = 72;
+            this.label15.Text = "Encargado del DECE";
+            // 
+            // txtEncargadoDECE
+            // 
+            this.txtEncargadoDECE.Location = new System.Drawing.Point(234, 124);
+            this.txtEncargadoDECE.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEncargadoDECE.Name = "txtEncargadoDECE";
+            this.txtEncargadoDECE.Size = new System.Drawing.Size(237, 22);
+            this.txtEncargadoDECE.TabIndex = 73;
+            this.txtEncargadoDECE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEncargadoDECE_KeyPress);
+            // 
+            // txtUEducativa
+            // 
+            this.txtUEducativa.Location = new System.Drawing.Point(234, 31);
+            this.txtUEducativa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUEducativa.Name = "txtUEducativa";
+            this.txtUEducativa.Size = new System.Drawing.Size(237, 22);
+            this.txtUEducativa.TabIndex = 71;
+            this.txtUEducativa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.Enabled = false;
+            this.txtEdad.Location = new System.Drawing.Point(572, 213);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(104, 22);
+            this.txtEdad.TabIndex = 69;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Location = new System.Drawing.Point(380, 213);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(41, 17);
+            this.label13.TabIndex = 68;
+            this.label13.Text = "Edad";
             // 
             // pictureBox4
             // 
@@ -394,6 +620,7 @@
             this.btnGuardarPaciente.Size = new System.Drawing.Size(105, 83);
             this.btnGuardarPaciente.TabIndex = 73;
             this.btnGuardarPaciente.UseVisualStyleBackColor = true;
+            this.btnGuardarPaciente.Click += new System.EventHandler(this.btnGuardarPaciente_Click);
             // 
             // label11
             // 
@@ -429,176 +656,6 @@
             this.label12.TabIndex = 76;
             this.label12.Text = "Cancelar";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Location = new System.Drawing.Point(380, 213);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 17);
-            this.label13.TabIndex = 68;
-            this.label13.Text = "Edad";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(572, 213);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(104, 22);
-            this.textBox2.TabIndex = 69;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Location = new System.Drawing.Point(48, 39);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(119, 17);
-            this.label14.TabIndex = 70;
-            this.label14.Text = "Unidad Educativa";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(234, 31);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(237, 22);
-            this.textBox3.TabIndex = 71;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Location = new System.Drawing.Point(48, 124);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(141, 17);
-            this.label15.TabIndex = 72;
-            this.label15.Text = "Encargado del DECE";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(234, 124);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(237, 22);
-            this.textBox4.TabIndex = 73;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Location = new System.Drawing.Point(48, 82);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(82, 17);
-            this.label16.TabIndex = 74;
-            this.label16.Text = "Escolaridad";
-            // 
-            // comboEscolaridad
-            // 
-            this.comboEscolaridad.FormattingEnabled = true;
-            this.comboEscolaridad.Items.AddRange(new object[] {
-            "Inicial",
-            "Escuela",
-            "Colegio",
-            "Universidad"});
-            this.comboEscolaridad.Location = new System.Drawing.Point(234, 75);
-            this.comboEscolaridad.Name = "comboEscolaridad";
-            this.comboEscolaridad.Size = new System.Drawing.Size(121, 24);
-            this.comboEscolaridad.TabIndex = 75;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.label21);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.comboEscolaridad);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Location = new System.Drawing.Point(351, 248);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(614, 302);
-            this.groupBox2.TabIndex = 76;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Datos Extras";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Location = new System.Drawing.Point(811, 89);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(13, 17);
-            this.label17.TabIndex = 77;
-            this.label17.Text = "*";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Location = new System.Drawing.Point(811, 127);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(13, 17);
-            this.label18.TabIndex = 78;
-            this.label18.Text = "*";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Location = new System.Drawing.Point(773, 167);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(13, 17);
-            this.label19.TabIndex = 79;
-            this.label19.Text = "*";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(25, 18);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(629, 36);
-            this.label20.TabIndex = 80;
-            this.label20.Text = "Los campos marcados con (*) son obligatorios";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Location = new System.Drawing.Point(48, 282);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(149, 17);
-            this.label21.TabIndex = 76;
-            this.label21.Text = "Telefono Referencia 2";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(234, 279);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(237, 22);
-            this.textBox5.TabIndex = 77;
-            // 
             // RegistrarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -629,9 +686,9 @@
             this.groupBox3.PerformLayout();
             this.gBdatosPaciente.ResumeLayout(false);
             this.gBdatosPaciente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -639,11 +696,11 @@
 
         #endregion
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtNref2;
+        private System.Windows.Forms.TextBox txtTelref1;
+        private System.Windows.Forms.TextBox txtNref1;
         private System.Windows.Forms.TextBox txtCedula;
-        private System.Windows.Forms.TextBox txNombrePaciente;
+        private System.Windows.Forms.TextBox txtNombrePaciente;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -652,12 +709,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lbIdRepresentante;
-        private System.Windows.Forms.TextBox txtIdRepresentante;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateFechaNacimiento;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNombreEncontrado;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnBuscarCliente;
         private System.Windows.Forms.Label label2;
@@ -676,14 +731,19 @@
         private System.Windows.Forms.ComboBox comboEscolaridad;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEncargadoDECE;
+        private System.Windows.Forms.TextBox txtUEducativa;
+        private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txttelref2;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Button btnAceptar;
     }
 }

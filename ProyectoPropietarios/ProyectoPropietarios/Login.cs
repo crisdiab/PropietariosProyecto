@@ -207,5 +207,14 @@ namespace ProyectoPropietarios
             }
 
         }
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Si es la primera vez que ingresa al sistema ingrese las siguientes credenciales:\n"+
+                "Usuario:default\nPassword:1234",
+                                          "Confirmación",
+                                           MessageBoxButtons.OK,
+                                           MessageBoxIcon.Warning);
+        }
     }
 }

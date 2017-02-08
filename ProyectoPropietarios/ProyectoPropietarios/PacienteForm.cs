@@ -41,7 +41,7 @@ namespace ProyectoPropietarios
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Modulos md = new Modulos();
+            Cliente md = new Cliente();
             md.Show();
             this.Hide();
         }

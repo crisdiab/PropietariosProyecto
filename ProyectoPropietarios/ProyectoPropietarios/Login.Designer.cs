@@ -32,6 +32,7 @@
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.pBoxIngresar = new System.Windows.Forms.PictureBox();
+            this.btnAyuda = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxIngresar)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +74,18 @@
             this.pBoxIngresar.TabStop = false;
             this.pBoxIngresar.Click += new System.EventHandler(this.pBoxIngresar_Click);
             // 
+            // btnAyuda
+            // 
+            this.btnAyuda.BackColor = System.Drawing.Color.Transparent;
+            this.btnAyuda.BackgroundImage = global::ProyectoPropietarios.Properties.Resources.ayuda1;
+            this.btnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAyuda.Location = new System.Drawing.Point(379, 12);
+            this.btnAyuda.Name = "btnAyuda";
+            this.btnAyuda.Size = new System.Drawing.Size(60, 44);
+            this.btnAyuda.TabIndex = 4;
+            this.btnAyuda.UseVisualStyleBackColor = false;
+            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -80,6 +93,7 @@
             this.BackgroundImage = global::ProyectoPropietarios.Properties.Resources.free;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(451, 352);
+            this.Controls.Add(this.btnAyuda);
             this.Controls.Add(this.pBoxIngresar);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUser);
@@ -101,5 +115,6 @@
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.PictureBox pBoxIngresar;
+        private System.Windows.Forms.Button btnAyuda;
     }
 }
