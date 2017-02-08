@@ -120,11 +120,6 @@
     <Compile Include="Facturacion.Designer.cs">
       <DependentUpon>Facturacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="GrisGrisDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GrisGrisDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="loginAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -352,17 +347,7 @@
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="GrisGrisDataSet.xsc">
-      <DependentUpon>GrisGrisDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="GrisGrisDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GrisGrisDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GrisGrisDataSet.xss">
-      <DependentUpon>GrisGrisDataSet.xsd</DependentUpon>
-    </None>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

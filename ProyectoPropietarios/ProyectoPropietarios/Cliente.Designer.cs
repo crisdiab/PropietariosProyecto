@@ -115,7 +115,7 @@
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Cliente";
-            this.Text = "Usuarios";
+            this.Text = "Clientes";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Usuarios_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();

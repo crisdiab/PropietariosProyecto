@@ -25,7 +25,7 @@ namespace ProyectoPropietarios
 
         private void Modulos_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            Environment.Exit(0);
         }
 
         private void button4_Click(object sender, EventArgs e)
