@@ -86,7 +86,7 @@ namespace ProyectoPropietarios
                 }
                 else
                 {
-                    string buscarCliente = "select from REPRESENTANTE WHERE CEDULAREPRESENTANTE = '" + txtcedulaCliente.Text + "'";
+                    string buscarCliente = "select CEDULAREPRESENTANTE from REPRESENTANTE WHERE CEDULAREPRESENTANTE = '" + txtcedulaCliente.Text + "'";
                     consultaRepresentante = consulta.consultar(buscarCliente);
                     if (consultaRepresentante.Rows.Count == 0)
                     {
