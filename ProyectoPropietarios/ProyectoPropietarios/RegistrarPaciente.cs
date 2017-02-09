@@ -106,7 +106,7 @@ namespace ProyectoPropietarios
                 }
                 else
                 {
-                    string buscarCliente = "select CEDULAREPRESENTANTE from REPRESENTANTE WHERE CEDULAREPRESENTANTE = '" + txtcedulaCliente.Text + "'";
+                    string buscarCliente = "select * from REPRESENTANTE WHERE CEDULAREPRESENTANTE = '" + txtcedulaCliente.Text + "'";
                     consultaRepresentante = consulta.consultar(buscarCliente);
                     #region buscar el cliente si esta o no r egistrado
                     if (consultaRepresentante.Rows.Count == 0)
@@ -116,20 +116,29 @@ namespace ProyectoPropietarios
                     }
                     else
                     {
-                        string recuperarUltimoRepresentante = "select*from REPRESENTANTE WHERE IDREPRESENTANTE =(SELECT MAX(IDREPRESENTANTE) FROM REPRESENTANTE)";
+                        string recuperarUltimoRepresentante = "select*from REPRESENTANTE WHERE CEDULAREPRESENTANTE = '"+txtcedulaCliente.Text+"'";
 
-                        consultaRepresentante = consulta.consultar(recuperarUltimoRepresentante);
+                       DataTable consultaRepresentante2 = consulta.consultar(recuperarUltimoRepresentante);
 
-                        filaRepresentante = consultaRepresentante.Rows[0];
+                       DataRow filaRepresentante2 = consultaRepresentante2.Rows[0];
+                        if (filaRepresentante2["ESTADOREPRESENTANTE"].ToString().Trim() == "Activo")
+                        {
+                            idRepresentante = Convert.ToInt32(filaRepresentante2["IDREPRESENTANTE"].ToString().Trim());
 
-                        idRepresentante = Convert.ToInt32(filaRepresentante["IDREPRESENTANTE"].ToString().Trim());
+                            txtcedulaCliente.Text = filaRepresentante2["CEDULAREPRESENTANTE"].ToString().Trim();
+                            txtNombreEncontrado.Text = filaRepresentante2["NOMBREREPRESENTANTE"].ToString().Trim();
+                            btnAceptar.Enabled = true;
+                            txtcedulaCliente.Enabled = false;
+                            btnBuscarCliente.Enabled = false;
+                            btnNuevaBusqueda.Enabled = true;
+                        }
+                        else
+                        {
+                            MessageBox.Show("El cliente esta dado de baja", "Resultado de busqueda", MessageBoxButtons.OK,
+                           MessageBoxIcon.Error);
+                        }
 
-                        txtcedulaCliente.Text = filaRepresentante["CEDULAREPRESENTANTE"].ToString().Trim();
-                        txtNombreEncontrado.Text = filaRepresentante["NOMBREREPRESENTANTE"].ToString().Trim();
-                        btnAceptar.Enabled = true;
-                        txtcedulaCliente.Enabled = false;
-                        btnBuscarCliente.Enabled = false;
-                        btnNuevaBusqueda.Enabled = true;
+                       
                     }
                     #endregion
                 }

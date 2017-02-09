@@ -14,10 +14,13 @@ namespace ProyectoPropietarios
     {
         ConsultasBaseDatos consulta = new ConsultasBaseDatos();
         Validaciones validacion = new Validaciones();
+
+        
         public ModificarCliente()
         {
             InitializeComponent();
             this.CenterToScreen();
+            
         }
 
         private void label7_Click(object sender, EventArgs e)

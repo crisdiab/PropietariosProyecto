@@ -31,5 +31,30 @@ namespace ProyectoPropietarios
             md.Show();
             this.Hide();
         }
+
+        private void pACIENTEBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.pACIENTEBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.grisGrisDataSet);
+
+        }
+
+        private void EliminarPaciente_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'grisGrisDataSet.PACIENTE' Puede moverla o quitarla según sea necesario.
+            this.pACIENTETableAdapter.Fill(this.grisGrisDataSet.PACIENTE);
+
+        }
+
+        private void cEDULAPACIENTELabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void eSTADOPACIENTETextEdit_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
