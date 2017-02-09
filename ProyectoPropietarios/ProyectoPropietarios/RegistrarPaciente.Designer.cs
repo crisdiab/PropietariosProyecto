@@ -103,12 +103,15 @@
             this.txtNref2.Name = "txtNref2";
             this.txtNref2.Size = new System.Drawing.Size(237, 22);
             this.txtNref2.TabIndex = 62;
+            this.txtNref2.TabStop = false;
+            this.txtNref2.Text = "No tiene";
             this.txtNref2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNref2_KeyPress);
             // 
             // txtTelref1
             // 
             this.txtTelref1.Location = new System.Drawing.Point(234, 203);
             this.txtTelref1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelref1.MaxLength = 10;
             this.txtTelref1.Name = "txtTelref1";
             this.txtTelref1.Size = new System.Drawing.Size(237, 22);
             this.txtTelref1.TabIndex = 61;
@@ -513,9 +516,11 @@
             // 
             this.txttelref2.Location = new System.Drawing.Point(234, 279);
             this.txttelref2.Margin = new System.Windows.Forms.Padding(4);
+            this.txttelref2.MaxLength = 10;
             this.txttelref2.Name = "txttelref2";
             this.txttelref2.Size = new System.Drawing.Size(237, 22);
             this.txttelref2.TabIndex = 77;
+            this.txttelref2.Text = "0000";
             this.txttelref2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelref2_KeyPress);
             // 
             // label21
