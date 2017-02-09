@@ -84,11 +84,11 @@
     <Compile Include="Eliminar Servicio.Designer.cs">
       <DependentUpon>Eliminar Servicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="EliminarCliente.cs">
+    <Compile Include="DardeBajaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EliminarCliente.Designer.cs">
-      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    <Compile Include="DardeBajaCliente.Designer.cs">
+      <DependentUpon>DardeBajaCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="EliminarFactura.cs">
       <SubType>Form</SubType>
@@ -119,6 +119,11 @@
     </Compile>
     <Compile Include="Facturacion.Designer.cs">
       <DependentUpon>Facturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrisGrisDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GrisGrisDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="loginAdmin.cs">
       <SubType>Form</SubType>
@@ -258,8 +263,8 @@
     <EmbeddedResource Include="Eliminar Servicio.resx">
       <DependentUpon>Eliminar Servicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EliminarCliente.resx">
-      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    <EmbeddedResource Include="DardeBajaCliente.resx">
+      <DependentUpon>DardeBajaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarFactura.resx">
       <DependentUpon>EliminarFactura.cs</DependentUpon>
@@ -348,6 +353,17 @@
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
+    <None Include="GrisGrisDataSet.xsc">
+      <DependentUpon>GrisGrisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GrisGrisDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GrisGrisDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GrisGrisDataSet.xss">
+      <DependentUpon>GrisGrisDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

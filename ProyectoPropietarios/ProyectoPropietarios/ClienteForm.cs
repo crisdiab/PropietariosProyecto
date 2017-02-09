@@ -46,7 +46,7 @@ namespace ProyectoPropietarios
 
         private void pictureBox4_Click_1(object sender, EventArgs e)
         {
-            EliminarCliente ec = new EliminarCliente();
+            DardeBajaCliente ec = new DardeBajaCliente();
             ec.Show();
             this.Hide();
         }
