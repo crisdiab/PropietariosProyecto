@@ -24,9 +24,26 @@ namespace ProyectoPropietarios
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            PacienteForm pf = new PacienteForm();
-            pf.Show();
-            this.Hide();
+            if (txtNombrePaciente.Text != "" || txtCedula.Text != "" || txtUEducativa.Text != ""
+                || comboEscolaridad.Text != "")
+            {
+                DialogResult resultado = MessageBox.Show("Esta seguro que quiere regresar, se perderan los datos ingresados",
+             "Regresar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (DialogResult.Yes == resultado)
+                {
+                    PacienteForm pf = new PacienteForm();
+                    pf.Show();
+                    this.Hide();
+                }
+            }
+            else
+            {
+                PacienteForm pf = new PacienteForm();
+                pf.Show();
+                this.Hide();
+            }
+            
         }
 
         private void RegistrarPaciente_FormClosing(object sender, FormClosingEventArgs e)
@@ -251,6 +268,7 @@ namespace ProyectoPropietarios
                         txtcedulaCliente.Enabled = true;
                         txtcedulaCliente.Text = "";
                         txtEncargadoDECE.Text = "";
+                        comboEscolaridad.Text = "";
                     }
                     else
                     {
@@ -271,6 +289,7 @@ namespace ProyectoPropietarios
                         txtcedulaCliente.Enabled = true;
                         txtcedulaCliente.Text = "";
                         txtEncargadoDECE.Text = "";
+                        comboEscolaridad.Text = "";
                     }
                 }
                 
@@ -296,5 +315,29 @@ namespace ProyectoPropietarios
             return edad;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Esta seguro que quiere cancelar, se perderan los datos ingresados",
+              "Cancelar",MessageBoxButtons.YesNo,MessageBoxIcon.Question  );
+
+            if (DialogResult.Yes == resultado)
+            {
+                txtNombrePaciente.Text = "";
+                txtCedula.Text = "";
+                txtEdad.Text = "";
+                txtUEducativa.Text = "";
+                txtNref1.Text = "";
+                txtTelref1.Text = "";
+                txtNref2.Text = "";
+                txttelref2.Text = "";
+                gBdatosPaciente.Enabled = false;
+                btnAceptar.Enabled = false;
+                btnNuevaBusqueda.Enabled = false;
+                btnBuscarCliente.Enabled = true;
+                txtcedulaCliente.Enabled = true;
+                txtcedulaCliente.Text = "";
+                txtEncargadoDECE.Text = "";
+            }
+        }
     }
 }
