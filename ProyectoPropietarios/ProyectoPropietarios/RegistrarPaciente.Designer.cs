@@ -59,6 +59,8 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -78,8 +80,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -127,6 +127,7 @@
             // 
             this.txtCedula.Location = new System.Drawing.Point(566, 127);
             this.txtCedula.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCedula.MaxLength = 10;
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(237, 22);
             this.txtCedula.TabIndex = 57;
@@ -453,6 +454,28 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Extras";
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Location = new System.Drawing.Point(477, 203);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(13, 17);
+            this.label27.TabIndex = 85;
+            this.label27.Text = "*";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Location = new System.Drawing.Point(477, 163);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(13, 17);
+            this.label26.TabIndex = 84;
+            this.label26.Text = "*";
+            // 
             // label24
             // 
             this.label24.AutoSize = true;
@@ -659,28 +682,6 @@
             this.label12.Size = new System.Drawing.Size(109, 29);
             this.label12.TabIndex = 76;
             this.label12.Text = "Cancelar";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Location = new System.Drawing.Point(477, 163);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(13, 17);
-            this.label26.TabIndex = 84;
-            this.label26.Text = "*";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Location = new System.Drawing.Point(477, 203);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(13, 17);
-            this.label27.TabIndex = 85;
-            this.label27.Text = "*";
             // 
             // RegistrarPaciente
             // 

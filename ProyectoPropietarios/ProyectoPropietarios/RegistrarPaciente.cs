@@ -14,6 +14,7 @@ namespace ProyectoPropietarios
     {
         ConsultasBaseDatos consulta = new ConsultasBaseDatos();
         Validaciones validacion = new Validaciones();
+        private int idRepresentante=0;
         public RegistrarPaciente()
         {
             InitializeComponent();
@@ -53,7 +54,7 @@ namespace ProyectoPropietarios
 
         private void btnBuscarCliente_Click(object sender, EventArgs e)
         {
-            string idRepresentante;
+            
             DataTable consultaRepresentante;
             DataRow filaRepresentante;
             // SELECT* FROM movimiento WHERE idmovimiento = (SELECT MAX(idmovimiento) FROM movimiento
@@ -67,7 +68,7 @@ namespace ProyectoPropietarios
 
                 filaRepresentante = consultaRepresentante.Rows[0];
 
-                idRepresentante = filaRepresentante["IDREPRESENTANTE"].ToString().Trim();
+                idRepresentante = Convert.ToInt32(filaRepresentante["IDREPRESENTANTE"].ToString().Trim());
 
                 txtcedulaCliente.Text = filaRepresentante["CEDULAREPRESENTANTE"].ToString().Trim();
                 txtNombreEncontrado.Text = filaRepresentante["NOMBREREPRESENTANTE"].ToString().Trim();
@@ -78,6 +79,7 @@ namespace ProyectoPropietarios
             }
             #endregion
             else
+
             {
                 #region validacion de la cedula ingresada
                 if (validacion.validarCedula(txtcedulaCliente.Text) == false)
@@ -89,6 +91,7 @@ namespace ProyectoPropietarios
                 {
                     string buscarCliente = "select CEDULAREPRESENTANTE from REPRESENTANTE WHERE CEDULAREPRESENTANTE = '" + txtcedulaCliente.Text + "'";
                     consultaRepresentante = consulta.consultar(buscarCliente);
+                    #region buscar el cliente si esta o no r egistrado
                     if (consultaRepresentante.Rows.Count == 0)
                     {
                         MessageBox.Show("No se encontro al cliente", "Resultado de busqueda", MessageBoxButtons.OK,
@@ -102,7 +105,7 @@ namespace ProyectoPropietarios
 
                         filaRepresentante = consultaRepresentante.Rows[0];
 
-                        idRepresentante = filaRepresentante["IDREPRESENTANTE"].ToString().Trim();
+                        idRepresentante = Convert.ToInt32(filaRepresentante["IDREPRESENTANTE"].ToString().Trim());
 
                         txtcedulaCliente.Text = filaRepresentante["CEDULAREPRESENTANTE"].ToString().Trim();
                         txtNombreEncontrado.Text = filaRepresentante["NOMBREREPRESENTANTE"].ToString().Trim();
@@ -111,6 +114,7 @@ namespace ProyectoPropietarios
                         btnBuscarCliente.Enabled = false;
                         btnNuevaBusqueda.Enabled = true;
                     }
+                    #endregion
                 }
 
                 #endregion
@@ -126,6 +130,7 @@ namespace ProyectoPropietarios
             btnBuscarCliente.Enabled = true;
             btnAceptar.Enabled = false;
             txtcedulaCliente.Enabled = true;
+            gBdatosPaciente.Enabled = false;
         }
 
         private void txNombrePaciente_KeyPress(object sender, KeyPressEventArgs e)
@@ -165,14 +170,14 @@ namespace ProyectoPropietarios
 
         private void txttelref2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validacion.soloLetras(e);
+            validacion.soloNumeros(e);
         }
 
         private void btnGuardarPaciente_Click(object sender, EventArgs e)
         {
 
 
-            MessageBox.Show("3fasdf", "Confirmacion", MessageBoxButtons.OK);
+           
             if (txtNombrePaciente.Text == "" || txtCedula.Text == "" || txtUEducativa.Text == ""
                 || comboEscolaridad.Text == "")
             {
@@ -181,13 +186,98 @@ namespace ProyectoPropietarios
             }
             else
             {
-                string fecha = dateFechaNacimiento.Text;
+                #region validar cedula antes de guardar
+                if (validacion.validarCedula(txtCedula.Text) == false)
+                {
+                    MessageBox.Show("Porfavor verifique e intentelo de nuevo", "Confirmacion", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    string fecha = dateFechaNacimiento.Text;
+                    string[] anioNac = separarFecha(fecha, '/');
+                    DateTime fechaActual = DateTime.Now;
+                    string[] anioActual = separarFecha(fechaActual.ToString("d"), '/');
+                    txtEdad.Text = calcularEdad(anioNac[2], anioActual[2]);
+
+                    string stringBuscarCedula = "select CEDULAPACIENTE FROM PACIENTE WHERE CEDULAPACIENTE = '"+ txtCedula.Text+"'";
+                    DataTable tablaPaciente = consulta.consultar(stringBuscarCedula);
+
+                    if (tablaPaciente.Rows.Count == 0)
+                    {
+
+                        #region buscar id del centro
+                        string buscarTipoCentro = "select * FROM TIPOCENTROEDUCACION WHERE NOMBRETIPOCENTRO='"+comboEscolaridad.Text.Trim()+"'";
+                        DataTable tablaTipocentro = consulta.consultar(buscarTipoCentro);
+                        
+                        DataRow filaTipocentro = tablaTipocentro.Rows[0];
+                       
+                        int idCentro = Convert.ToInt32(filaTipocentro["IDCENTRO"].ToString().Trim());
+
+                        int otro = idCentro + idCentro;
+                        MessageBox.Show(otro.ToString(), "fua", MessageBoxButtons.OK);
+                        #endregion
+                        #region crear centro educativo y obtener el id creado
+                        string crearCentro = "insert into CENTROEDUCACION VALUES('"+idCentro+"','"+txtUEducativa.Text+"')";
+
+                        consulta.counsultaTodoTipo(crearCentro);
+
+                        string obteneridCreadodeUE = "select * from CENTROEDUCACION WHERE IDCENTROEDUCACION = (SELECT MAX(IDCENTROEDUCACION) FROM CENTROEDUCACION)";
+                        DataTable consultarCE = consulta.consultar(obteneridCreadodeUE);
+                        DataRow filaCE = consultarCE.Rows[0];
+
+                        int idCentroEduc =Convert.ToInt32( filaCE["IDCENTROEDUCACION"].ToString().Trim());
+                        #endregion
+                        #region creacion del paciente
+                        string crearPaciente = "insert into PACIENTE VALUES('"+idRepresentante+ "','" + idCentroEduc + "','" + txtNombrePaciente.Text+ "','" +txtCedula.Text  + "',"+
+                            "'" +txtEdad.Text + "','" + txtEncargadoDECE.Text+ "','" + txtNref1.Text+ "','" +txtTelref1.Text + "','" + txtNref2.Text+ "','" +txttelref2.Text +"',"+
+                            "'Activo','" + fecha+"')";
+
+                        consulta.counsultaTodoTipo(crearPaciente);
+                        #endregion
+
+                        MessageBox.Show("Paciente creado correctamente", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txtNombrePaciente.Text = "";
+                        txtCedula.Text = "";
+                        txtEdad.Text = "";
+                        txtUEducativa.Text = "";
+                        txtNref1.Text = "";
+                        txtTelref1.Text = "";
+                        txtNref2.Text = "";
+                        txttelref2.Text = "";
+                        gBdatosPaciente.Enabled = false;
+                        btnAceptar.Enabled = false;
+                        btnNuevaBusqueda.Enabled = false;
+                        btnBuscarCliente.Enabled = true;
+                        txtcedulaCliente.Enabled = true;
+                        txtcedulaCliente.Text = "";
+                        txtEncargadoDECE.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show("El paciente que ingreso ya se encuentra registrado en el sistema",
+                            "Notificacion",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                        txtNombrePaciente.Text = "";
+                        txtCedula.Text = "";
+                        txtEdad.Text = "";
+                        txtUEducativa.Text = "";
+                        txtNref1.Text = "";
+                        txtTelref1.Text = "";
+                        txtNref2.Text = "";
+                        txttelref2.Text = "";
+                        gBdatosPaciente.Enabled = false;
+                        btnAceptar.Enabled = false;
+                        btnNuevaBusqueda.Enabled = false;
+                        btnBuscarCliente.Enabled = true;
+                        txtcedulaCliente.Enabled = true;
+                        txtcedulaCliente.Text = "";
+                        txtEncargadoDECE.Text = "";
+                    }
+                }
                 
-                string[] anioNac = separarFecha(fecha, '/');
-                DateTime fechaActual = DateTime.Now;
-                string[] anioActual = separarFecha(fechaActual.ToString("d"),'/');
-                txtEdad.Text = calcularEdad( anioNac[2], anioActual[2]);
+
+                #endregion
             }
+
 
         }
         private string[] separarFecha(string fecha, char delimiter)
