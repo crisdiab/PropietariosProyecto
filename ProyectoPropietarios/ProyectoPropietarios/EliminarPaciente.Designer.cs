@@ -34,6 +34,7 @@
             System.Windows.Forms.Label cEDULAPACIENTELabel;
             System.Windows.Forms.Label eSTADOPACIENTELabel1;
             System.Windows.Forms.Label label1;
+            System.Windows.Forms.Label label2;
             this.button3 = new System.Windows.Forms.Button();
             this.grisGrisDataSet = new ProyectoPropietarios.GrisGrisDataSet();
             this.pACIENTEBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -69,10 +70,12 @@
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             nOMBREPACIENTELabel = new System.Windows.Forms.Label();
             cEDULAPACIENTELabel = new System.Windows.Forms.Label();
             eSTADOPACIENTELabel1 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grisGrisDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pACIENTEBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pACIENTEBindingNavigator)).BeginInit();
@@ -86,7 +89,7 @@
             // 
             this.button3.BackgroundImage = global::ProyectoPropietarios.Properties.Resources.retroceso;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(126, 259);
+            this.button3.Location = new System.Drawing.Point(55, 259);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(96, 64);
@@ -252,6 +255,7 @@
             this.pACIENTEBindingNavigatorSaveItem.Name = "pACIENTEBindingNavigatorSaveItem";
             this.pACIENTEBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.pACIENTEBindingNavigatorSaveItem.Text = "Guardar datos";
+            this.pACIENTEBindingNavigatorSaveItem.Visible = false;
             this.pACIENTEBindingNavigatorSaveItem.Click += new System.EventHandler(this.pACIENTEBindingNavigatorSaveItem_Click);
             // 
             // pACIENTEDataGridView
@@ -340,7 +344,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(151, 325);
+            label1.Location = new System.Drawing.Point(80, 325);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(67, 17);
             label1.TabIndex = 27;
@@ -436,11 +440,35 @@
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.Visible = false;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::ProyectoPropietarios.Properties.Resources.guardar;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(181, 259);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 64);
+            this.button1.TabIndex = 28;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(196, 326);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(61, 17);
+            label2.TabIndex = 29;
+            label2.Text = "Guardar";
+            // 
             // EliminarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ProyectoPropietarios.Properties.Resources.fondo3;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(699, 377);
+            this.Controls.Add(label2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(label1);
             this.Controls.Add(eSTADOPACIENTELabel1);
             this.Controls.Add(this.eSTADOPACIENTEComboBox);
@@ -505,5 +533,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.Button button1;
     }
 }

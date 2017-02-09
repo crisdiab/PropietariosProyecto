@@ -56,5 +56,15 @@ namespace ProyectoPropietarios
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.pACIENTEBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.grisGrisDataSet);
+            MessageBox.Show("Paciente Mmodificado", "Modificacion", MessageBoxButtons.OK,
+                           MessageBoxIcon.Information);
+
+        }
     }
 }

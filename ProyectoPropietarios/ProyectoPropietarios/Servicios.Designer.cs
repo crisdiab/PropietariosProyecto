@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Servicios));
             System.Windows.Forms.Label nOMBRESERVICIOLabel;
             System.Windows.Forms.Label pRECIOSERVICIOLabel;
-            System.Windows.Forms.Label eSTADOSERVICIOLabel;
             this.grisGrisDataSet = new ProyectoPropietarios.GrisGrisDataSet();
             this.rEPRESENTANTEBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rEPRESENTANTETableAdapter = new ProyectoPropietarios.GrisGrisDataSetTableAdapters.REPRESENTANTETableAdapter();
@@ -59,7 +58,6 @@
             this.label1 = new System.Windows.Forms.Label();
             nOMBRESERVICIOLabel = new System.Windows.Forms.Label();
             pRECIOSERVICIOLabel = new System.Windows.Forms.Label();
-            eSTADOSERVICIOLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grisGrisDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rEPRESENTANTEBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rEPRESENTANTEBindingNavigator)).BeginInit();
@@ -292,15 +290,7 @@
             this.eSTADOSERVICIOTextEdit.Name = "eSTADOSERVICIOTextEdit";
             this.eSTADOSERVICIOTextEdit.Size = new System.Drawing.Size(100, 22);
             this.eSTADOSERVICIOTextEdit.TabIndex = 10;
-            // 
-            // eSTADOSERVICIOLabel
-            // 
-            eSTADOSERVICIOLabel.AutoSize = true;
-            eSTADOSERVICIOLabel.Location = new System.Drawing.Point(30, 108);
-            eSTADOSERVICIOLabel.Name = "eSTADOSERVICIOLabel";
-            eSTADOSERVICIOLabel.Size = new System.Drawing.Size(132, 17);
-            eSTADOSERVICIOLabel.TabIndex = 9;
-            eSTADOSERVICIOLabel.Text = "ESTADOSERVICIO:";
+            this.eSTADOSERVICIOTextEdit.Visible = false;
             // 
             // button1
             // 
@@ -335,7 +325,6 @@
             this.Controls.Add(this.nOMBRESERVICIOTextEdit);
             this.Controls.Add(pRECIOSERVICIOLabel);
             this.Controls.Add(this.pRECIOSERVICIOSpinEdit);
-            this.Controls.Add(eSTADOSERVICIOLabel);
             this.Controls.Add(this.eSTADOSERVICIOTextEdit);
             this.Controls.Add(this.rEPRESENTANTEBindingNavigator);
             this.Name = "Servicios";

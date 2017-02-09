@@ -429,6 +429,7 @@
             this.tELEFONOREFERENCIA1TextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pACIENTEBindingSource, "TELEFONOREFERENCIA1", true));
             this.tELEFONOREFERENCIA1TextEdit.Location = new System.Drawing.Point(166, 167);
             this.tELEFONOREFERENCIA1TextEdit.Name = "tELEFONOREFERENCIA1TextEdit";
+            this.tELEFONOREFERENCIA1TextEdit.Properties.MaxLength = 10;
             this.tELEFONOREFERENCIA1TextEdit.Size = new System.Drawing.Size(100, 22);
             this.tELEFONOREFERENCIA1TextEdit.TabIndex = 103;
             this.tELEFONOREFERENCIA1TextEdit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tELEFONOREFERENCIA1TextEdit_KeyPress);
@@ -465,6 +466,7 @@
             this.tELEFONOREFERENCIA2TextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pACIENTEBindingSource, "TELEFONOREFERENCIA2", true));
             this.tELEFONOREFERENCIA2TextEdit.Location = new System.Drawing.Point(166, 223);
             this.tELEFONOREFERENCIA2TextEdit.Name = "tELEFONOREFERENCIA2TextEdit";
+            this.tELEFONOREFERENCIA2TextEdit.Properties.MaxLength = 10;
             this.tELEFONOREFERENCIA2TextEdit.Size = new System.Drawing.Size(100, 22);
             this.tELEFONOREFERENCIA2TextEdit.TabIndex = 107;
             this.tELEFONOREFERENCIA2TextEdit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tELEFONOREFERENCIA2TextEdit_KeyPress);
