@@ -112,7 +112,7 @@
             this.btn_configuracion.BackColor = System.Drawing.Color.Transparent;
             this.btn_configuracion.BackgroundImage = global::ProyectoPropietarios.Properties.Resources.config;
             this.btn_configuracion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_configuracion.Location = new System.Drawing.Point(126, 317);
+            this.btn_configuracion.Location = new System.Drawing.Point(368, 317);
             this.btn_configuracion.Name = "btn_configuracion";
             this.btn_configuracion.Size = new System.Drawing.Size(120, 119);
             this.btn_configuracion.TabIndex = 5;
@@ -146,7 +146,7 @@
             this.btn_controlEstudiantes.BackgroundImage = global::ProyectoPropietarios.Properties.Resources.seguimiento;
             this.btn_controlEstudiantes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_controlEstudiantes.DialogResult = System.Windows.Forms.DialogResult.No;
-            this.btn_controlEstudiantes.Location = new System.Drawing.Point(326, 317);
+            this.btn_controlEstudiantes.Location = new System.Drawing.Point(119, 317);
             this.btn_controlEstudiantes.Name = "btn_controlEstudiantes";
             this.btn_controlEstudiantes.Size = new System.Drawing.Size(145, 111);
             this.btn_controlEstudiantes.TabIndex = 8;
@@ -228,17 +228,18 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Modern No. 20", 18F);
-            this.label7.Location = new System.Drawing.Point(76, 439);
+            this.label7.Location = new System.Drawing.Point(337, 439);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(186, 31);
             this.label7.TabIndex = 17;
             this.label7.Text = "Configuracion";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Modern No. 20", 18F);
-            this.label8.Location = new System.Drawing.Point(320, 439);
+            this.label8.Location = new System.Drawing.Point(113, 439);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(174, 31);
             this.label8.TabIndex = 18;
@@ -249,7 +250,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Modern No. 20", 18F);
-            this.label9.Location = new System.Drawing.Point(555, 439);
+            this.label9.Location = new System.Drawing.Point(578, 439);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(93, 31);
             this.label9.TabIndex = 19;
