@@ -209,6 +209,7 @@
             // 
             this.txtcedulaCliente.Location = new System.Drawing.Point(138, 67);
             this.txtcedulaCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtcedulaCliente.MaxLength = 10;
             this.txtcedulaCliente.Name = "txtcedulaCliente";
             this.txtcedulaCliente.Size = new System.Drawing.Size(237, 22);
             this.txtcedulaCliente.TabIndex = 69;
@@ -293,7 +294,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BuscarRepresentante";
-            this.Text = "ModificarCliente";
+            this.Text = "Buscar Representante";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ModificarCliente_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.groupBox1.ResumeLayout(false);

@@ -19,9 +19,7 @@ namespace ProyectoPropietarios
 
         private void rEPRESENTANTEBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.rEPRESENTANTEBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.grisGrisDataSet);
+           
 
         }
 
@@ -39,6 +37,29 @@ namespace ProyectoPropietarios
             SerivcioPrincipal sp = new SerivcioPrincipal();
             sp.Show();
             this.Hide();
+        }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            txtNombreServicio.Enabled = true;
+            PrecioServicio.Enabled = true;
+            txtNombreServicio.Text = "";
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.rEPRESENTANTEBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.grisGrisDataSet);
+            txtNombreServicio.Enabled = false;
+            PrecioServicio.Enabled = false;
+            MessageBox.Show("Servicio agreado al sistema", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

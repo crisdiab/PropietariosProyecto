@@ -84,7 +84,9 @@ namespace ProyectoPropietarios
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            ModificarRepresentante mr = new ModificarRepresentante();
+            mr.Show();
+            this.Hide();
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)

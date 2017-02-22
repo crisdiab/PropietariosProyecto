@@ -45,5 +45,20 @@ namespace ProyectoPropietarios
             md.Show();
             this.Hide();
         }
+
+        private void cENTROEDUCACIONBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.cENTROEDUCACIONBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.grisGrisDataSet);
+
+        }
+
+        private void Reportes_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'grisGrisDataSet.CENTROEDUCACION' Puede moverla o quitarla según sea necesario.
+            this.cENTROEDUCACIONTableAdapter.Fill(this.grisGrisDataSet.CENTROEDUCACION);
+
+        }
     }
 }

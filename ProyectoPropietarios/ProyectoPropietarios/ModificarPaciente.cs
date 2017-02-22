@@ -106,12 +106,55 @@ namespace ProyectoPropietarios
             this.Validate();
             this.pACIENTEBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.grisGrisDataSet);
-            string fecha = fECHANACIMIENTOPACIENTEDateEdit.Text;
-            string[] anioNac = separarFecha(fecha, '/');
+           
+           
             DateTime fechaActual = DateTime.Now;
             string[] anioActual = separarFecha(fechaActual.ToString("d"), '/');
             // eDADPACIENTETextEdit.Text = calcularEdad(anioNac[2], anioActual[2]);
             MessageBox.Show("Datos Modificados correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void fillToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.uNIR_TABLASTableAdapter.Fill(this.grisGrisDataSet.UNIR_TABLAS, cEDULAPACIENTEToolStripTextBox.Text);
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void cEDULAPACIENTEToolStripTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.soloNumeros(e);
+        }
+
+        private void nOMBRECENTROTextEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.soloLetras(e);
+        }
+
+        private void nOMBREREFERENCIA1TextEdit_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            validacion.soloLetras(e);
+        }
+
+        private void nOMBREREFERENCIA2TextEdit_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            validacion.soloLetras(e);
+        }
+
+        private void tELEFONOREFERENCIA1TextEdit_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            validacion.soloNumeros(e);
+        }
+
+        private void nOMBREREFERENCIA21TextEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.soloNumeros(e);
         }
     }
 }

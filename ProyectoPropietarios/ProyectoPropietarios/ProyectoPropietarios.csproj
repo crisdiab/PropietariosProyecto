@@ -61,65 +61,71 @@
     <Compile Include="BuscarProfesional.Designer.cs">
       <DependentUpon>BuscarProfesional.cs</DependentUpon>
     </Compile>
-    <Compile Include="GrisGrisDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GrisGrisDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="AsignarServicio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AsignarServicio.Designer.cs">
       <DependentUpon>AsignarServicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ayuda\Ayuda.cs">
+    <Compile Include="Ayuda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ayuda\Ayuda.Designer.cs">
+    <Compile Include="Ayuda.Designer.cs">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </Compile>
-    <Compile Include="BDD\ConsultasBaseDatos.cs" />
+    <Compile Include="ConsultasBaseDatos.cs" />
+    <Compile Include="GrisGrisDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GrisGrisDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ModificarProfesional.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ModificarProfesional.Designer.cs">
       <DependentUpon>ModificarProfesional.cs</DependentUpon>
     </Compile>
-    <Compile Include="Representante\RepresentanteMain.cs">
+    <Compile Include="ModificarRepresentante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Representante\RepresentanteMain.Designer.cs">
+    <Compile Include="ModificarRepresentante.Designer.cs">
+      <DependentUpon>ModificarRepresentante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepresentanteMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepresentanteMain.Designer.cs">
       <DependentUpon>RepresentanteMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="BDD\ConexiónBaseDatos.cs" />
+    <Compile Include="ConexiónBaseDatos.cs" />
     <Compile Include="Configuracion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Configuracion.Designer.cs">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Servicios\Eliminar Servicio.cs">
+    <Compile Include="Eliminar Servicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Servicios\Eliminar Servicio.Designer.cs">
+    <Compile Include="Eliminar Servicio.Designer.cs">
       <DependentUpon>Eliminar Servicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Representante\DardeBajaRepresentante.cs">
+    <Compile Include="DardeBajaRepresentante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Representante\DardeBajaRepresentante.Designer.cs">
+    <Compile Include="DardeBajaRepresentante.Designer.cs">
       <DependentUpon>DardeBajaRepresentante.cs</DependentUpon>
     </Compile>
-    <Compile Include="FacturasRecibos\EliminarFactura.cs">
+    <Compile Include="EliminarFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FacturasRecibos\EliminarFactura.Designer.cs">
+    <Compile Include="EliminarFactura.Designer.cs">
       <DependentUpon>EliminarFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="Paciente\DardeBajaPaciente.cs">
+    <Compile Include="DardeBajaPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Paciente\DardeBajaPaciente.Designer.cs">
+    <Compile Include="DardeBajaPaciente.Designer.cs">
       <DependentUpon>DardeBajaPaciente.cs</DependentUpon>
     </Compile>
     <Compile Include="EliminarProfesional.cs">
@@ -128,10 +134,10 @@
     <Compile Include="EliminarProfesional.Designer.cs">
       <DependentUpon>EliminarProfesional.cs</DependentUpon>
     </Compile>
-    <Compile Include="FacturasRecibos\Factura.cs">
+    <Compile Include="Factura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FacturasRecibos\Factura.Designer.cs">
+    <Compile Include="Factura.Designer.cs">
       <DependentUpon>Factura.cs</DependentUpon>
     </Compile>
     <Compile Include="Facturacion.cs">
@@ -164,22 +170,22 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Representante\BuscarRepresentante.cs">
+    <Compile Include="BuscarRepresentante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Representante\BuscarRepresentante.Designer.cs">
+    <Compile Include="BuscarRepresentante.Designer.cs">
       <DependentUpon>BuscarRepresentante.cs</DependentUpon>
     </Compile>
-    <Compile Include="Paciente\ModificarPaciente.cs">
+    <Compile Include="ModificarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Paciente\ModificarPaciente.Designer.cs">
+    <Compile Include="ModificarPaciente.Designer.cs">
       <DependentUpon>ModificarPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Servicios\ModificarServicio.cs">
+    <Compile Include="ModificarServicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Servicios\ModificarServicio.Designer.cs">
+    <Compile Include="ModificarServicio.Designer.cs">
       <DependentUpon>ModificarServicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos.cs">
@@ -188,10 +194,10 @@
     <Compile Include="Modulos.Designer.cs">
       <DependentUpon>Modulos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Paciente\PacienteMain.cs">
+    <Compile Include="PacienteMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Paciente\PacienteMain.Designer.cs">
+    <Compile Include="PacienteMain.Designer.cs">
       <DependentUpon>PacienteMain.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistrarProfesional.cs">
@@ -202,34 +208,34 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FacturasRecibos\Recibo.cs">
+    <Compile Include="Recibo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FacturasRecibos\Recibo.Designer.cs">
+    <Compile Include="Recibo.Designer.cs">
       <DependentUpon>Recibo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Representante\RegistrarRepresentante.cs">
+    <Compile Include="RegistrarRepresentante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Representante\RegistrarRepresentante.Designer.cs">
+    <Compile Include="RegistrarRepresentante.Designer.cs">
       <DependentUpon>RegistrarRepresentante.cs</DependentUpon>
     </Compile>
-    <Compile Include="Paciente\RegistrarPaciente.cs">
+    <Compile Include="RegistrarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Paciente\RegistrarPaciente.Designer.cs">
+    <Compile Include="RegistrarPaciente.Designer.cs">
       <DependentUpon>RegistrarPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReporteAcademico.cs">
+    <Compile Include="ReporteAcademico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes\ReporteAcademico.Designer.cs">
+    <Compile Include="ReporteAcademico.Designer.cs">
       <DependentUpon>ReporteAcademico.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReporteFinanciero.cs">
+    <Compile Include="ReporteFinanciero.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes\ReporteFinanciero.Designer.cs">
+    <Compile Include="ReporteFinanciero.Designer.cs">
       <DependentUpon>ReporteFinanciero.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes.cs">
@@ -266,7 +272,7 @@
     <EmbeddedResource Include="AsignarServicio.resx">
       <DependentUpon>AsignarServicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ayuda\Ayuda.resx">
+    <EmbeddedResource Include="Ayuda.resx">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarProfesional.resx">
@@ -275,28 +281,31 @@
     <EmbeddedResource Include="ModificarProfesional.resx">
       <DependentUpon>ModificarProfesional.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Representante\RepresentanteMain.resx">
+    <EmbeddedResource Include="ModificarRepresentante.resx">
+      <DependentUpon>ModificarRepresentante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepresentanteMain.resx">
       <DependentUpon>RepresentanteMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Servicios\Eliminar Servicio.resx">
+    <EmbeddedResource Include="Eliminar Servicio.resx">
       <DependentUpon>Eliminar Servicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Representante\DardeBajaRepresentante.resx">
+    <EmbeddedResource Include="DardeBajaRepresentante.resx">
       <DependentUpon>DardeBajaRepresentante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FacturasRecibos\EliminarFactura.resx">
+    <EmbeddedResource Include="EliminarFactura.resx">
       <DependentUpon>EliminarFactura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Paciente\DardeBajaPaciente.resx">
+    <EmbeddedResource Include="DardeBajaPaciente.resx">
       <DependentUpon>DardeBajaPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarProfesional.resx">
       <DependentUpon>EliminarProfesional.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FacturasRecibos\Factura.resx">
+    <EmbeddedResource Include="Factura.resx">
       <DependentUpon>Factura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Facturacion.resx">
@@ -311,19 +320,19 @@
     <EmbeddedResource Include="loginAdmin.resx">
       <DependentUpon>loginAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Representante\BuscarRepresentante.resx">
+    <EmbeddedResource Include="BuscarRepresentante.resx">
       <DependentUpon>BuscarRepresentante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Paciente\ModificarPaciente.resx">
+    <EmbeddedResource Include="ModificarPaciente.resx">
       <DependentUpon>ModificarPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Servicios\ModificarServicio.resx">
+    <EmbeddedResource Include="ModificarServicio.resx">
       <DependentUpon>ModificarServicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos.resx">
       <DependentUpon>Modulos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Paciente\PacienteMain.resx">
+    <EmbeddedResource Include="PacienteMain.resx">
       <DependentUpon>PacienteMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarProfesional.resx">
@@ -340,19 +349,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="FacturasRecibos\Recibo.resx">
+    <EmbeddedResource Include="Recibo.resx">
       <DependentUpon>Recibo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Representante\RegistrarRepresentante.resx">
+    <EmbeddedResource Include="RegistrarRepresentante.resx">
       <DependentUpon>RegistrarRepresentante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Paciente\RegistrarPaciente.resx">
+    <EmbeddedResource Include="RegistrarPaciente.resx">
       <DependentUpon>RegistrarPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReporteAcademico.resx">
+    <EmbeddedResource Include="ReporteAcademico.resx">
       <DependentUpon>ReporteAcademico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReporteFinanciero.resx">
+    <EmbeddedResource Include="ReporteFinanciero.resx">
       <DependentUpon>ReporteFinanciero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes.resx">
@@ -533,7 +542,14 @@
     <None Include="Resources\images %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Ayuda\" />
+    <Folder Include="BDD\" />
+    <Folder Include="FacturasRecibos\" />
+    <Folder Include="Paciente\" />
     <Folder Include="Profesional\" />
+    <Folder Include="Reportes\" />
+    <Folder Include="Representante\" />
+    <Folder Include="Servicios\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\buscar.jpg" />
