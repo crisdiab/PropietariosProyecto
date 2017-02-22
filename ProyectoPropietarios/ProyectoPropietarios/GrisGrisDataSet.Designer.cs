@@ -52,35 +52,35 @@ namespace ProyectoPropietarios {
         
         private TIPOCENTROEDUCACIONDataTable tableTIPOCENTROEDUCACION;
         
-        private global::System.Data.DataRelation relationFK_CENTROED_RELATIONS_TIPOCENT;
+        private global::System.Data.DataRelation relationFK__CENTROEDU__IDCEN__29572725;
         
-        private global::System.Data.DataRelation relationFK_DETALLEF_RELATIONS_FACTURA;
+        private global::System.Data.DataRelation relationFK__DETALLEFA__IDFAC__2A4B4B5E;
         
-        private global::System.Data.DataRelation relationFK_DETALLEF_RELATIONS_SERVICIO;
+        private global::System.Data.DataRelation relationFK__DETALLEFA__IDSER__2B3F6F97;
         
-        private global::System.Data.DataRelation relationFK_DETALLER_RELATIONS_RECIBO;
+        private global::System.Data.DataRelation relationFK__DETALLERE__IDREC__2C3393D0;
         
-        private global::System.Data.DataRelation relationFK_DETALLER_RELATIONS_SERVICIO;
+        private global::System.Data.DataRelation relationFK__DETALLERE__IDSER__2D27B809;
         
-        private global::System.Data.DataRelation relationFK_FACTURA_RELATIONS_REPRESEN;
+        private global::System.Data.DataRelation relationFK__FACTURA__IDREPRE__2E1BDC42;
         
-        private global::System.Data.DataRelation relationFK_PACIENTE_RELATIONS_CENTROED;
+        private global::System.Data.DataRelation relationFK__PACIENTE__IDCENT__2F10007B;
         
-        private global::System.Data.DataRelation relationFK_PACIENTE_RELATIONS_REPRESEN;
+        private global::System.Data.DataRelation relationFK__PACIENTE__IDREPR__300424B4;
         
-        private global::System.Data.DataRelation relationFK_PACIENTE_RELATIONS_PACIENTE;
+        private global::System.Data.DataRelation relationFK__PACIENTES__IDPAC__30F848ED;
         
-        private global::System.Data.DataRelation relationFK_PACIENTE_RELATIONS_PROFESIO;
+        private global::System.Data.DataRelation relationFK__PACIENTES__IDPRO__31EC6D26;
         
-        private global::System.Data.DataRelation relationFK_RECIBO_RELATIONS_REPRESEN;
+        private global::System.Data.DataRelation relationFK__RECIBO__IDREPRES__32E0915F;
         
-        private global::System.Data.DataRelation relationFK_SERVICIO_OTRARELAC_PROFESIO;
+        private global::System.Data.DataRelation relationFK__SERVICIOS__IDPRO__33D4B598;
         
-        private global::System.Data.DataRelation relationFK_SERVICIO_RELACIONS_SERVICIO;
+        private global::System.Data.DataRelation relationFK__SERVICIOS__IDSER__34C8D9D1;
         
-        private global::System.Data.DataRelation relationFK_SERVICIO_RELATIONS_PACIENTE;
+        private global::System.Data.DataRelation relationFK__SERVICIOS__IDPAC__35BCFE0A;
         
-        private global::System.Data.DataRelation relationFK_SERVICIO_RELATIONS_SERVICIO;
+        private global::System.Data.DataRelation relationFK__SERVICIOS__IDSER__36B12243;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -536,21 +536,21 @@ namespace ProyectoPropietarios {
                     this.tableTIPOCENTROEDUCACION.InitVars();
                 }
             }
-            this.relationFK_CENTROED_RELATIONS_TIPOCENT = this.Relations["FK_CENTROED_RELATIONS_TIPOCENT"];
-            this.relationFK_DETALLEF_RELATIONS_FACTURA = this.Relations["FK_DETALLEF_RELATIONS_FACTURA"];
-            this.relationFK_DETALLEF_RELATIONS_SERVICIO = this.Relations["FK_DETALLEF_RELATIONS_SERVICIO"];
-            this.relationFK_DETALLER_RELATIONS_RECIBO = this.Relations["FK_DETALLER_RELATIONS_RECIBO"];
-            this.relationFK_DETALLER_RELATIONS_SERVICIO = this.Relations["FK_DETALLER_RELATIONS_SERVICIO"];
-            this.relationFK_FACTURA_RELATIONS_REPRESEN = this.Relations["FK_FACTURA_RELATIONS_REPRESEN"];
-            this.relationFK_PACIENTE_RELATIONS_CENTROED = this.Relations["FK_PACIENTE_RELATIONS_CENTROED"];
-            this.relationFK_PACIENTE_RELATIONS_REPRESEN = this.Relations["FK_PACIENTE_RELATIONS_REPRESEN"];
-            this.relationFK_PACIENTE_RELATIONS_PACIENTE = this.Relations["FK_PACIENTE_RELATIONS_PACIENTE"];
-            this.relationFK_PACIENTE_RELATIONS_PROFESIO = this.Relations["FK_PACIENTE_RELATIONS_PROFESIO"];
-            this.relationFK_RECIBO_RELATIONS_REPRESEN = this.Relations["FK_RECIBO_RELATIONS_REPRESEN"];
-            this.relationFK_SERVICIO_OTRARELAC_PROFESIO = this.Relations["FK_SERVICIO_OTRARELAC_PROFESIO"];
-            this.relationFK_SERVICIO_RELACIONS_SERVICIO = this.Relations["FK_SERVICIO_RELACIONS_SERVICIO"];
-            this.relationFK_SERVICIO_RELATIONS_PACIENTE = this.Relations["FK_SERVICIO_RELATIONS_PACIENTE"];
-            this.relationFK_SERVICIO_RELATIONS_SERVICIO = this.Relations["FK_SERVICIO_RELATIONS_SERVICIO"];
+            this.relationFK__CENTROEDU__IDCEN__29572725 = this.Relations["FK__CENTROEDU__IDCEN__29572725"];
+            this.relationFK__DETALLEFA__IDFAC__2A4B4B5E = this.Relations["FK__DETALLEFA__IDFAC__2A4B4B5E"];
+            this.relationFK__DETALLEFA__IDSER__2B3F6F97 = this.Relations["FK__DETALLEFA__IDSER__2B3F6F97"];
+            this.relationFK__DETALLERE__IDREC__2C3393D0 = this.Relations["FK__DETALLERE__IDREC__2C3393D0"];
+            this.relationFK__DETALLERE__IDSER__2D27B809 = this.Relations["FK__DETALLERE__IDSER__2D27B809"];
+            this.relationFK__FACTURA__IDREPRE__2E1BDC42 = this.Relations["FK__FACTURA__IDREPRE__2E1BDC42"];
+            this.relationFK__PACIENTE__IDCENT__2F10007B = this.Relations["FK__PACIENTE__IDCENT__2F10007B"];
+            this.relationFK__PACIENTE__IDREPR__300424B4 = this.Relations["FK__PACIENTE__IDREPR__300424B4"];
+            this.relationFK__PACIENTES__IDPAC__30F848ED = this.Relations["FK__PACIENTES__IDPAC__30F848ED"];
+            this.relationFK__PACIENTES__IDPRO__31EC6D26 = this.Relations["FK__PACIENTES__IDPRO__31EC6D26"];
+            this.relationFK__RECIBO__IDREPRES__32E0915F = this.Relations["FK__RECIBO__IDREPRES__32E0915F"];
+            this.relationFK__SERVICIOS__IDPRO__33D4B598 = this.Relations["FK__SERVICIOS__IDPRO__33D4B598"];
+            this.relationFK__SERVICIOS__IDSER__34C8D9D1 = this.Relations["FK__SERVICIOS__IDSER__34C8D9D1"];
+            this.relationFK__SERVICIOS__IDPAC__35BCFE0A = this.Relations["FK__SERVICIOS__IDPAC__35BCFE0A"];
+            this.relationFK__SERVICIOS__IDSER__36B12243 = this.Relations["FK__SERVICIOS__IDSER__36B12243"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -589,66 +589,66 @@ namespace ProyectoPropietarios {
             base.Tables.Add(this.tableSERVICIOSXPACIENTE);
             this.tableTIPOCENTROEDUCACION = new TIPOCENTROEDUCACIONDataTable();
             base.Tables.Add(this.tableTIPOCENTROEDUCACION);
-            this.relationFK_CENTROED_RELATIONS_TIPOCENT = new global::System.Data.DataRelation("FK_CENTROED_RELATIONS_TIPOCENT", new global::System.Data.DataColumn[] {
+            this.relationFK__CENTROEDU__IDCEN__29572725 = new global::System.Data.DataRelation("FK__CENTROEDU__IDCEN__29572725", new global::System.Data.DataColumn[] {
                         this.tableTIPOCENTROEDUCACION.IDCENTROColumn}, new global::System.Data.DataColumn[] {
                         this.tableCENTROEDUCACION.IDCENTROColumn}, false);
-            this.Relations.Add(this.relationFK_CENTROED_RELATIONS_TIPOCENT);
-            this.relationFK_DETALLEF_RELATIONS_FACTURA = new global::System.Data.DataRelation("FK_DETALLEF_RELATIONS_FACTURA", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__CENTROEDU__IDCEN__29572725);
+            this.relationFK__DETALLEFA__IDFAC__2A4B4B5E = new global::System.Data.DataRelation("FK__DETALLEFA__IDFAC__2A4B4B5E", new global::System.Data.DataColumn[] {
                         this.tableFACTURA.IDFACTURAColumn}, new global::System.Data.DataColumn[] {
                         this.tableDETALLEFACTURA.IDFACTURAColumn}, false);
-            this.Relations.Add(this.relationFK_DETALLEF_RELATIONS_FACTURA);
-            this.relationFK_DETALLEF_RELATIONS_SERVICIO = new global::System.Data.DataRelation("FK_DETALLEF_RELATIONS_SERVICIO", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__DETALLEFA__IDFAC__2A4B4B5E);
+            this.relationFK__DETALLEFA__IDSER__2B3F6F97 = new global::System.Data.DataRelation("FK__DETALLEFA__IDSER__2B3F6F97", new global::System.Data.DataColumn[] {
                         this.tableSERVICIO.IDSERVICIOColumn}, new global::System.Data.DataColumn[] {
                         this.tableDETALLEFACTURA.IDSERVICIOColumn}, false);
-            this.Relations.Add(this.relationFK_DETALLEF_RELATIONS_SERVICIO);
-            this.relationFK_DETALLER_RELATIONS_RECIBO = new global::System.Data.DataRelation("FK_DETALLER_RELATIONS_RECIBO", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__DETALLEFA__IDSER__2B3F6F97);
+            this.relationFK__DETALLERE__IDREC__2C3393D0 = new global::System.Data.DataRelation("FK__DETALLERE__IDREC__2C3393D0", new global::System.Data.DataColumn[] {
                         this.tableRECIBO.IDRECIBOColumn}, new global::System.Data.DataColumn[] {
                         this.tableDETALLERECIBO.IDRECIBOColumn}, false);
-            this.Relations.Add(this.relationFK_DETALLER_RELATIONS_RECIBO);
-            this.relationFK_DETALLER_RELATIONS_SERVICIO = new global::System.Data.DataRelation("FK_DETALLER_RELATIONS_SERVICIO", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__DETALLERE__IDREC__2C3393D0);
+            this.relationFK__DETALLERE__IDSER__2D27B809 = new global::System.Data.DataRelation("FK__DETALLERE__IDSER__2D27B809", new global::System.Data.DataColumn[] {
                         this.tableSERVICIO.IDSERVICIOColumn}, new global::System.Data.DataColumn[] {
                         this.tableDETALLERECIBO.IDSERVICIOColumn}, false);
-            this.Relations.Add(this.relationFK_DETALLER_RELATIONS_SERVICIO);
-            this.relationFK_FACTURA_RELATIONS_REPRESEN = new global::System.Data.DataRelation("FK_FACTURA_RELATIONS_REPRESEN", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__DETALLERE__IDSER__2D27B809);
+            this.relationFK__FACTURA__IDREPRE__2E1BDC42 = new global::System.Data.DataRelation("FK__FACTURA__IDREPRE__2E1BDC42", new global::System.Data.DataColumn[] {
                         this.tableREPRESENTANTE.IDREPRESENTANTEColumn}, new global::System.Data.DataColumn[] {
                         this.tableFACTURA.IDREPRESENTANTEColumn}, false);
-            this.Relations.Add(this.relationFK_FACTURA_RELATIONS_REPRESEN);
-            this.relationFK_PACIENTE_RELATIONS_CENTROED = new global::System.Data.DataRelation("FK_PACIENTE_RELATIONS_CENTROED", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__FACTURA__IDREPRE__2E1BDC42);
+            this.relationFK__PACIENTE__IDCENT__2F10007B = new global::System.Data.DataRelation("FK__PACIENTE__IDCENT__2F10007B", new global::System.Data.DataColumn[] {
                         this.tableCENTROEDUCACION.IDCENTROEDUCACIONColumn}, new global::System.Data.DataColumn[] {
                         this.tablePACIENTE.IDCENTROEDUCACIONColumn}, false);
-            this.Relations.Add(this.relationFK_PACIENTE_RELATIONS_CENTROED);
-            this.relationFK_PACIENTE_RELATIONS_REPRESEN = new global::System.Data.DataRelation("FK_PACIENTE_RELATIONS_REPRESEN", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__PACIENTE__IDCENT__2F10007B);
+            this.relationFK__PACIENTE__IDREPR__300424B4 = new global::System.Data.DataRelation("FK__PACIENTE__IDREPR__300424B4", new global::System.Data.DataColumn[] {
                         this.tableREPRESENTANTE.IDREPRESENTANTEColumn}, new global::System.Data.DataColumn[] {
                         this.tablePACIENTE.IDREPRESENTANTEColumn}, false);
-            this.Relations.Add(this.relationFK_PACIENTE_RELATIONS_REPRESEN);
-            this.relationFK_PACIENTE_RELATIONS_PACIENTE = new global::System.Data.DataRelation("FK_PACIENTE_RELATIONS_PACIENTE", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__PACIENTE__IDREPR__300424B4);
+            this.relationFK__PACIENTES__IDPAC__30F848ED = new global::System.Data.DataRelation("FK__PACIENTES__IDPAC__30F848ED", new global::System.Data.DataColumn[] {
                         this.tablePACIENTE.IDPACIENTEColumn}, new global::System.Data.DataColumn[] {
                         this.tablePACIENTESXPROFESIONAL.IDPACIENTEColumn}, false);
-            this.Relations.Add(this.relationFK_PACIENTE_RELATIONS_PACIENTE);
-            this.relationFK_PACIENTE_RELATIONS_PROFESIO = new global::System.Data.DataRelation("FK_PACIENTE_RELATIONS_PROFESIO", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__PACIENTES__IDPAC__30F848ED);
+            this.relationFK__PACIENTES__IDPRO__31EC6D26 = new global::System.Data.DataRelation("FK__PACIENTES__IDPRO__31EC6D26", new global::System.Data.DataColumn[] {
                         this.tablePROFESIONAL.IDPROFESIONALColumn}, new global::System.Data.DataColumn[] {
                         this.tablePACIENTESXPROFESIONAL.IDPROFESIONALColumn}, false);
-            this.Relations.Add(this.relationFK_PACIENTE_RELATIONS_PROFESIO);
-            this.relationFK_RECIBO_RELATIONS_REPRESEN = new global::System.Data.DataRelation("FK_RECIBO_RELATIONS_REPRESEN", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__PACIENTES__IDPRO__31EC6D26);
+            this.relationFK__RECIBO__IDREPRES__32E0915F = new global::System.Data.DataRelation("FK__RECIBO__IDREPRES__32E0915F", new global::System.Data.DataColumn[] {
                         this.tableREPRESENTANTE.IDREPRESENTANTEColumn}, new global::System.Data.DataColumn[] {
                         this.tableRECIBO.IDREPRESENTANTEColumn}, false);
-            this.Relations.Add(this.relationFK_RECIBO_RELATIONS_REPRESEN);
-            this.relationFK_SERVICIO_OTRARELAC_PROFESIO = new global::System.Data.DataRelation("FK_SERVICIO_OTRARELAC_PROFESIO", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__RECIBO__IDREPRES__32E0915F);
+            this.relationFK__SERVICIOS__IDPRO__33D4B598 = new global::System.Data.DataRelation("FK__SERVICIOS__IDPRO__33D4B598", new global::System.Data.DataColumn[] {
                         this.tablePROFESIONAL.IDPROFESIONALColumn}, new global::System.Data.DataColumn[] {
                         this.tableSERVICIOSPORPROFESIONAL.IDPROFESIONALColumn}, false);
-            this.Relations.Add(this.relationFK_SERVICIO_OTRARELAC_PROFESIO);
-            this.relationFK_SERVICIO_RELACIONS_SERVICIO = new global::System.Data.DataRelation("FK_SERVICIO_RELACIONS_SERVICIO", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__SERVICIOS__IDPRO__33D4B598);
+            this.relationFK__SERVICIOS__IDSER__34C8D9D1 = new global::System.Data.DataRelation("FK__SERVICIOS__IDSER__34C8D9D1", new global::System.Data.DataColumn[] {
                         this.tableSERVICIO.IDSERVICIOColumn}, new global::System.Data.DataColumn[] {
                         this.tableSERVICIOSPORPROFESIONAL.IDSERVICIOColumn}, false);
-            this.Relations.Add(this.relationFK_SERVICIO_RELACIONS_SERVICIO);
-            this.relationFK_SERVICIO_RELATIONS_PACIENTE = new global::System.Data.DataRelation("FK_SERVICIO_RELATIONS_PACIENTE", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__SERVICIOS__IDSER__34C8D9D1);
+            this.relationFK__SERVICIOS__IDPAC__35BCFE0A = new global::System.Data.DataRelation("FK__SERVICIOS__IDPAC__35BCFE0A", new global::System.Data.DataColumn[] {
                         this.tablePACIENTE.IDPACIENTEColumn}, new global::System.Data.DataColumn[] {
                         this.tableSERVICIOSXPACIENTE.IDPACIENTEColumn}, false);
-            this.Relations.Add(this.relationFK_SERVICIO_RELATIONS_PACIENTE);
-            this.relationFK_SERVICIO_RELATIONS_SERVICIO = new global::System.Data.DataRelation("FK_SERVICIO_RELATIONS_SERVICIO", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__SERVICIOS__IDPAC__35BCFE0A);
+            this.relationFK__SERVICIOS__IDSER__36B12243 = new global::System.Data.DataRelation("FK__SERVICIOS__IDSER__36B12243", new global::System.Data.DataColumn[] {
                         this.tableSERVICIO.IDSERVICIOColumn}, new global::System.Data.DataColumn[] {
                         this.tableSERVICIOSXPACIENTE.IDSERVICIOColumn}, false);
-            this.Relations.Add(this.relationFK_SERVICIO_RELATIONS_SERVICIO);
+            this.Relations.Add(this.relationFK__SERVICIOS__IDSER__36B12243);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -939,14 +939,14 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CENTROEDUCACIONRow AddCENTROEDUCACIONRow(TIPOCENTROEDUCACIONRow parentTIPOCENTROEDUCACIONRowByFK_CENTROED_RELATIONS_TIPOCENT, string NOMBRECENTRO) {
+            public CENTROEDUCACIONRow AddCENTROEDUCACIONRow(TIPOCENTROEDUCACIONRow parentTIPOCENTROEDUCACIONRowByFK__CENTROEDU__IDCEN__29572725, string NOMBRECENTRO) {
                 CENTROEDUCACIONRow rowCENTROEDUCACIONRow = ((CENTROEDUCACIONRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         NOMBRECENTRO};
-                if ((parentTIPOCENTROEDUCACIONRowByFK_CENTROED_RELATIONS_TIPOCENT != null)) {
-                    columnValuesArray[1] = parentTIPOCENTROEDUCACIONRowByFK_CENTROED_RELATIONS_TIPOCENT[0];
+                if ((parentTIPOCENTROEDUCACIONRowByFK__CENTROEDU__IDCEN__29572725 != null)) {
+                    columnValuesArray[1] = parentTIPOCENTROEDUCACIONRowByFK__CENTROEDU__IDCEN__29572725[0];
                 }
                 rowCENTROEDUCACIONRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCENTROEDUCACIONRow);
@@ -1263,7 +1263,7 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DETALLEFACTURARow AddDETALLEFACTURARow(SERVICIORow parentSERVICIORowByFK_DETALLEF_RELATIONS_SERVICIO, FACTURARow parentFACTURARowByFK_DETALLEF_RELATIONS_FACTURA, int CANTIDADPRODUCTO, double PRECIOUNITARIO, double TOTALPRODUCTO) {
+            public DETALLEFACTURARow AddDETALLEFACTURARow(SERVICIORow parentSERVICIORowByFK__DETALLEFA__IDSER__2B3F6F97, FACTURARow parentFACTURARowByFK__DETALLEFA__IDFAC__2A4B4B5E, int CANTIDADPRODUCTO, double PRECIOUNITARIO, double TOTALPRODUCTO) {
                 DETALLEFACTURARow rowDETALLEFACTURARow = ((DETALLEFACTURARow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1272,11 +1272,11 @@ namespace ProyectoPropietarios {
                         CANTIDADPRODUCTO,
                         PRECIOUNITARIO,
                         TOTALPRODUCTO};
-                if ((parentSERVICIORowByFK_DETALLEF_RELATIONS_SERVICIO != null)) {
-                    columnValuesArray[1] = parentSERVICIORowByFK_DETALLEF_RELATIONS_SERVICIO[0];
+                if ((parentSERVICIORowByFK__DETALLEFA__IDSER__2B3F6F97 != null)) {
+                    columnValuesArray[1] = parentSERVICIORowByFK__DETALLEFA__IDSER__2B3F6F97[0];
                 }
-                if ((parentFACTURARowByFK_DETALLEF_RELATIONS_FACTURA != null)) {
-                    columnValuesArray[2] = parentFACTURARowByFK_DETALLEF_RELATIONS_FACTURA[0];
+                if ((parentFACTURARowByFK__DETALLEFA__IDFAC__2A4B4B5E != null)) {
+                    columnValuesArray[2] = parentFACTURARowByFK__DETALLEFA__IDFAC__2A4B4B5E[0];
                 }
                 rowDETALLEFACTURARow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDETALLEFACTURARow);
@@ -1601,7 +1601,7 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DETALLERECIBORow AddDETALLERECIBORow(RECIBORow parentRECIBORowByFK_DETALLER_RELATIONS_RECIBO, SERVICIORow parentSERVICIORowByFK_DETALLER_RELATIONS_SERVICIO, int CANTIDAD, double PRECIOUNITARIO, double TOTAL) {
+            public DETALLERECIBORow AddDETALLERECIBORow(RECIBORow parentRECIBORowByFK__DETALLERE__IDREC__2C3393D0, SERVICIORow parentSERVICIORowByFK__DETALLERE__IDSER__2D27B809, int CANTIDAD, double PRECIOUNITARIO, double TOTAL) {
                 DETALLERECIBORow rowDETALLERECIBORow = ((DETALLERECIBORow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1610,11 +1610,11 @@ namespace ProyectoPropietarios {
                         CANTIDAD,
                         PRECIOUNITARIO,
                         TOTAL};
-                if ((parentRECIBORowByFK_DETALLER_RELATIONS_RECIBO != null)) {
-                    columnValuesArray[1] = parentRECIBORowByFK_DETALLER_RELATIONS_RECIBO[0];
+                if ((parentRECIBORowByFK__DETALLERE__IDREC__2C3393D0 != null)) {
+                    columnValuesArray[1] = parentRECIBORowByFK__DETALLERE__IDREC__2C3393D0[0];
                 }
-                if ((parentSERVICIORowByFK_DETALLER_RELATIONS_SERVICIO != null)) {
-                    columnValuesArray[2] = parentSERVICIORowByFK_DETALLER_RELATIONS_SERVICIO[0];
+                if ((parentSERVICIORowByFK__DETALLERE__IDSER__2D27B809 != null)) {
+                    columnValuesArray[2] = parentSERVICIORowByFK__DETALLERE__IDSER__2D27B809[0];
                 }
                 rowDETALLERECIBORow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDETALLERECIBORow);
@@ -1959,7 +1959,7 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public FACTURARow AddFACTURARow(REPRESENTANTERow parentREPRESENTANTERowByFK_FACTURA_RELATIONS_REPRESEN, string NUMEROFACTURA, string FECHAFACTURA, double SUBTOTALFACTURA, double VALORIVA, double TOTALFACTURA, string ESTADOFACTURA) {
+            public FACTURARow AddFACTURARow(REPRESENTANTERow parentREPRESENTANTERowByFK__FACTURA__IDREPRE__2E1BDC42, string NUMEROFACTURA, string FECHAFACTURA, double SUBTOTALFACTURA, double VALORIVA, double TOTALFACTURA, string ESTADOFACTURA) {
                 FACTURARow rowFACTURARow = ((FACTURARow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1970,8 +1970,8 @@ namespace ProyectoPropietarios {
                         VALORIVA,
                         TOTALFACTURA,
                         ESTADOFACTURA};
-                if ((parentREPRESENTANTERowByFK_FACTURA_RELATIONS_REPRESEN != null)) {
-                    columnValuesArray[1] = parentREPRESENTANTERowByFK_FACTURA_RELATIONS_REPRESEN[0];
+                if ((parentREPRESENTANTERowByFK__FACTURA__IDREPRE__2E1BDC42 != null)) {
+                    columnValuesArray[1] = parentREPRESENTANTERowByFK__FACTURA__IDREPRE__2E1BDC42[0];
                 }
                 rowFACTURARow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFACTURARow);
@@ -2375,7 +2375,7 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public PACIENTERow AddPACIENTERow(REPRESENTANTERow parentREPRESENTANTERowByFK_PACIENTE_RELATIONS_REPRESEN, CENTROEDUCACIONRow parentCENTROEDUCACIONRowByFK_PACIENTE_RELATIONS_CENTROED, string NOMBREPACIENTE, string CEDULAPACIENTE, string EDADPACIENTE, string ENCARGADODECE, string NOMBREREFERENCIA1, string TELEFONOREFERENCIA1, string NOMBREREFERENCIA2, string TELEFONOREFERENCIA2, string ESTADOPACIENTE, System.DateTime FECHANACIMIENTOPACIENTE) {
+            public PACIENTERow AddPACIENTERow(REPRESENTANTERow parentREPRESENTANTERowByFK__PACIENTE__IDREPR__300424B4, CENTROEDUCACIONRow parentCENTROEDUCACIONRowByFK__PACIENTE__IDCENT__2F10007B, string NOMBREPACIENTE, string CEDULAPACIENTE, string EDADPACIENTE, string ENCARGADODECE, string NOMBREREFERENCIA1, string TELEFONOREFERENCIA1, string NOMBREREFERENCIA2, string TELEFONOREFERENCIA2, string ESTADOPACIENTE, System.DateTime FECHANACIMIENTOPACIENTE) {
                 PACIENTERow rowPACIENTERow = ((PACIENTERow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2391,11 +2391,11 @@ namespace ProyectoPropietarios {
                         TELEFONOREFERENCIA2,
                         ESTADOPACIENTE,
                         FECHANACIMIENTOPACIENTE};
-                if ((parentREPRESENTANTERowByFK_PACIENTE_RELATIONS_REPRESEN != null)) {
-                    columnValuesArray[1] = parentREPRESENTANTERowByFK_PACIENTE_RELATIONS_REPRESEN[0];
+                if ((parentREPRESENTANTERowByFK__PACIENTE__IDREPR__300424B4 != null)) {
+                    columnValuesArray[1] = parentREPRESENTANTERowByFK__PACIENTE__IDREPR__300424B4[0];
                 }
-                if ((parentCENTROEDUCACIONRowByFK_PACIENTE_RELATIONS_CENTROED != null)) {
-                    columnValuesArray[2] = parentCENTROEDUCACIONRowByFK_PACIENTE_RELATIONS_CENTROED[0];
+                if ((parentCENTROEDUCACIONRowByFK__PACIENTE__IDCENT__2F10007B != null)) {
+                    columnValuesArray[2] = parentCENTROEDUCACIONRowByFK__PACIENTE__IDCENT__2F10007B[0];
                 }
                 rowPACIENTERow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPACIENTERow);
@@ -2720,17 +2720,17 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public PACIENTESXPROFESIONALRow AddPACIENTESXPROFESIONALRow(PROFESIONALRow parentPROFESIONALRowByFK_PACIENTE_RELATIONS_PROFESIO, PACIENTERow parentPACIENTERowByFK_PACIENTE_RELATIONS_PACIENTE) {
+            public PACIENTESXPROFESIONALRow AddPACIENTESXPROFESIONALRow(PROFESIONALRow parentPROFESIONALRowByFK__PACIENTES__IDPRO__31EC6D26, PACIENTERow parentPACIENTERowByFK__PACIENTES__IDPAC__30F848ED) {
                 PACIENTESXPROFESIONALRow rowPACIENTESXPROFESIONALRow = ((PACIENTESXPROFESIONALRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         null};
-                if ((parentPROFESIONALRowByFK_PACIENTE_RELATIONS_PROFESIO != null)) {
-                    columnValuesArray[1] = parentPROFESIONALRowByFK_PACIENTE_RELATIONS_PROFESIO[0];
+                if ((parentPROFESIONALRowByFK__PACIENTES__IDPRO__31EC6D26 != null)) {
+                    columnValuesArray[1] = parentPROFESIONALRowByFK__PACIENTES__IDPRO__31EC6D26[0];
                 }
-                if ((parentPACIENTERowByFK_PACIENTE_RELATIONS_PACIENTE != null)) {
-                    columnValuesArray[2] = parentPACIENTERowByFK_PACIENTE_RELATIONS_PACIENTE[0];
+                if ((parentPACIENTERowByFK__PACIENTES__IDPAC__30F848ED != null)) {
+                    columnValuesArray[2] = parentPACIENTERowByFK__PACIENTES__IDPAC__30F848ED[0];
                 }
                 rowPACIENTESXPROFESIONALRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPACIENTESXPROFESIONALRow);
@@ -3248,6 +3248,8 @@ namespace ProyectoPropietarios {
             
             private global::System.Data.DataColumn columnESTADOPROFESIONAL;
             
+            private global::System.Data.DataColumn columnFECHAINGRESO;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PROFESIONALDataTable() {
@@ -3331,6 +3333,14 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FECHAINGRESOColumn {
+                get {
+                    return this.columnFECHAINGRESO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -3366,7 +3376,7 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public PROFESIONALRow AddPROFESIONALRow(string NOMBREPROFESIONAL, string CEDULAPROFESIONAL, string TITULOPROFESIONAL, string TELEFONOPROFESIONAL, string ESTADOPROFESIONAL) {
+            public PROFESIONALRow AddPROFESIONALRow(string NOMBREPROFESIONAL, string CEDULAPROFESIONAL, string TITULOPROFESIONAL, string TELEFONOPROFESIONAL, string ESTADOPROFESIONAL, System.DateTime FECHAINGRESO) {
                 PROFESIONALRow rowPROFESIONALRow = ((PROFESIONALRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -3374,7 +3384,8 @@ namespace ProyectoPropietarios {
                         CEDULAPROFESIONAL,
                         TITULOPROFESIONAL,
                         TELEFONOPROFESIONAL,
-                        ESTADOPROFESIONAL};
+                        ESTADOPROFESIONAL,
+                        FECHAINGRESO};
                 rowPROFESIONALRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPROFESIONALRow);
                 return rowPROFESIONALRow;
@@ -3410,6 +3421,7 @@ namespace ProyectoPropietarios {
                 this.columnTITULOPROFESIONAL = base.Columns["TITULOPROFESIONAL"];
                 this.columnTELEFONOPROFESIONAL = base.Columns["TELEFONOPROFESIONAL"];
                 this.columnESTADOPROFESIONAL = base.Columns["ESTADOPROFESIONAL"];
+                this.columnFECHAINGRESO = base.Columns["FECHAINGRESO"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3427,6 +3439,8 @@ namespace ProyectoPropietarios {
                 base.Columns.Add(this.columnTELEFONOPROFESIONAL);
                 this.columnESTADOPROFESIONAL = new global::System.Data.DataColumn("ESTADOPROFESIONAL", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnESTADOPROFESIONAL);
+                this.columnFECHAINGRESO = new global::System.Data.DataColumn("FECHAINGRESO", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFECHAINGRESO);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnIDPROFESIONAL}, true));
                 this.columnIDPROFESIONAL.AutoIncrement = true;
@@ -3703,7 +3717,7 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public RECIBORow AddRECIBORow(REPRESENTANTERow parentREPRESENTANTERowByFK_RECIBO_RELATIONS_REPRESEN, string NUMERORECIBO, System.DateTime FECHARECIBO, double TOTALRECIBO, string ESTADORECIBO) {
+            public RECIBORow AddRECIBORow(REPRESENTANTERow parentREPRESENTANTERowByFK__RECIBO__IDREPRES__32E0915F, string NUMERORECIBO, System.DateTime FECHARECIBO, double TOTALRECIBO, string ESTADORECIBO) {
                 RECIBORow rowRECIBORow = ((RECIBORow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -3712,8 +3726,8 @@ namespace ProyectoPropietarios {
                         FECHARECIBO,
                         TOTALRECIBO,
                         ESTADORECIBO};
-                if ((parentREPRESENTANTERowByFK_RECIBO_RELATIONS_REPRESEN != null)) {
-                    columnValuesArray[1] = parentREPRESENTANTERowByFK_RECIBO_RELATIONS_REPRESEN[0];
+                if ((parentREPRESENTANTERowByFK__RECIBO__IDREPRES__32E0915F != null)) {
+                    columnValuesArray[1] = parentREPRESENTANTERowByFK__RECIBO__IDREPRES__32E0915F[0];
                 }
                 rowRECIBORow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowRECIBORow);
@@ -4668,17 +4682,17 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SERVICIOSPORPROFESIONALRow AddSERVICIOSPORPROFESIONALRow(PROFESIONALRow parentPROFESIONALRowByFK_SERVICIO_OTRARELAC_PROFESIO, SERVICIORow parentSERVICIORowByFK_SERVICIO_RELACIONS_SERVICIO) {
+            public SERVICIOSPORPROFESIONALRow AddSERVICIOSPORPROFESIONALRow(PROFESIONALRow parentPROFESIONALRowByFK__SERVICIOS__IDPRO__33D4B598, SERVICIORow parentSERVICIORowByFK__SERVICIOS__IDSER__34C8D9D1) {
                 SERVICIOSPORPROFESIONALRow rowSERVICIOSPORPROFESIONALRow = ((SERVICIOSPORPROFESIONALRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         null};
-                if ((parentPROFESIONALRowByFK_SERVICIO_OTRARELAC_PROFESIO != null)) {
-                    columnValuesArray[1] = parentPROFESIONALRowByFK_SERVICIO_OTRARELAC_PROFESIO[0];
+                if ((parentPROFESIONALRowByFK__SERVICIOS__IDPRO__33D4B598 != null)) {
+                    columnValuesArray[1] = parentPROFESIONALRowByFK__SERVICIOS__IDPRO__33D4B598[0];
                 }
-                if ((parentSERVICIORowByFK_SERVICIO_RELACIONS_SERVICIO != null)) {
-                    columnValuesArray[2] = parentSERVICIORowByFK_SERVICIO_RELACIONS_SERVICIO[0];
+                if ((parentSERVICIORowByFK__SERVICIOS__IDSER__34C8D9D1 != null)) {
+                    columnValuesArray[2] = parentSERVICIORowByFK__SERVICIOS__IDSER__34C8D9D1[0];
                 }
                 rowSERVICIOSPORPROFESIONALRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSERVICIOSPORPROFESIONALRow);
@@ -4964,17 +4978,17 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SERVICIOSXPACIENTERow AddSERVICIOSXPACIENTERow(PACIENTERow parentPACIENTERowByFK_SERVICIO_RELATIONS_PACIENTE, SERVICIORow parentSERVICIORowByFK_SERVICIO_RELATIONS_SERVICIO) {
+            public SERVICIOSXPACIENTERow AddSERVICIOSXPACIENTERow(PACIENTERow parentPACIENTERowByFK__SERVICIOS__IDPAC__35BCFE0A, SERVICIORow parentSERVICIORowByFK__SERVICIOS__IDSER__36B12243) {
                 SERVICIOSXPACIENTERow rowSERVICIOSXPACIENTERow = ((SERVICIOSXPACIENTERow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         null};
-                if ((parentPACIENTERowByFK_SERVICIO_RELATIONS_PACIENTE != null)) {
-                    columnValuesArray[1] = parentPACIENTERowByFK_SERVICIO_RELATIONS_PACIENTE[0];
+                if ((parentPACIENTERowByFK__SERVICIOS__IDPAC__35BCFE0A != null)) {
+                    columnValuesArray[1] = parentPACIENTERowByFK__SERVICIOS__IDPAC__35BCFE0A[0];
                 }
-                if ((parentSERVICIORowByFK_SERVICIO_RELATIONS_SERVICIO != null)) {
-                    columnValuesArray[2] = parentSERVICIORowByFK_SERVICIO_RELATIONS_SERVICIO[0];
+                if ((parentSERVICIORowByFK__SERVICIOS__IDSER__36B12243 != null)) {
+                    columnValuesArray[2] = parentSERVICIORowByFK__SERVICIOS__IDSER__36B12243[0];
                 }
                 rowSERVICIOSXPACIENTERow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSERVICIOSXPACIENTERow);
@@ -5491,10 +5505,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public TIPOCENTROEDUCACIONRow TIPOCENTROEDUCACIONRow {
                 get {
-                    return ((TIPOCENTROEDUCACIONRow)(this.GetParentRow(this.Table.ParentRelations["FK_CENTROED_RELATIONS_TIPOCENT"])));
+                    return ((TIPOCENTROEDUCACIONRow)(this.GetParentRow(this.Table.ParentRelations["FK__CENTROEDU__IDCEN__29572725"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_CENTROED_RELATIONS_TIPOCENT"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CENTROEDU__IDCEN__29572725"]);
                 }
             }
             
@@ -5525,11 +5539,11 @@ namespace ProyectoPropietarios {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PACIENTERow[] GetPACIENTERows() {
-                if ((this.Table.ChildRelations["FK_PACIENTE_RELATIONS_CENTROED"] == null)) {
+                if ((this.Table.ChildRelations["FK__PACIENTE__IDCENT__2F10007B"] == null)) {
                     return new PACIENTERow[0];
                 }
                 else {
-                    return ((PACIENTERow[])(base.GetChildRows(this.Table.ChildRelations["FK_PACIENTE_RELATIONS_CENTROED"])));
+                    return ((PACIENTERow[])(base.GetChildRows(this.Table.ChildRelations["FK__PACIENTE__IDCENT__2F10007B"])));
                 }
             }
         }
@@ -5644,10 +5658,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public FACTURARow FACTURARow {
                 get {
-                    return ((FACTURARow)(this.GetParentRow(this.Table.ParentRelations["FK_DETALLEF_RELATIONS_FACTURA"])));
+                    return ((FACTURARow)(this.GetParentRow(this.Table.ParentRelations["FK__DETALLEFA__IDFAC__2A4B4B5E"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_DETALLEF_RELATIONS_FACTURA"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__DETALLEFA__IDFAC__2A4B4B5E"]);
                 }
             }
             
@@ -5655,10 +5669,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SERVICIORow SERVICIORow {
                 get {
-                    return ((SERVICIORow)(this.GetParentRow(this.Table.ParentRelations["FK_DETALLEF_RELATIONS_SERVICIO"])));
+                    return ((SERVICIORow)(this.GetParentRow(this.Table.ParentRelations["FK__DETALLEFA__IDSER__2B3F6F97"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_DETALLEF_RELATIONS_SERVICIO"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__DETALLEFA__IDSER__2B3F6F97"]);
                 }
             }
             
@@ -5832,10 +5846,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public RECIBORow RECIBORow {
                 get {
-                    return ((RECIBORow)(this.GetParentRow(this.Table.ParentRelations["FK_DETALLER_RELATIONS_RECIBO"])));
+                    return ((RECIBORow)(this.GetParentRow(this.Table.ParentRelations["FK__DETALLERE__IDREC__2C3393D0"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_DETALLER_RELATIONS_RECIBO"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__DETALLERE__IDREC__2C3393D0"]);
                 }
             }
             
@@ -5843,10 +5857,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SERVICIORow SERVICIORow {
                 get {
-                    return ((SERVICIORow)(this.GetParentRow(this.Table.ParentRelations["FK_DETALLER_RELATIONS_SERVICIO"])));
+                    return ((SERVICIORow)(this.GetParentRow(this.Table.ParentRelations["FK__DETALLERE__IDSER__2D27B809"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_DETALLER_RELATIONS_SERVICIO"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__DETALLERE__IDSER__2D27B809"]);
                 }
             }
             
@@ -6052,10 +6066,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public REPRESENTANTERow REPRESENTANTERow {
                 get {
-                    return ((REPRESENTANTERow)(this.GetParentRow(this.Table.ParentRelations["FK_FACTURA_RELATIONS_REPRESEN"])));
+                    return ((REPRESENTANTERow)(this.GetParentRow(this.Table.ParentRelations["FK__FACTURA__IDREPRE__2E1BDC42"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_FACTURA_RELATIONS_REPRESEN"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__FACTURA__IDREPRE__2E1BDC42"]);
                 }
             }
             
@@ -6146,11 +6160,11 @@ namespace ProyectoPropietarios {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public DETALLEFACTURARow[] GetDETALLEFACTURARows() {
-                if ((this.Table.ChildRelations["FK_DETALLEF_RELATIONS_FACTURA"] == null)) {
+                if ((this.Table.ChildRelations["FK__DETALLEFA__IDFAC__2A4B4B5E"] == null)) {
                     return new DETALLEFACTURARow[0];
                 }
                 else {
-                    return ((DETALLEFACTURARow[])(base.GetChildRows(this.Table.ChildRelations["FK_DETALLEF_RELATIONS_FACTURA"])));
+                    return ((DETALLEFACTURARow[])(base.GetChildRows(this.Table.ChildRelations["FK__DETALLEFA__IDFAC__2A4B4B5E"])));
                 }
             }
         }
@@ -6377,10 +6391,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CENTROEDUCACIONRow CENTROEDUCACIONRow {
                 get {
-                    return ((CENTROEDUCACIONRow)(this.GetParentRow(this.Table.ParentRelations["FK_PACIENTE_RELATIONS_CENTROED"])));
+                    return ((CENTROEDUCACIONRow)(this.GetParentRow(this.Table.ParentRelations["FK__PACIENTE__IDCENT__2F10007B"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_PACIENTE_RELATIONS_CENTROED"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__PACIENTE__IDCENT__2F10007B"]);
                 }
             }
             
@@ -6388,10 +6402,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public REPRESENTANTERow REPRESENTANTERow {
                 get {
-                    return ((REPRESENTANTERow)(this.GetParentRow(this.Table.ParentRelations["FK_PACIENTE_RELATIONS_REPRESEN"])));
+                    return ((REPRESENTANTERow)(this.GetParentRow(this.Table.ParentRelations["FK__PACIENTE__IDREPR__300424B4"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_PACIENTE_RELATIONS_REPRESEN"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__PACIENTE__IDREPR__300424B4"]);
                 }
             }
             
@@ -6542,22 +6556,22 @@ namespace ProyectoPropietarios {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PACIENTESXPROFESIONALRow[] GetPACIENTESXPROFESIONALRows() {
-                if ((this.Table.ChildRelations["FK_PACIENTE_RELATIONS_PACIENTE"] == null)) {
+                if ((this.Table.ChildRelations["FK__PACIENTES__IDPAC__30F848ED"] == null)) {
                     return new PACIENTESXPROFESIONALRow[0];
                 }
                 else {
-                    return ((PACIENTESXPROFESIONALRow[])(base.GetChildRows(this.Table.ChildRelations["FK_PACIENTE_RELATIONS_PACIENTE"])));
+                    return ((PACIENTESXPROFESIONALRow[])(base.GetChildRows(this.Table.ChildRelations["FK__PACIENTES__IDPAC__30F848ED"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SERVICIOSXPACIENTERow[] GetSERVICIOSXPACIENTERows() {
-                if ((this.Table.ChildRelations["FK_SERVICIO_RELATIONS_PACIENTE"] == null)) {
+                if ((this.Table.ChildRelations["FK__SERVICIOS__IDPAC__35BCFE0A"] == null)) {
                     return new SERVICIOSXPACIENTERow[0];
                 }
                 else {
-                    return ((SERVICIOSXPACIENTERow[])(base.GetChildRows(this.Table.ChildRelations["FK_SERVICIO_RELATIONS_PACIENTE"])));
+                    return ((SERVICIOSXPACIENTERow[])(base.GetChildRows(this.Table.ChildRelations["FK__SERVICIOS__IDPAC__35BCFE0A"])));
                 }
             }
         }
@@ -6625,10 +6639,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PACIENTERow PACIENTERow {
                 get {
-                    return ((PACIENTERow)(this.GetParentRow(this.Table.ParentRelations["FK_PACIENTE_RELATIONS_PACIENTE"])));
+                    return ((PACIENTERow)(this.GetParentRow(this.Table.ParentRelations["FK__PACIENTES__IDPAC__30F848ED"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_PACIENTE_RELATIONS_PACIENTE"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__PACIENTES__IDPAC__30F848ED"]);
                 }
             }
             
@@ -6636,10 +6650,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PROFESIONALRow PROFESIONALRow {
                 get {
-                    return ((PROFESIONALRow)(this.GetParentRow(this.Table.ParentRelations["FK_PACIENTE_RELATIONS_PROFESIO"])));
+                    return ((PROFESIONALRow)(this.GetParentRow(this.Table.ParentRelations["FK__PACIENTES__IDPRO__31EC6D26"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_PACIENTE_RELATIONS_PROFESIO"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__PACIENTES__IDPRO__31EC6D26"]);
                 }
             }
             
@@ -6914,6 +6928,22 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime FECHAINGRESO {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tablePROFESIONAL.FECHAINGRESOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'FECHAINGRESO\' de la tabla \'PROFESIONAL\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePROFESIONAL.FECHAINGRESOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsNOMBREPROFESIONALNull() {
                 return this.IsNull(this.tablePROFESIONAL.NOMBREPROFESIONALColumn);
             }
@@ -6974,23 +7004,35 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsFECHAINGRESONull() {
+                return this.IsNull(this.tablePROFESIONAL.FECHAINGRESOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetFECHAINGRESONull() {
+                this[this.tablePROFESIONAL.FECHAINGRESOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PACIENTESXPROFESIONALRow[] GetPACIENTESXPROFESIONALRows() {
-                if ((this.Table.ChildRelations["FK_PACIENTE_RELATIONS_PROFESIO"] == null)) {
+                if ((this.Table.ChildRelations["FK__PACIENTES__IDPRO__31EC6D26"] == null)) {
                     return new PACIENTESXPROFESIONALRow[0];
                 }
                 else {
-                    return ((PACIENTESXPROFESIONALRow[])(base.GetChildRows(this.Table.ChildRelations["FK_PACIENTE_RELATIONS_PROFESIO"])));
+                    return ((PACIENTESXPROFESIONALRow[])(base.GetChildRows(this.Table.ChildRelations["FK__PACIENTES__IDPRO__31EC6D26"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SERVICIOSPORPROFESIONALRow[] GetSERVICIOSPORPROFESIONALRows() {
-                if ((this.Table.ChildRelations["FK_SERVICIO_OTRARELAC_PROFESIO"] == null)) {
+                if ((this.Table.ChildRelations["FK__SERVICIOS__IDPRO__33D4B598"] == null)) {
                     return new SERVICIOSPORPROFESIONALRow[0];
                 }
                 else {
-                    return ((SERVICIOSPORPROFESIONALRow[])(base.GetChildRows(this.Table.ChildRelations["FK_SERVICIO_OTRARELAC_PROFESIO"])));
+                    return ((SERVICIOSPORPROFESIONALRow[])(base.GetChildRows(this.Table.ChildRelations["FK__SERVICIOS__IDPRO__33D4B598"])));
                 }
             }
         }
@@ -7104,10 +7146,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public REPRESENTANTERow REPRESENTANTERow {
                 get {
-                    return ((REPRESENTANTERow)(this.GetParentRow(this.Table.ParentRelations["FK_RECIBO_RELATIONS_REPRESEN"])));
+                    return ((REPRESENTANTERow)(this.GetParentRow(this.Table.ParentRelations["FK__RECIBO__IDREPRES__32E0915F"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_RECIBO_RELATIONS_REPRESEN"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__RECIBO__IDREPRES__32E0915F"]);
                 }
             }
             
@@ -7174,11 +7216,11 @@ namespace ProyectoPropietarios {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public DETALLERECIBORow[] GetDETALLERECIBORows() {
-                if ((this.Table.ChildRelations["FK_DETALLER_RELATIONS_RECIBO"] == null)) {
+                if ((this.Table.ChildRelations["FK__DETALLERE__IDREC__2C3393D0"] == null)) {
                     return new DETALLERECIBORow[0];
                 }
                 else {
-                    return ((DETALLERECIBORow[])(base.GetChildRows(this.Table.ChildRelations["FK_DETALLER_RELATIONS_RECIBO"])));
+                    return ((DETALLERECIBORow[])(base.GetChildRows(this.Table.ChildRelations["FK__DETALLERE__IDREC__2C3393D0"])));
                 }
             }
         }
@@ -7385,33 +7427,33 @@ namespace ProyectoPropietarios {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public FACTURARow[] GetFACTURARows() {
-                if ((this.Table.ChildRelations["FK_FACTURA_RELATIONS_REPRESEN"] == null)) {
+                if ((this.Table.ChildRelations["FK__FACTURA__IDREPRE__2E1BDC42"] == null)) {
                     return new FACTURARow[0];
                 }
                 else {
-                    return ((FACTURARow[])(base.GetChildRows(this.Table.ChildRelations["FK_FACTURA_RELATIONS_REPRESEN"])));
+                    return ((FACTURARow[])(base.GetChildRows(this.Table.ChildRelations["FK__FACTURA__IDREPRE__2E1BDC42"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PACIENTERow[] GetPACIENTERows() {
-                if ((this.Table.ChildRelations["FK_PACIENTE_RELATIONS_REPRESEN"] == null)) {
+                if ((this.Table.ChildRelations["FK__PACIENTE__IDREPR__300424B4"] == null)) {
                     return new PACIENTERow[0];
                 }
                 else {
-                    return ((PACIENTERow[])(base.GetChildRows(this.Table.ChildRelations["FK_PACIENTE_RELATIONS_REPRESEN"])));
+                    return ((PACIENTERow[])(base.GetChildRows(this.Table.ChildRelations["FK__PACIENTE__IDREPR__300424B4"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public RECIBORow[] GetRECIBORows() {
-                if ((this.Table.ChildRelations["FK_RECIBO_RELATIONS_REPRESEN"] == null)) {
+                if ((this.Table.ChildRelations["FK__RECIBO__IDREPRES__32E0915F"] == null)) {
                     return new RECIBORow[0];
                 }
                 else {
-                    return ((RECIBORow[])(base.GetChildRows(this.Table.ChildRelations["FK_RECIBO_RELATIONS_REPRESEN"])));
+                    return ((RECIBORow[])(base.GetChildRows(this.Table.ChildRelations["FK__RECIBO__IDREPRES__32E0915F"])));
                 }
             }
         }
@@ -7528,44 +7570,44 @@ namespace ProyectoPropietarios {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public DETALLEFACTURARow[] GetDETALLEFACTURARows() {
-                if ((this.Table.ChildRelations["FK_DETALLEF_RELATIONS_SERVICIO"] == null)) {
+                if ((this.Table.ChildRelations["FK__DETALLEFA__IDSER__2B3F6F97"] == null)) {
                     return new DETALLEFACTURARow[0];
                 }
                 else {
-                    return ((DETALLEFACTURARow[])(base.GetChildRows(this.Table.ChildRelations["FK_DETALLEF_RELATIONS_SERVICIO"])));
+                    return ((DETALLEFACTURARow[])(base.GetChildRows(this.Table.ChildRelations["FK__DETALLEFA__IDSER__2B3F6F97"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public DETALLERECIBORow[] GetDETALLERECIBORows() {
-                if ((this.Table.ChildRelations["FK_DETALLER_RELATIONS_SERVICIO"] == null)) {
+                if ((this.Table.ChildRelations["FK__DETALLERE__IDSER__2D27B809"] == null)) {
                     return new DETALLERECIBORow[0];
                 }
                 else {
-                    return ((DETALLERECIBORow[])(base.GetChildRows(this.Table.ChildRelations["FK_DETALLER_RELATIONS_SERVICIO"])));
+                    return ((DETALLERECIBORow[])(base.GetChildRows(this.Table.ChildRelations["FK__DETALLERE__IDSER__2D27B809"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SERVICIOSPORPROFESIONALRow[] GetSERVICIOSPORPROFESIONALRows() {
-                if ((this.Table.ChildRelations["FK_SERVICIO_RELACIONS_SERVICIO"] == null)) {
+                if ((this.Table.ChildRelations["FK__SERVICIOS__IDSER__34C8D9D1"] == null)) {
                     return new SERVICIOSPORPROFESIONALRow[0];
                 }
                 else {
-                    return ((SERVICIOSPORPROFESIONALRow[])(base.GetChildRows(this.Table.ChildRelations["FK_SERVICIO_RELACIONS_SERVICIO"])));
+                    return ((SERVICIOSPORPROFESIONALRow[])(base.GetChildRows(this.Table.ChildRelations["FK__SERVICIOS__IDSER__34C8D9D1"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SERVICIOSXPACIENTERow[] GetSERVICIOSXPACIENTERows() {
-                if ((this.Table.ChildRelations["FK_SERVICIO_RELATIONS_SERVICIO"] == null)) {
+                if ((this.Table.ChildRelations["FK__SERVICIOS__IDSER__36B12243"] == null)) {
                     return new SERVICIOSXPACIENTERow[0];
                 }
                 else {
-                    return ((SERVICIOSXPACIENTERow[])(base.GetChildRows(this.Table.ChildRelations["FK_SERVICIO_RELATIONS_SERVICIO"])));
+                    return ((SERVICIOSXPACIENTERow[])(base.GetChildRows(this.Table.ChildRelations["FK__SERVICIOS__IDSER__36B12243"])));
                 }
             }
         }
@@ -7633,10 +7675,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PROFESIONALRow PROFESIONALRow {
                 get {
-                    return ((PROFESIONALRow)(this.GetParentRow(this.Table.ParentRelations["FK_SERVICIO_OTRARELAC_PROFESIO"])));
+                    return ((PROFESIONALRow)(this.GetParentRow(this.Table.ParentRelations["FK__SERVICIOS__IDPRO__33D4B598"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_SERVICIO_OTRARELAC_PROFESIO"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__SERVICIOS__IDPRO__33D4B598"]);
                 }
             }
             
@@ -7644,10 +7686,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SERVICIORow SERVICIORow {
                 get {
-                    return ((SERVICIORow)(this.GetParentRow(this.Table.ParentRelations["FK_SERVICIO_RELACIONS_SERVICIO"])));
+                    return ((SERVICIORow)(this.GetParentRow(this.Table.ParentRelations["FK__SERVICIOS__IDSER__34C8D9D1"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_SERVICIO_RELACIONS_SERVICIO"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__SERVICIOS__IDSER__34C8D9D1"]);
                 }
             }
             
@@ -7737,10 +7779,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PACIENTERow PACIENTERow {
                 get {
-                    return ((PACIENTERow)(this.GetParentRow(this.Table.ParentRelations["FK_SERVICIO_RELATIONS_PACIENTE"])));
+                    return ((PACIENTERow)(this.GetParentRow(this.Table.ParentRelations["FK__SERVICIOS__IDPAC__35BCFE0A"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_SERVICIO_RELATIONS_PACIENTE"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__SERVICIOS__IDPAC__35BCFE0A"]);
                 }
             }
             
@@ -7748,10 +7790,10 @@ namespace ProyectoPropietarios {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SERVICIORow SERVICIORow {
                 get {
-                    return ((SERVICIORow)(this.GetParentRow(this.Table.ParentRelations["FK_SERVICIO_RELATIONS_SERVICIO"])));
+                    return ((SERVICIORow)(this.GetParentRow(this.Table.ParentRelations["FK__SERVICIOS__IDSER__36B12243"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_SERVICIO_RELATIONS_SERVICIO"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__SERVICIOS__IDSER__36B12243"]);
                 }
             }
             
@@ -7837,11 +7879,11 @@ namespace ProyectoPropietarios {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CENTROEDUCACIONRow[] GetCENTROEDUCACIONRows() {
-                if ((this.Table.ChildRelations["FK_CENTROED_RELATIONS_TIPOCENT"] == null)) {
+                if ((this.Table.ChildRelations["FK__CENTROEDU__IDCEN__29572725"] == null)) {
                     return new CENTROEDUCACIONRow[0];
                 }
                 else {
-                    return ((CENTROEDUCACIONRow[])(base.GetChildRows(this.Table.ChildRelations["FK_CENTROED_RELATIONS_TIPOCENT"])));
+                    return ((CENTROEDUCACIONRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CENTROEDU__IDCEN__29572725"])));
                 }
             }
         }
@@ -8487,7 +8529,7 @@ SELECT IDCENTROEDUCACION, IDCENTRO, NOMBRECENTRO FROM CENTROEDUCACION WHERE (IDC
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8865,7 +8907,7 @@ SELECT IDDETALLEFACTURA, IDSERVICIO, IDFACTURA, CANTIDADPRODUCTO, PRECIOUNITARIO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9328,7 +9370,7 @@ SELECT IDDETALLERECIBO, IDRECIBO, IDSERVICIO, CANTIDAD, PRECIOUNITARIO, TOTAL FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9805,7 +9847,7 @@ SELECT IDFACTURA, IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10435,7 +10477,7 @@ SELECT IDPACIENTE, IDREPRESENTANTE, IDCENTROEDUCACION, NOMBREPACIENTE, CEDULAPAC
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11127,7 +11169,7 @@ SELECT IDPACXPROF, IDPROFESIONAL, IDPACIENTE FROM PACIENTESXPROFESIONAL WHERE (I
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11498,7 +11540,7 @@ SELECT IDPARAMETROS, VALORIVA, NUMEROFACTURA, USUARIO, CONTRASENIA FROM PARAMETR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11879,10 +11921,11 @@ SELECT IDPARAMETROS, VALORIVA, NUMEROFACTURA, USUARIO, CONTRASENIA FROM PARAMETR
             tableMapping.ColumnMappings.Add("TITULOPROFESIONAL", "TITULOPROFESIONAL");
             tableMapping.ColumnMappings.Add("TELEFONOPROFESIONAL", "TELEFONOPROFESIONAL");
             tableMapping.ColumnMappings.Add("ESTADOPROFESIONAL", "ESTADOPROFESIONAL");
+            tableMapping.ColumnMappings.Add("FECHAINGRESO", "FECHAINGRESO");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[PROFESIONAL] WHERE (([IDPROFESIONAL] = @Original_IDPROFESIONAL) AND ((@IsNull_NOMBREPROFESIONAL = 1 AND [NOMBREPROFESIONAL] IS NULL) OR ([NOMBREPROFESIONAL] = @Original_NOMBREPROFESIONAL)) AND ((@IsNull_CEDULAPROFESIONAL = 1 AND [CEDULAPROFESIONAL] IS NULL) OR ([CEDULAPROFESIONAL] = @Original_CEDULAPROFESIONAL)) AND ((@IsNull_TITULOPROFESIONAL = 1 AND [TITULOPROFESIONAL] IS NULL) OR ([TITULOPROFESIONAL] = @Original_TITULOPROFESIONAL)) AND ((@IsNull_TELEFONOPROFESIONAL = 1 AND [TELEFONOPROFESIONAL] IS NULL) OR ([TELEFONOPROFESIONAL] = @Original_TELEFONOPROFESIONAL)) AND ((@IsNull_ESTADOPROFESIONAL = 1 AND [ESTADOPROFESIONAL] IS NULL) OR ([ESTADOPROFESIONAL] = @Original_ESTADOPROFESIONAL)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[PROFESIONAL] WHERE (([IDPROFESIONAL] = @Original_IDPROFESIONAL) AND ((@IsNull_NOMBREPROFESIONAL = 1 AND [NOMBREPROFESIONAL] IS NULL) OR ([NOMBREPROFESIONAL] = @Original_NOMBREPROFESIONAL)) AND ((@IsNull_CEDULAPROFESIONAL = 1 AND [CEDULAPROFESIONAL] IS NULL) OR ([CEDULAPROFESIONAL] = @Original_CEDULAPROFESIONAL)) AND ((@IsNull_TITULOPROFESIONAL = 1 AND [TITULOPROFESIONAL] IS NULL) OR ([TITULOPROFESIONAL] = @Original_TITULOPROFESIONAL)) AND ((@IsNull_TELEFONOPROFESIONAL = 1 AND [TELEFONOPROFESIONAL] IS NULL) OR ([TELEFONOPROFESIONAL] = @Original_TELEFONOPROFESIONAL)) AND ((@IsNull_ESTADOPROFESIONAL = 1 AND [ESTADOPROFESIONAL] IS NULL) OR ([ESTADOPROFESIONAL] = @Original_ESTADOPROFESIONAL)) AND ((@IsNull_FECHAINGRESO = 1 AND [FECHAINGRESO] IS NULL) OR ([FECHAINGRESO] = @Original_FECHAINGRESO)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDPROFESIONAL", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDPROFESIONAL", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NOMBREPROFESIONAL", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NOMBREPROFESIONAL", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -11895,26 +11938,30 @@ SELECT IDPARAMETROS, VALORIVA, NUMEROFACTURA, USUARIO, CONTRASENIA FROM PARAMETR
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TELEFONOPROFESIONAL", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFONOPROFESIONAL", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ESTADOPROFESIONAL", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ESTADOPROFESIONAL", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ESTADOPROFESIONAL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ESTADOPROFESIONAL", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_FECHAINGRESO", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FECHAINGRESO", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FECHAINGRESO", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FECHAINGRESO", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[PROFESIONAL] ([NOMBREPROFESIONAL], [CEDULAPROFESIONAL], [TITULOPROFESIONAL], [TELEFONOPROFESIONAL], [ESTADOPROFESIONAL]) VALUES (@NOMBREPROFESIONAL, @CEDULAPROFESIONAL, @TITULOPROFESIONAL, @TELEFONOPROFESIONAL, @ESTADOPROFESIONAL);
-SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, TELEFONOPROFESIONAL, ESTADOPROFESIONAL FROM PROFESIONAL WHERE (IDPROFESIONAL = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[PROFESIONAL] ([NOMBREPROFESIONAL], [CEDULAPROFESIONAL], [TITULOPROFESIONAL], [TELEFONOPROFESIONAL], [ESTADOPROFESIONAL], [FECHAINGRESO]) VALUES (@NOMBREPROFESIONAL, @CEDULAPROFESIONAL, @TITULOPROFESIONAL, @TELEFONOPROFESIONAL, @ESTADOPROFESIONAL, @FECHAINGRESO);
+SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, TELEFONOPROFESIONAL, ESTADOPROFESIONAL, FECHAINGRESO FROM PROFESIONAL WHERE (IDPROFESIONAL = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NOMBREPROFESIONAL", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NOMBREPROFESIONAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CEDULAPROFESIONAL", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CEDULAPROFESIONAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TITULOPROFESIONAL", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TITULOPROFESIONAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TELEFONOPROFESIONAL", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFONOPROFESIONAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ESTADOPROFESIONAL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ESTADOPROFESIONAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FECHAINGRESO", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FECHAINGRESO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[PROFESIONAL] SET [NOMBREPROFESIONAL] = @NOMBREPROFESIONAL, [CEDULAPROFESIONAL] = @CEDULAPROFESIONAL, [TITULOPROFESIONAL] = @TITULOPROFESIONAL, [TELEFONOPROFESIONAL] = @TELEFONOPROFESIONAL, [ESTADOPROFESIONAL] = @ESTADOPROFESIONAL WHERE (([IDPROFESIONAL] = @Original_IDPROFESIONAL) AND ((@IsNull_NOMBREPROFESIONAL = 1 AND [NOMBREPROFESIONAL] IS NULL) OR ([NOMBREPROFESIONAL] = @Original_NOMBREPROFESIONAL)) AND ((@IsNull_CEDULAPROFESIONAL = 1 AND [CEDULAPROFESIONAL] IS NULL) OR ([CEDULAPROFESIONAL] = @Original_CEDULAPROFESIONAL)) AND ((@IsNull_TITULOPROFESIONAL = 1 AND [TITULOPROFESIONAL] IS NULL) OR ([TITULOPROFESIONAL] = @Original_TITULOPROFESIONAL)) AND ((@IsNull_TELEFONOPROFESIONAL = 1 AND [TELEFONOPROFESIONAL] IS NULL) OR ([TELEFONOPROFESIONAL] = @Original_TELEFONOPROFESIONAL)) AND ((@IsNull_ESTADOPROFESIONAL = 1 AND [ESTADOPROFESIONAL] IS NULL) OR ([ESTADOPROFESIONAL] = @Original_ESTADOPROFESIONAL)));
-SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, TELEFONOPROFESIONAL, ESTADOPROFESIONAL FROM PROFESIONAL WHERE (IDPROFESIONAL = @IDPROFESIONAL)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[PROFESIONAL] SET [NOMBREPROFESIONAL] = @NOMBREPROFESIONAL, [CEDULAPROFESIONAL] = @CEDULAPROFESIONAL, [TITULOPROFESIONAL] = @TITULOPROFESIONAL, [TELEFONOPROFESIONAL] = @TELEFONOPROFESIONAL, [ESTADOPROFESIONAL] = @ESTADOPROFESIONAL, [FECHAINGRESO] = @FECHAINGRESO WHERE (([IDPROFESIONAL] = @Original_IDPROFESIONAL) AND ((@IsNull_NOMBREPROFESIONAL = 1 AND [NOMBREPROFESIONAL] IS NULL) OR ([NOMBREPROFESIONAL] = @Original_NOMBREPROFESIONAL)) AND ((@IsNull_CEDULAPROFESIONAL = 1 AND [CEDULAPROFESIONAL] IS NULL) OR ([CEDULAPROFESIONAL] = @Original_CEDULAPROFESIONAL)) AND ((@IsNull_TITULOPROFESIONAL = 1 AND [TITULOPROFESIONAL] IS NULL) OR ([TITULOPROFESIONAL] = @Original_TITULOPROFESIONAL)) AND ((@IsNull_TELEFONOPROFESIONAL = 1 AND [TELEFONOPROFESIONAL] IS NULL) OR ([TELEFONOPROFESIONAL] = @Original_TELEFONOPROFESIONAL)) AND ((@IsNull_ESTADOPROFESIONAL = 1 AND [ESTADOPROFESIONAL] IS NULL) OR ([ESTADOPROFESIONAL] = @Original_ESTADOPROFESIONAL)) AND ((@IsNull_FECHAINGRESO = 1 AND [FECHAINGRESO] IS NULL) OR ([FECHAINGRESO] = @Original_FECHAINGRESO)));
+SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, TELEFONOPROFESIONAL, ESTADOPROFESIONAL, FECHAINGRESO FROM PROFESIONAL WHERE (IDPROFESIONAL = @IDPROFESIONAL)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NOMBREPROFESIONAL", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NOMBREPROFESIONAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CEDULAPROFESIONAL", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CEDULAPROFESIONAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TITULOPROFESIONAL", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TITULOPROFESIONAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TELEFONOPROFESIONAL", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFONOPROFESIONAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ESTADOPROFESIONAL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ESTADOPROFESIONAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FECHAINGRESO", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FECHAINGRESO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDPROFESIONAL", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDPROFESIONAL", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NOMBREPROFESIONAL", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NOMBREPROFESIONAL", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NOMBREPROFESIONAL", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NOMBREPROFESIONAL", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -11926,6 +11973,8 @@ SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, T
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TELEFONOPROFESIONAL", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFONOPROFESIONAL", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ESTADOPROFESIONAL", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ESTADOPROFESIONAL", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ESTADOPROFESIONAL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ESTADOPROFESIONAL", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_FECHAINGRESO", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FECHAINGRESO", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FECHAINGRESO", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FECHAINGRESO", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDPROFESIONAL", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IDPROFESIONAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -11933,7 +11982,7 @@ SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, T
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11943,7 +11992,7 @@ SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, T
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, TE" +
-                "LEFONOPROFESIONAL, ESTADOPROFESIONAL FROM dbo.PROFESIONAL";
+                "LEFONOPROFESIONAL, ESTADOPROFESIONAL, FECHAINGRESO FROM dbo.PROFESIONAL";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -12004,7 +12053,7 @@ SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, T
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_IDPROFESIONAL, string Original_NOMBREPROFESIONAL, string Original_CEDULAPROFESIONAL, string Original_TITULOPROFESIONAL, string Original_TELEFONOPROFESIONAL, string Original_ESTADOPROFESIONAL) {
+        public virtual int Delete(int Original_IDPROFESIONAL, string Original_NOMBREPROFESIONAL, string Original_CEDULAPROFESIONAL, string Original_TITULOPROFESIONAL, string Original_TELEFONOPROFESIONAL, string Original_ESTADOPROFESIONAL, global::System.Nullable<global::System.DateTime> Original_FECHAINGRESO) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_IDPROFESIONAL));
             if ((Original_NOMBREPROFESIONAL == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -12046,6 +12095,14 @@ SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, T
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_ESTADOPROFESIONAL));
             }
+            if ((Original_FECHAINGRESO.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((System.DateTime)(Original_FECHAINGRESO.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -12066,7 +12123,7 @@ SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, T
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string NOMBREPROFESIONAL, string CEDULAPROFESIONAL, string TITULOPROFESIONAL, string TELEFONOPROFESIONAL, string ESTADOPROFESIONAL) {
+        public virtual int Insert(string NOMBREPROFESIONAL, string CEDULAPROFESIONAL, string TITULOPROFESIONAL, string TELEFONOPROFESIONAL, string ESTADOPROFESIONAL, global::System.Nullable<global::System.DateTime> FECHAINGRESO) {
             if ((NOMBREPROFESIONAL == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -12097,6 +12154,12 @@ SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, T
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(ESTADOPROFESIONAL));
             }
+            if ((FECHAINGRESO.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(FECHAINGRESO.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -12117,7 +12180,7 @@ SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, T
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string NOMBREPROFESIONAL, string CEDULAPROFESIONAL, string TITULOPROFESIONAL, string TELEFONOPROFESIONAL, string ESTADOPROFESIONAL, int Original_IDPROFESIONAL, string Original_NOMBREPROFESIONAL, string Original_CEDULAPROFESIONAL, string Original_TITULOPROFESIONAL, string Original_TELEFONOPROFESIONAL, string Original_ESTADOPROFESIONAL, int IDPROFESIONAL) {
+        public virtual int Update(string NOMBREPROFESIONAL, string CEDULAPROFESIONAL, string TITULOPROFESIONAL, string TELEFONOPROFESIONAL, string ESTADOPROFESIONAL, global::System.Nullable<global::System.DateTime> FECHAINGRESO, int Original_IDPROFESIONAL, string Original_NOMBREPROFESIONAL, string Original_CEDULAPROFESIONAL, string Original_TITULOPROFESIONAL, string Original_TELEFONOPROFESIONAL, string Original_ESTADOPROFESIONAL, global::System.Nullable<global::System.DateTime> Original_FECHAINGRESO, int IDPROFESIONAL) {
             if ((NOMBREPROFESIONAL == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -12148,48 +12211,62 @@ SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, T
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(ESTADOPROFESIONAL));
             }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_IDPROFESIONAL));
-            if ((Original_NOMBREPROFESIONAL == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            if ((FECHAINGRESO.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(FECHAINGRESO.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_NOMBREPROFESIONAL));
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_IDPROFESIONAL));
+            if ((Original_NOMBREPROFESIONAL == null)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_NOMBREPROFESIONAL));
             }
             if ((Original_CEDULAPROFESIONAL == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_CEDULAPROFESIONAL));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_CEDULAPROFESIONAL));
             }
             if ((Original_TITULOPROFESIONAL == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_TITULOPROFESIONAL));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_TITULOPROFESIONAL));
             }
             if ((Original_TELEFONOPROFESIONAL == null)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_TELEFONOPROFESIONAL));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_TELEFONOPROFESIONAL));
             }
             if ((Original_ESTADOPROFESIONAL == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_ESTADOPROFESIONAL));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_ESTADOPROFESIONAL));
             }
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(IDPROFESIONAL));
+            if ((Original_FECHAINGRESO.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((System.DateTime)(Original_FECHAINGRESO.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(IDPROFESIONAL));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -12210,8 +12287,8 @@ SELECT IDPROFESIONAL, NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, T
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string NOMBREPROFESIONAL, string CEDULAPROFESIONAL, string TITULOPROFESIONAL, string TELEFONOPROFESIONAL, string ESTADOPROFESIONAL, int Original_IDPROFESIONAL, string Original_NOMBREPROFESIONAL, string Original_CEDULAPROFESIONAL, string Original_TITULOPROFESIONAL, string Original_TELEFONOPROFESIONAL, string Original_ESTADOPROFESIONAL) {
-            return this.Update(NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, TELEFONOPROFESIONAL, ESTADOPROFESIONAL, Original_IDPROFESIONAL, Original_NOMBREPROFESIONAL, Original_CEDULAPROFESIONAL, Original_TITULOPROFESIONAL, Original_TELEFONOPROFESIONAL, Original_ESTADOPROFESIONAL, Original_IDPROFESIONAL);
+        public virtual int Update(string NOMBREPROFESIONAL, string CEDULAPROFESIONAL, string TITULOPROFESIONAL, string TELEFONOPROFESIONAL, string ESTADOPROFESIONAL, global::System.Nullable<global::System.DateTime> FECHAINGRESO, int Original_IDPROFESIONAL, string Original_NOMBREPROFESIONAL, string Original_CEDULAPROFESIONAL, string Original_TITULOPROFESIONAL, string Original_TELEFONOPROFESIONAL, string Original_ESTADOPROFESIONAL, global::System.Nullable<global::System.DateTime> Original_FECHAINGRESO) {
+            return this.Update(NOMBREPROFESIONAL, CEDULAPROFESIONAL, TITULOPROFESIONAL, TELEFONOPROFESIONAL, ESTADOPROFESIONAL, FECHAINGRESO, Original_IDPROFESIONAL, Original_NOMBREPROFESIONAL, Original_CEDULAPROFESIONAL, Original_TITULOPROFESIONAL, Original_TELEFONOPROFESIONAL, Original_ESTADOPROFESIONAL, Original_FECHAINGRESO, Original_IDPROFESIONAL);
         }
     }
     
@@ -12396,7 +12473,7 @@ SELECT IDRECIBO, IDREPRESENTANTE, NUMERORECIBO, FECHARECIBO, TOTALRECIBO, ESTADO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12866,7 +12943,7 @@ SELECT IDREPRESENTANTE, NOMBREREPRESENTANTE, CEDULAREPRESENTANTE, DIRECCIONREPRE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13344,7 +13421,7 @@ SELECT IDSERVICIO, NOMBRESERVICIO, PRECIOSERVICIO, ESTADOSERVICIO FROM SERVICIO 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13731,7 +13808,7 @@ SELECT IDSERXPROFESIONAL, IDPROFESIONAL, IDSERVICIO FROM SERVICIOSPORPROFESIONAL
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14090,7 +14167,7 @@ SELECT IDSERVICIOSXPACIENTE, IDPACIENTE, IDSERVICIO FROM SERVICIOSXPACIENTE WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14443,7 +14520,7 @@ SELECT IDCENTRO, NOMBRETIPOCENTRO FROM TIPOCENTROEDUCACION WHERE (IDCENTRO = @ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString;
+            this._connection.ConnectionString = global::ProyectoPropietarios.Properties.Settings.Default.GrisGrisConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -25,7 +25,7 @@ namespace ProyectoPropietarios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ClienteForm cliente = new ClienteForm();
+            RepresentanteMain cliente = new RepresentanteMain();
             cliente.Show();
 
             this.Hide();
@@ -38,7 +38,7 @@ namespace ProyectoPropietarios
 
         private void button2_Click(object sender, EventArgs e)
         {
-            PacienteForm paciente = new PacienteForm();
+            PacienteMain paciente = new PacienteMain();
             paciente.Show();
             this.Hide();
         }

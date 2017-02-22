@@ -55,66 +55,77 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AsignarServicio.cs">
+    <Compile Include="GrisGrisDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GrisGrisDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Profesional\AsignarServicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AsignarServicio.Designer.cs">
+    <Compile Include="Profesional\AsignarServicio.Designer.cs">
       <DependentUpon>AsignarServicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ayuda.cs">
+    <Compile Include="Ayuda\Ayuda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ayuda.Designer.cs">
+    <Compile Include="Ayuda\Ayuda.Designer.cs">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConsultasBaseDatos.cs" />
-    <Compile Include="ClienteForm.cs">
+    <Compile Include="BDD\ConsultasBaseDatos.cs" />
+    <Compile Include="Profesional\ModificarProfesional.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClienteForm.Designer.cs">
-      <DependentUpon>ClienteForm.cs</DependentUpon>
+    <Compile Include="Profesional\ModificarProfesional.Designer.cs">
+      <DependentUpon>ModificarProfesional.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConexiónBaseDatos.cs" />
+    <Compile Include="Representante\RepresentanteMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Representante\RepresentanteMain.Designer.cs">
+      <DependentUpon>RepresentanteMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BDD\ConexiónBaseDatos.cs" />
     <Compile Include="Configuracion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Configuracion.Designer.cs">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Eliminar Servicio.cs">
+    <Compile Include="Servicios\Eliminar Servicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Eliminar Servicio.Designer.cs">
+    <Compile Include="Servicios\Eliminar Servicio.Designer.cs">
       <DependentUpon>Eliminar Servicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="DardeBajaCliente.cs">
+    <Compile Include="Representante\DardeBajaRepresentante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DardeBajaCliente.Designer.cs">
-      <DependentUpon>DardeBajaCliente.cs</DependentUpon>
+    <Compile Include="Representante\DardeBajaRepresentante.Designer.cs">
+      <DependentUpon>DardeBajaRepresentante.cs</DependentUpon>
     </Compile>
-    <Compile Include="EliminarFactura.cs">
+    <Compile Include="FacturasRecibos\EliminarFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EliminarFactura.Designer.cs">
+    <Compile Include="FacturasRecibos\EliminarFactura.Designer.cs">
       <DependentUpon>EliminarFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="EliminarPaciente.cs">
+    <Compile Include="Paciente\DardeBajaPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EliminarPaciente.Designer.cs">
-      <DependentUpon>EliminarPaciente.cs</DependentUpon>
+    <Compile Include="Paciente\DardeBajaPaciente.Designer.cs">
+      <DependentUpon>DardeBajaPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="EliminarProfesional.cs">
+    <Compile Include="Profesional\EliminarProfesional.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EliminarProfesional.Designer.cs">
+    <Compile Include="Profesional\EliminarProfesional.Designer.cs">
       <DependentUpon>EliminarProfesional.cs</DependentUpon>
     </Compile>
-    <Compile Include="Factura.cs">
+    <Compile Include="FacturasRecibos\Factura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Factura.Designer.cs">
+    <Compile Include="FacturasRecibos\Factura.Designer.cs">
       <DependentUpon>Factura.cs</DependentUpon>
     </Compile>
     <Compile Include="Facturacion.cs">
@@ -122,17 +133,6 @@
     </Compile>
     <Compile Include="Facturacion.Designer.cs">
       <DependentUpon>Facturacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GrisGrisDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GrisGrisDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="loginAdmin.cs">
       <SubType>Form</SubType>
@@ -158,22 +158,22 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModificarCliente.cs">
+    <Compile Include="Representante\BuscarRepresentante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarCliente.Designer.cs">
-      <DependentUpon>ModificarCliente.cs</DependentUpon>
+    <Compile Include="Representante\BuscarRepresentante.Designer.cs">
+      <DependentUpon>BuscarRepresentante.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModificarPaciente.cs">
+    <Compile Include="Paciente\ModificarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarPaciente.Designer.cs">
+    <Compile Include="Paciente\ModificarPaciente.Designer.cs">
       <DependentUpon>ModificarPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModificarServicio.cs">
+    <Compile Include="Servicios\ModificarServicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarServicio.Designer.cs">
+    <Compile Include="Servicios\ModificarServicio.Designer.cs">
       <DependentUpon>ModificarServicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos.cs">
@@ -182,48 +182,48 @@
     <Compile Include="Modulos.Designer.cs">
       <DependentUpon>Modulos.cs</DependentUpon>
     </Compile>
-    <Compile Include="PacienteForm.cs">
+    <Compile Include="Paciente\PacienteMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PacienteForm.Designer.cs">
-      <DependentUpon>PacienteForm.cs</DependentUpon>
+    <Compile Include="Paciente\PacienteMain.Designer.cs">
+      <DependentUpon>PacienteMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Profesional.cs">
+    <Compile Include="Profesional\RegistrarProfesional.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profesional.Designer.cs">
-      <DependentUpon>Profesional.cs</DependentUpon>
+    <Compile Include="Profesional\RegistrarProfesional.Designer.cs">
+      <DependentUpon>RegistrarProfesional.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recibo.cs">
+    <Compile Include="FacturasRecibos\Recibo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Recibo.Designer.cs">
+    <Compile Include="FacturasRecibos\Recibo.Designer.cs">
       <DependentUpon>Recibo.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarCliente.cs">
+    <Compile Include="Representante\RegistrarRepresentante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarCliente.Designer.cs">
-      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    <Compile Include="Representante\RegistrarRepresentante.Designer.cs">
+      <DependentUpon>RegistrarRepresentante.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarPaciente.cs">
+    <Compile Include="Paciente\RegistrarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarPaciente.Designer.cs">
+    <Compile Include="Paciente\RegistrarPaciente.Designer.cs">
       <DependentUpon>RegistrarPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReporteAcademico.cs">
+    <Compile Include="Reportes\ReporteAcademico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReporteAcademico.Designer.cs">
+    <Compile Include="Reportes\ReporteAcademico.Designer.cs">
       <DependentUpon>ReporteAcademico.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReporteFinanciero.cs">
+    <Compile Include="Reportes\ReporteFinanciero.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReporteFinanciero.Designer.cs">
+    <Compile Include="Reportes\ReporteFinanciero.Designer.cs">
       <DependentUpon>ReporteFinanciero.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes.cs">
@@ -244,10 +244,10 @@
     <Compile Include="SerivcioPrincipal.Designer.cs">
       <DependentUpon>SerivcioPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="TalentoHumano.cs">
+    <Compile Include="Profesional\TalentoHumano.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TalentoHumano.Designer.cs">
+    <Compile Include="Profesional\TalentoHumano.Designer.cs">
       <DependentUpon>TalentoHumano.cs</DependentUpon>
     </Compile>
     <Compile Include="Cliente.cs">
@@ -257,41 +257,41 @@
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Validaciones.cs" />
-    <EmbeddedResource Include="AsignarServicio.resx">
+    <EmbeddedResource Include="Profesional\AsignarServicio.resx">
       <DependentUpon>AsignarServicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ayuda.resx">
+    <EmbeddedResource Include="Ayuda\Ayuda.resx">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClienteForm.resx">
-      <DependentUpon>ClienteForm.cs</DependentUpon>
+    <EmbeddedResource Include="Profesional\ModificarProfesional.resx">
+      <DependentUpon>ModificarProfesional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Representante\RepresentanteMain.resx">
+      <DependentUpon>RepresentanteMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Eliminar Servicio.resx">
+    <EmbeddedResource Include="Servicios\Eliminar Servicio.resx">
       <DependentUpon>Eliminar Servicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DardeBajaCliente.resx">
-      <DependentUpon>DardeBajaCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Representante\DardeBajaRepresentante.resx">
+      <DependentUpon>DardeBajaRepresentante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EliminarFactura.resx">
+    <EmbeddedResource Include="FacturasRecibos\EliminarFactura.resx">
       <DependentUpon>EliminarFactura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EliminarPaciente.resx">
-      <DependentUpon>EliminarPaciente.cs</DependentUpon>
+    <EmbeddedResource Include="Paciente\DardeBajaPaciente.resx">
+      <DependentUpon>DardeBajaPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EliminarProfesional.resx">
+    <EmbeddedResource Include="Profesional\EliminarProfesional.resx">
       <DependentUpon>EliminarProfesional.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Factura.resx">
+    <EmbeddedResource Include="FacturasRecibos\Factura.resx">
       <DependentUpon>Factura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Facturacion.resx">
       <DependentUpon>Facturacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
@@ -302,23 +302,23 @@
     <EmbeddedResource Include="loginAdmin.resx">
       <DependentUpon>loginAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarCliente.resx">
-      <DependentUpon>ModificarCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Representante\BuscarRepresentante.resx">
+      <DependentUpon>BuscarRepresentante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarPaciente.resx">
+    <EmbeddedResource Include="Paciente\ModificarPaciente.resx">
       <DependentUpon>ModificarPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarServicio.resx">
+    <EmbeddedResource Include="Servicios\ModificarServicio.resx">
       <DependentUpon>ModificarServicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos.resx">
       <DependentUpon>Modulos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PacienteForm.resx">
-      <DependentUpon>PacienteForm.cs</DependentUpon>
+    <EmbeddedResource Include="Paciente\PacienteMain.resx">
+      <DependentUpon>PacienteMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Profesional.resx">
-      <DependentUpon>Profesional.cs</DependentUpon>
+    <EmbeddedResource Include="Profesional\RegistrarProfesional.resx">
+      <DependentUpon>RegistrarProfesional.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -331,19 +331,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Recibo.resx">
+    <EmbeddedResource Include="FacturasRecibos\Recibo.resx">
       <DependentUpon>Recibo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarCliente.resx">
-      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Representante\RegistrarRepresentante.resx">
+      <DependentUpon>RegistrarRepresentante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarPaciente.resx">
+    <EmbeddedResource Include="Paciente\RegistrarPaciente.resx">
       <DependentUpon>RegistrarPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteAcademico.resx">
+    <EmbeddedResource Include="Reportes\ReporteAcademico.resx">
       <DependentUpon>ReporteAcademico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteFinanciero.resx">
+    <EmbeddedResource Include="Reportes\ReporteFinanciero.resx">
       <DependentUpon>ReporteFinanciero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes.resx">
@@ -358,7 +358,7 @@
     <EmbeddedResource Include="Servicios.resx">
       <DependentUpon>Servicios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TalentoHumano.resx">
+    <EmbeddedResource Include="Profesional\TalentoHumano.resx">
       <DependentUpon>TalentoHumano.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente.resx">
@@ -387,7 +387,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondoInicio.jpg" />
@@ -511,6 +513,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ayuda1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muceta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

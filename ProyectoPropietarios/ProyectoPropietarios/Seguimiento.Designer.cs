@@ -98,7 +98,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(177, 25);
             this.label4.TabIndex = 23;
-            this.label4.Text = "Cedula Profesional";
+            this.label4.Text = "Cedula RegistrarProfesional";
             // 
             // dataGridView1
             // 

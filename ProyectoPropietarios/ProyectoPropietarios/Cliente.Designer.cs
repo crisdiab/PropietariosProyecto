@@ -63,7 +63,7 @@
             // 
             this.button3.BackgroundImage = global::ProyectoPropietarios.Properties.Resources.retroceso;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(631, 144);
+            this.button3.Location = new System.Drawing.Point(655, 144);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(214, 160);
             this.button3.TabIndex = 8;
@@ -74,11 +74,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(161, 307);
+            this.label1.Location = new System.Drawing.Point(134, 307);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 29);
+            this.label1.Size = new System.Drawing.Size(171, 29);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Clientes";
+            this.label1.Text = "Representante";
             // 
             // label2
             // 

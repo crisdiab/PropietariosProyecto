@@ -132,7 +132,7 @@ namespace ProyectoPropietarios
                         //toastr.success('La cedula ingresada es valida')
                         valida = true;
                         
-                        MessageBox.Show("Cedula Valida", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                      //  MessageBox.Show("Cedula Valida", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         return valida;
 
@@ -143,7 +143,7 @@ namespace ProyectoPropietarios
                         valida = false;
 
                         // toastr.error('La cedula ingresada no es valida')
-                        MessageBox.Show("Cedula ingresada invalida", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                       // MessageBox.Show("Cedula ingresada invalida", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         // console.log('la cedula:' + cedula + ' es incorrecta');
                         return valida;
                     }
@@ -154,7 +154,7 @@ namespace ProyectoPropietarios
                     // imprimimos en consola si la region no pertenece
                     //  console.log('Esta cedula no pertenece a ninguna region');
                     valida = false;
-                    MessageBox.Show("La cedula ingresada no pertenece a ninguna region del ecuador", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("La cedula ingresada no pertenece a ninguna region del ecuador", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     //toastr.error('La cedula ingresada no pertenece a ninguna provincia')
                     return valida;
@@ -163,7 +163,7 @@ namespace ProyectoPropietarios
             else
             {
                 valida = false;
-                MessageBox.Show("La cedula ingresada tiene menos de 10 digitos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               // MessageBox.Show("La cedula ingresada tiene menos de 10 digitos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //imprimimos en consola si la cedula tiene mas o menos de 10 digitos
                 // console.log('Esta cedula tiene menos de 10 Digitos');
                 // toastr.options.preventDuplicates = true
