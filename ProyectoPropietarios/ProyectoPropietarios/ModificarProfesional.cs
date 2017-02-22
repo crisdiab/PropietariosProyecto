@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoPropietarios.Profesional
+namespace ProyectoPropietarios
 {
     public partial class ModificarProfesional : Form
     {
+        Validaciones validar = new Validaciones();
         public ModificarProfesional()
         {
             InitializeComponent();
@@ -19,7 +20,7 @@ namespace ProyectoPropietarios.Profesional
 
         private void pROFESIONALBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-           
+            
 
         }
 
@@ -35,6 +36,7 @@ namespace ProyectoPropietarios.Profesional
             this.Validate();
             this.pROFESIONALBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.grisGrisDataSet);
+            MessageBox.Show("Se actualizo la información ", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
@@ -42,6 +44,22 @@ namespace ProyectoPropietarios.Profesional
             TalentoHumano th = new TalentoHumano();
             th.Show();
             this.Hide();
+          
+        }
+
+        private void cEDULAPROFESIONALTextEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void tITULOPROFESIONALTextEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validar.soloLetras(e);
+        }
+
+        private void tELEFONOPROFESIONALTextEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validar.soloNumeros(e);
         }
     }
 }

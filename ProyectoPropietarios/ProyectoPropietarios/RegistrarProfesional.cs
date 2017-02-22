@@ -60,11 +60,13 @@ namespace ProyectoPropietarios
                 }else
                 {
                     #region buscar representante
-                    string buscarCedula = "select CEDULAREPRESENTANTE from REPRESENTANTE where CEDULAREPRESENTANTE = '" + txtCedulaProfesional.Text + "' ";
+                    string buscarCedula = "select CEDULAPROFESIONAL from PROFESIONAL where CEDULAPROFESIONAL = '" + txtCedulaProfesional.Text + "' ";
                     DataTable consultarCedula = consulta.consultar(buscarCedula);
+                  
                     if (consultarCedula.Rows.Count == 0)
                     {
-                        string crearProfesional = "insert into REPRESENTANTE values(  '" + txtNombreProfesional.Text + "'" +
+                       
+                        string crearProfesional = "insert into PROFESIONAL values(  '" + txtNombreProfesional.Text + "'" +
                           ", '" + txtCedulaProfesional.Text + "'" +
                           ", '" + txtTituloProfesional.Text + "','" + txtTlfProfesional.Text + "'" +
                           ", ' Activo ','"+ dateFechaIngreso.Text+"' )";

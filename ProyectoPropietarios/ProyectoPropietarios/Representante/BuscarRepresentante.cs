@@ -204,15 +204,9 @@ namespace ProyectoPropietarios
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            DialogResult resultado = MessageBox.Show("Esta seguro que quiere regresar, se perderan los datos ingresados",
-             "Regresar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (DialogResult.Yes == resultado)
-            {
-                PacienteMain pf = new PacienteMain();
-                pf.Show();
-                this.Hide();
-            }
+            TalentoHumano pf = new TalentoHumano();
+            pf.Show();
+            this.Hide();
         }
 
         private void txtcedulaCliente_KeyPress(object sender, KeyPressEventArgs e)

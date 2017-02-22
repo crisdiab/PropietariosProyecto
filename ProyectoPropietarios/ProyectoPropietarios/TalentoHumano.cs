@@ -60,7 +60,16 @@ namespace ProyectoPropietarios
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            ModificarProfesional mp = new ModificarProfesional();
+            mp.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            BuscarProfesional bp = new BuscarProfesional();
+            bp.Show();
+            this.Hide();
         }
     }
 }

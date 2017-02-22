@@ -55,15 +55,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuscarProfesional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarProfesional.Designer.cs">
+      <DependentUpon>BuscarProfesional.cs</DependentUpon>
+    </Compile>
     <Compile Include="GrisGrisDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GrisGrisDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Profesional\AsignarServicio.cs">
+    <Compile Include="AsignarServicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profesional\AsignarServicio.Designer.cs">
+    <Compile Include="AsignarServicio.Designer.cs">
       <DependentUpon>AsignarServicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Ayuda\Ayuda.cs">
@@ -73,10 +79,10 @@
       <DependentUpon>Ayuda.cs</DependentUpon>
     </Compile>
     <Compile Include="BDD\ConsultasBaseDatos.cs" />
-    <Compile Include="Profesional\ModificarProfesional.cs">
+    <Compile Include="ModificarProfesional.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profesional\ModificarProfesional.Designer.cs">
+    <Compile Include="ModificarProfesional.Designer.cs">
       <DependentUpon>ModificarProfesional.cs</DependentUpon>
     </Compile>
     <Compile Include="Representante\RepresentanteMain.cs">
@@ -116,10 +122,10 @@
     <Compile Include="Paciente\DardeBajaPaciente.Designer.cs">
       <DependentUpon>DardeBajaPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Profesional\EliminarProfesional.cs">
+    <Compile Include="EliminarProfesional.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profesional\EliminarProfesional.Designer.cs">
+    <Compile Include="EliminarProfesional.Designer.cs">
       <DependentUpon>EliminarProfesional.cs</DependentUpon>
     </Compile>
     <Compile Include="FacturasRecibos\Factura.cs">
@@ -188,10 +194,10 @@
     <Compile Include="Paciente\PacienteMain.Designer.cs">
       <DependentUpon>PacienteMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Profesional\RegistrarProfesional.cs">
+    <Compile Include="RegistrarProfesional.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profesional\RegistrarProfesional.Designer.cs">
+    <Compile Include="RegistrarProfesional.Designer.cs">
       <DependentUpon>RegistrarProfesional.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -244,10 +250,10 @@
     <Compile Include="SerivcioPrincipal.Designer.cs">
       <DependentUpon>SerivcioPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Profesional\TalentoHumano.cs">
+    <Compile Include="TalentoHumano.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profesional\TalentoHumano.Designer.cs">
+    <Compile Include="TalentoHumano.Designer.cs">
       <DependentUpon>TalentoHumano.cs</DependentUpon>
     </Compile>
     <Compile Include="Cliente.cs">
@@ -257,13 +263,16 @@
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Validaciones.cs" />
-    <EmbeddedResource Include="Profesional\AsignarServicio.resx">
+    <EmbeddedResource Include="AsignarServicio.resx">
       <DependentUpon>AsignarServicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ayuda\Ayuda.resx">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Profesional\ModificarProfesional.resx">
+    <EmbeddedResource Include="BuscarProfesional.resx">
+      <DependentUpon>BuscarProfesional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarProfesional.resx">
       <DependentUpon>ModificarProfesional.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Representante\RepresentanteMain.resx">
@@ -284,7 +293,7 @@
     <EmbeddedResource Include="Paciente\DardeBajaPaciente.resx">
       <DependentUpon>DardeBajaPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Profesional\EliminarProfesional.resx">
+    <EmbeddedResource Include="EliminarProfesional.resx">
       <DependentUpon>EliminarProfesional.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FacturasRecibos\Factura.resx">
@@ -317,7 +326,7 @@
     <EmbeddedResource Include="Paciente\PacienteMain.resx">
       <DependentUpon>PacienteMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Profesional\RegistrarProfesional.resx">
+    <EmbeddedResource Include="RegistrarProfesional.resx">
       <DependentUpon>RegistrarProfesional.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -358,7 +367,7 @@
     <EmbeddedResource Include="Servicios.resx">
       <DependentUpon>Servicios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Profesional\TalentoHumano.resx">
+    <EmbeddedResource Include="TalentoHumano.resx">
       <DependentUpon>TalentoHumano.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente.resx">
@@ -522,6 +531,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Profesional\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
