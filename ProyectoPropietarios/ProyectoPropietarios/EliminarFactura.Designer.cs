@@ -28,25 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grisGrisDataSet = new ProyectoPropietarios.GrisGrisDataSet();
+            this.buscarFechaFacturaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buscarFechaFacturaTableAdapter = new ProyectoPropietarios.GrisGrisDataSetTableAdapters.buscarFechaFacturaTableAdapter();
+            this.tableAdapterManager = new ProyectoPropietarios.GrisGrisDataSetTableAdapters.TableAdapterManager();
+            this.buscarfacturaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buscarfacturaTableAdapter = new ProyectoPropietarios.GrisGrisDataSetTableAdapters.buscarfacturaTableAdapter();
+            this.fillToolStrip = new System.Windows.Forms.ToolStrip();
+            this.numfactToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.numfactToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.buscarfacturaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.grisGrisDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buscarFechaFacturaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buscarfacturaBindingSource)).BeginInit();
+            this.fillToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.buscarfacturaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(248, 349);
+            this.button3.Location = new System.Drawing.Point(353, 399);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(81, 30);
             this.button3.TabIndex = 28;
@@ -54,167 +67,204 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // groupBox1
             // 
-            this.button2.Location = new System.Drawing.Point(121, 349);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(81, 30);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "Anular";
-            this.button2.UseVisualStyleBackColor = true;
+            this.groupBox1.Location = new System.Drawing.Point(12, 85);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(219, 241);
+            this.groupBox1.TabIndex = 29;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Datos facturas ";
             // 
-            // textBox4
+            // grisGrisDataSet
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(166, 295);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(69, 22);
-            this.textBox4.TabIndex = 26;
+            this.grisGrisDataSet.DataSetName = "GrisGrisDataSet";
+            this.grisGrisDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // textBox3
+            // buscarFechaFacturaBindingSource
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(166, 256);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(163, 22);
-            this.textBox3.TabIndex = 25;
+            this.buscarFechaFacturaBindingSource.DataMember = "buscarFechaFactura";
+            this.buscarFechaFacturaBindingSource.DataSource = this.grisGrisDataSet;
             // 
-            // textBox2
+            // buscarFechaFacturaTableAdapter
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(166, 208);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 22);
-            this.textBox2.TabIndex = 24;
+            this.buscarFechaFacturaTableAdapter.ClearBeforeFill = true;
             // 
-            // dateTimePicker1
+            // tableAdapterManager
             // 
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(166, 160);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(114, 22);
-            this.dateTimePicker1.TabIndex = 23;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CENTROEDUCACIONTableAdapter = null;
+            this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.DETALLEFACTURATableAdapter = null;
+            this.tableAdapterManager.DETALLERECIBOTableAdapter = null;
+            this.tableAdapterManager.FACTURATableAdapter = null;
+            this.tableAdapterManager.PACIENTESXPROFESIONALTableAdapter = null;
+            this.tableAdapterManager.PACIENTETableAdapter = null;
+            this.tableAdapterManager.PARAMETROSTableAdapter = null;
+            this.tableAdapterManager.PROFESIONALTableAdapter = null;
+            this.tableAdapterManager.RECIBOTableAdapter = null;
+            this.tableAdapterManager.REPRESENTANTETableAdapter = null;
+            this.tableAdapterManager.SERVICIOSPORPROFESIONALTableAdapter = null;
+            this.tableAdapterManager.SERVICIOSXPACIENTETableAdapter = null;
+            this.tableAdapterManager.SERVICIOTableAdapter = null;
+            this.tableAdapterManager.TIPOCENTROEDUCACIONTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = ProyectoPropietarios.GrisGrisDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // label6
+            // buscarfacturaBindingSource
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(42, 252);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 25);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "CI:";
+            this.buscarfacturaBindingSource.DataMember = "buscarfactura";
+            this.buscarfacturaBindingSource.DataSource = this.grisGrisDataSet;
             // 
-            // label5
+            // buscarfacturaTableAdapter
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(42, 292);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 25);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Valor Total:";
+            this.buscarfacturaTableAdapter.ClearBeforeFill = true;
             // 
-            // label4
+            // fillToolStrip
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(42, 208);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 25);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Cliente:";
+            this.fillToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.fillToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.fillToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.numfactToolStripLabel,
+            this.numfactToolStripTextBox,
+            this.fillToolStripButton});
+            this.fillToolStrip.Location = new System.Drawing.Point(316, 46);
+            this.fillToolStrip.Name = "fillToolStrip";
+            this.fillToolStrip.Size = new System.Drawing.Size(308, 27);
+            this.fillToolStrip.TabIndex = 30;
+            this.fillToolStrip.Text = "fillToolStrip";
             // 
-            // label3
+            // numfactToolStripLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(42, 158);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 25);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Fecha:";
+            this.numfactToolStripLabel.Name = "numfactToolStripLabel";
+            this.numfactToolStripLabel.Size = new System.Drawing.Size(138, 24);
+            this.numfactToolStripLabel.Text = "Número de Factura:";
             // 
-            // textBox1
+            // numfactToolStripTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(183, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(94, 22);
-            this.textBox1.TabIndex = 18;
+            this.numfactToolStripTextBox.Name = "numfactToolStripTextBox";
+            this.numfactToolStripTextBox.Size = new System.Drawing.Size(100, 27);
             // 
-            // label2
+            // fillToolStripButton
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(42, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 29);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Factura";
+            this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillToolStripButton.Name = "fillToolStripButton";
+            this.fillToolStripButton.Size = new System.Drawing.Size(56, 24);
+            this.fillToolStripButton.Text = "Buscar";
+            this.fillToolStripButton.Click += new System.EventHandler(this.fillToolStripButton_Click_4);
             // 
-            // button1
+            // buscarfacturaDataGridView
             // 
-            this.button1.Location = new System.Drawing.Point(323, 33);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 41);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buscarfacturaDataGridView.AutoGenerateColumns = false;
+            this.buscarfacturaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.buscarfacturaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.buscarfacturaDataGridView.DataSource = this.buscarfacturaBindingSource;
+            this.buscarfacturaDataGridView.Location = new System.Drawing.Point(316, 85);
+            this.buscarfacturaDataGridView.Name = "buscarfacturaDataGridView";
+            this.buscarfacturaDataGridView.RowTemplate.Height = 24;
+            this.buscarfacturaDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.buscarfacturaDataGridView.TabIndex = 30;
             // 
-            // label1
+            // dataGridViewTextBoxColumn1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 29);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Numero de";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "IDFACTURA";
+            this.dataGridViewTextBoxColumn1.HeaderText = "IDFACTURA";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "IDREPRESENTANTE";
+            this.dataGridViewTextBoxColumn2.HeaderText = "IDREPRESENTANTE";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "NUMEROFACTURA";
+            this.dataGridViewTextBoxColumn3.HeaderText = "NUMEROFACTURA";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "FECHAFACTURA";
+            this.dataGridViewTextBoxColumn4.HeaderText = "FECHAFACTURA";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "SUBTOTALFACTURA";
+            this.dataGridViewTextBoxColumn5.HeaderText = "SUBTOTALFACTURA";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "VALORIVA";
+            this.dataGridViewTextBoxColumn6.HeaderText = "VALORIVA";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "TOTALFACTURA";
+            this.dataGridViewTextBoxColumn7.HeaderText = "TOTALFACTURA";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "ESTADOFACTURA";
+            this.dataGridViewTextBoxColumn8.HeaderText = "ESTADOFACTURA";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // EliminarFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(446, 441);
+            this.ClientSize = new System.Drawing.Size(1003, 449);
+            this.Controls.Add(this.buscarfacturaDataGridView);
+            this.Controls.Add(this.fillToolStrip);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
             this.Name = "EliminarFactura";
-            this.Text = "EliminarFactura";
+            this.Text = "Anular Factura";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EliminarFactura_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.grisGrisDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buscarFechaFacturaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buscarfacturaBindingSource)).EndInit();
+            this.fillToolStrip.ResumeLayout(false);
+            this.fillToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.buscarfacturaDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-
+        private System.Windows.Forms.GroupBox groupBox1;
+        private GrisGrisDataSet grisGrisDataSet;
+        private System.Windows.Forms.BindingSource buscarFechaFacturaBindingSource;
+        private GrisGrisDataSetTableAdapters.buscarFechaFacturaTableAdapter buscarFechaFacturaTableAdapter;
+        private GrisGrisDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingSource buscarfacturaBindingSource;
+        private GrisGrisDataSetTableAdapters.buscarfacturaTableAdapter buscarfacturaTableAdapter;
+        private System.Windows.Forms.ToolStrip fillToolStrip;
+        private System.Windows.Forms.ToolStripLabel numfactToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox numfactToolStripTextBox;
+        private System.Windows.Forms.ToolStripButton fillToolStripButton;
+        private System.Windows.Forms.DataGridView buscarfacturaDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }

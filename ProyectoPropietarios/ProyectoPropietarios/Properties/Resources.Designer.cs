@@ -93,6 +93,16 @@ namespace ProyectoPropietarios.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anularFact {
+            get {
+                object obj = ResourceManager.GetObject("anularFact", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ayuda {
             get {
                 object obj = ResourceManager.GetObject("ayuda", resourceCulture);
@@ -216,6 +226,16 @@ namespace ProyectoPropietarios.Properties {
         internal static System.Drawing.Bitmap factura {
             get {
                 object obj = ResourceManager.GetObject("factura", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap factura1 {
+            get {
+                object obj = ResourceManager.GetObject("factura1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
