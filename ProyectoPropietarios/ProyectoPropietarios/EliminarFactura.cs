@@ -34,27 +34,13 @@ namespace ProyectoPropietarios
 
         private void fillToolStripButton_Click(object sender, EventArgs e)
         {
-            try
-            {
-                this.buscarFechaFacturaTableAdapter.Fill(this.grisGrisDataSet.buscarFechaFactura, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(fechainicioToolStripTextBox.Text, typeof(System.DateTime))))), new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(fechafinToolStripTextBox.Text, typeof(System.DateTime))))));
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
+           
 
         }
 
         private void fillToolStripButton_Click_1(object sender, EventArgs e)
         {
-            try
-            {
-                this.buscarFechaFacturaTableAdapter.Fill(this.grisGrisDataSet.buscarFechaFactura, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(fechainicioToolStripTextBox.Text, typeof(System.DateTime))))), new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(fechafinToolStripTextBox.Text, typeof(System.DateTime))))));
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
+           
 
         }
 
@@ -65,27 +51,13 @@ namespace ProyectoPropietarios
 
         private void fillToolStripButton_Click_2(object sender, EventArgs e)
         {
-            try
-            {
-                this.buscarfacturaTableAdapter.Fill(this.grisGrisDataSet.buscarfactura, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(fechaToolStripTextBox.Text, typeof(System.DateTime))))));
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
+           
 
         }
 
         private void fillToolStripButton_Click_3(object sender, EventArgs e)
         {
-            try
-            {
-                this.buscarfacturaTableAdapter.Fill(this.grisGrisDataSet.buscarfactura, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(fechaToolStripTextBox.Text, typeof(System.DateTime))))));
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
+           
 
         }
 
