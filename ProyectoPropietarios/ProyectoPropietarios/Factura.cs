@@ -15,6 +15,7 @@ namespace ProyectoPropietarios
         Validaciones validacion = new Validaciones();
         ConsultasBaseDatos consulta = new ConsultasBaseDatos();
         string representanteID;
+        string parametroId;
         public Factura()
         {
             InitializeComponent();
@@ -165,24 +166,49 @@ namespace ProyectoPropietarios
             btnCalcularTotal.Enabled = false;
             btnNuevaBusqueda.Enabled = false;
             btnNueva.Enabled = true;
+            btnCrearfactura.Enabled = true;
         }
 
         private void btnNueva_Click(object sender, EventArgs e)
         {
             grupoBuscarCliente.Enabled = true;
 
+            string buscarUltimoFactura = "select top 1 * from PARAMETROS order by IDPARAMETROS desc";
+            DataTable tablaFactura;
 
-            //llenar numero de factura
-            string buscarUltimo = "select top 1 * from PARAMETROS order by IDPARAMETROS desc";
+            tablaFactura = consulta.consultar(buscarUltimoFactura);
             DataTable consul;
 
-            consul = consulta.consultar(buscarUltimo);
+            consul = consulta.consultar(buscarUltimoFactura);
 
-            DataRow parametros = consul.Rows[0];
-            txtNumeroFactura.Text =(Convert.ToInt32(parametros["NUMEROFACTURA"].ToString().Trim())+1).ToString();
+            DataRow parametros =consul.Rows[0];
+            txtNumeroFactura.Text = parametros["NUMEROFACTURA"].ToString().Trim();
+
             txtIvaPArametros.Text = parametros["VALORIVA"].ToString().Trim();
-            
-            
+            parametroId = parametros["IDPARAMETROS"].ToString().Trim();
+
+
+
+
+
+
+
+            //llenar numero de factura
+
+            txtcedulaCliente.Enabled = true;
+            txtcedulaCliente.Text = "";
+            grupodetalle.Enabled = false;
+            btnBuscarCliente.Enabled = true;
+            btnAgregarDetalle.Enabled = true;
+            gbServicios.Visible = false;
+            GridDetalles.Rows.Clear();
+            GridDetalles.Refresh();
+            txtcedulaCliente.Text = "";
+            txtClienteObtenido.Text = "";
+            txtDireccionObtenida.Text = "";
+            txtCedulaObtenida.Text = "";
+
+
         }
 
         private void btnNuevaBusqueda_Click(object sender, EventArgs e)
@@ -222,7 +248,26 @@ namespace ProyectoPropietarios
 
 
                 #endregion
-            }else if (DialogResult.No == resultado)
+
+                #region crear detalle
+                string buscarUltimo = "select top 1 * from FACTURA order by IDFACTURA desc";
+                DataTable consul;
+
+                consul = consulta.consultar(buscarUltimo);
+
+                DataRow filaFact = consul.Rows[0];
+
+                string facturaId = filaFact["IDFACTURA"].ToString().Trim();
+                string nuevoNum = (Convert.ToInt32(filaFact["NUMEROFACTURA"].ToString().Trim())+1).ToString();
+
+                string actualizarNumFact = "UPDATE PARAMETROS SET NUMEROFACTURA = '" + nuevoNum + "' WHERE IDPARAMETROS = '"+parametroId+"' ";
+
+                consulta.counsultaTodoTipo(actualizarNumFact);
+               
+
+                #endregion
+            }
+            else if (DialogResult.No == resultado)
             {
                 btnAgregarServicio.Enabled = true;
                 btnCalcularTotal.Enabled = true;
