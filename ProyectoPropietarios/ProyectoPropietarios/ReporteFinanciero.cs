@@ -31,5 +31,31 @@ namespace ProyectoPropietarios
             md.Show();
             this.Hide();
         }
+
+        private void fillToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.buscarFechaFacturaTableAdapter.Fill(this.grisGrisDataSet.buscarFechaFactura, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(fechainicioToolStripTextBox.Text, typeof(System.DateTime))))), new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(fechafinToolStripTextBox.Text, typeof(System.DateTime))))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double sumaIngresos = 0;
+            foreach (DataGridViewRow row in buscarFechaFacturaDataGridView.Rows)
+            {
+                 sumaIngresos += Convert.ToDouble(row.Cells["gridtotalfactura"].Value);
+
+                 
+
+            }
+            txtIngresos.Text = sumaIngresos.ToString();
+        }
     }
 }
