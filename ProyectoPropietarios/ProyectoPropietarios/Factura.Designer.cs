@@ -31,6 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Factura));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.iDSERVICIOSpinEdit = new DevExpress.XtraEditors.SpinEdit();
+            this.sERVICIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.grisGrisDataSet = new ProyectoPropietarios.GrisGrisDataSet();
+            this.txtPrecioSeleccionado = new DevExpress.XtraEditors.SpinEdit();
             this.label8 = new System.Windows.Forms.Label();
             this.txtCedulaObtenida = new System.Windows.Forms.TextBox();
             this.txtClienteObtenido = new System.Windows.Forms.TextBox();
@@ -39,9 +43,18 @@
             this.FECHAfACTURA = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.grupodetalle = new System.Windows.Forms.GroupBox();
+            this.btnCalcularTotal = new System.Windows.Forms.Button();
             this.btnAgregarServicio = new System.Windows.Forms.Button();
             this.GridDetalles = new System.Windows.Forms.DataGridView();
+            this.CantidadDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescripcionGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VunitarioDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VtotalDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gruposubtotal = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtIvaPArametros = new DevExpress.XtraEditors.TextEdit();
+            this.pARAMETROSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtTotalFactura = new System.Windows.Forms.TextBox();
             this.txtValorIva = new System.Windows.Forms.TextBox();
             this.txtSutFactura = new System.Windows.Forms.TextBox();
@@ -49,7 +62,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.txtNumeroFactura = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,66 +75,54 @@
             this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.txtcedulaCliente = new System.Windows.Forms.TextBox();
-            this.grisGrisDataSet = new ProyectoPropietarios.GrisGrisDataSet();
-            this.sERVICIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sERVICIOTableAdapter = new ProyectoPropietarios.GrisGrisDataSetTableAdapters.SERVICIOTableAdapter();
             this.tableAdapterManager = new ProyectoPropietarios.GrisGrisDataSetTableAdapters.TableAdapterManager();
+            this.pARAMETROSTableAdapter = new ProyectoPropietarios.GrisGrisDataSetTableAdapters.PARAMETROSTableAdapter();
             this.sERVICIOBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.sERVICIOBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.sERVICIODataGridView = new System.Windows.Forms.DataGridView();
-            this.gbServicios = new System.Windows.Forms.GroupBox();
-            this.btnAgregarDetalle = new System.Windows.Forms.Button();
-            this.btnCerraragregar = new System.Windows.Forms.Button();
-            this.txtServicioSeleccionado = new DevExpress.XtraEditors.TextEdit();
-            this.txtPrecioSeleccionado = new DevExpress.XtraEditors.SpinEdit();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.CantidadIngresada = new DevExpress.XtraEditors.SpinEdit();
-            this.btnCalcularTotal = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioservicioGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDSERVICIOSpinEdit = new DevExpress.XtraEditors.SpinEdit();
-            this.pARAMETROSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pARAMETROSTableAdapter = new ProyectoPropietarios.GrisGrisDataSetTableAdapters.PARAMETROSTableAdapter();
-            this.txtIvaPArametros = new DevExpress.XtraEditors.TextEdit();
-            this.label15 = new System.Windows.Forms.Label();
+            this.gbServicios = new System.Windows.Forms.GroupBox();
+            this.CantidadIngresada = new DevExpress.XtraEditors.SpinEdit();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.btnCerraragregar = new System.Windows.Forms.Button();
+            this.txtServicioSeleccionado = new DevExpress.XtraEditors.TextEdit();
+            this.btnAgregarDetalle = new System.Windows.Forms.Button();
             this.btnNueva = new System.Windows.Forms.Button();
-            this.CantidadDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DescripcionGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VunitarioDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VtotalDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtNumeroFactura = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iDSERVICIOSpinEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sERVICIOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grisGrisDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPrecioSeleccionado.Properties)).BeginInit();
             this.grupodetalle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridDetalles)).BeginInit();
             this.gruposubtotal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIvaPArametros.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pARAMETROSBindingSource)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.grupoBuscarCliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grisGrisDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sERVICIOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sERVICIOBindingNavigator)).BeginInit();
             this.sERVICIOBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sERVICIODataGridView)).BeginInit();
             this.gbServicios.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtServicioSeleccionado.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPrecioSeleccionado.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadIngresada.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iDSERVICIOSpinEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pARAMETROSBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIvaPArametros.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtServicioSeleccionado.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -143,6 +143,46 @@
             this.groupBox1.Size = new System.Drawing.Size(678, 149);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // iDSERVICIOSpinEdit
+            // 
+            this.iDSERVICIOSpinEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sERVICIOBindingSource, "IDSERVICIO", true));
+            this.iDSERVICIOSpinEdit.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.iDSERVICIOSpinEdit.Location = new System.Drawing.Point(550, 37);
+            this.iDSERVICIOSpinEdit.Name = "iDSERVICIOSpinEdit";
+            this.iDSERVICIOSpinEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.iDSERVICIOSpinEdit.Size = new System.Drawing.Size(100, 22);
+            this.iDSERVICIOSpinEdit.TabIndex = 11;
+            // 
+            // sERVICIOBindingSource
+            // 
+            this.sERVICIOBindingSource.DataMember = "SERVICIO";
+            this.sERVICIOBindingSource.DataSource = this.grisGrisDataSet;
+            // 
+            // grisGrisDataSet
+            // 
+            this.grisGrisDataSet.DataSetName = "GrisGrisDataSet";
+            this.grisGrisDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // txtPrecioSeleccionado
+            // 
+            this.txtPrecioSeleccionado.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sERVICIOBindingSource, "PRECIOSERVICIO", true));
+            this.txtPrecioSeleccionado.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.txtPrecioSeleccionado.Location = new System.Drawing.Point(550, 65);
+            this.txtPrecioSeleccionado.Name = "txtPrecioSeleccionado";
+            this.txtPrecioSeleccionado.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtPrecioSeleccionado.Size = new System.Drawing.Size(100, 22);
+            this.txtPrecioSeleccionado.TabIndex = 10;
             // 
             // label8
             // 
@@ -219,6 +259,16 @@
             this.grupodetalle.TabIndex = 1;
             this.grupodetalle.TabStop = false;
             // 
+            // btnCalcularTotal
+            // 
+            this.btnCalcularTotal.Location = new System.Drawing.Point(541, 104);
+            this.btnCalcularTotal.Name = "btnCalcularTotal";
+            this.btnCalcularTotal.Size = new System.Drawing.Size(109, 48);
+            this.btnCalcularTotal.TabIndex = 2;
+            this.btnCalcularTotal.Text = "Calcular Total";
+            this.btnCalcularTotal.UseVisualStyleBackColor = true;
+            this.btnCalcularTotal.Click += new System.EventHandler(this.btnCalcularTotal_Click);
+            // 
             // btnAgregarServicio
             // 
             this.btnAgregarServicio.Location = new System.Drawing.Point(541, 21);
@@ -244,6 +294,39 @@
             this.GridDetalles.Size = new System.Drawing.Size(485, 145);
             this.GridDetalles.TabIndex = 0;
             // 
+            // CantidadDetalle
+            // 
+            this.CantidadDetalle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.CantidadDetalle.HeaderText = "CANT";
+            this.CantidadDetalle.Name = "CantidadDetalle";
+            this.CantidadDetalle.Width = 74;
+            // 
+            // DescripcionGrid
+            // 
+            this.DescripcionGrid.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.DescripcionGrid.HeaderText = "DESCRIPCION";
+            this.DescripcionGrid.Name = "DescripcionGrid";
+            this.DescripcionGrid.Width = 129;
+            // 
+            // VunitarioDetalle
+            // 
+            this.VunitarioDetalle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.VunitarioDetalle.HeaderText = "V UNIT";
+            this.VunitarioDetalle.Name = "VunitarioDetalle";
+            this.VunitarioDetalle.Width = 82;
+            // 
+            // VtotalDetalle
+            // 
+            this.VtotalDetalle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.VtotalDetalle.HeaderText = "V TOTAL";
+            this.VtotalDetalle.Name = "VtotalDetalle";
+            this.VtotalDetalle.Width = 96;
+            // 
+            // IdProducto
+            // 
+            this.IdProducto.HeaderText = "IdProducto";
+            this.IdProducto.Name = "IdProducto";
+            // 
             // gruposubtotal
             // 
             this.gruposubtotal.BackColor = System.Drawing.Color.Transparent;
@@ -261,6 +344,28 @@
             this.gruposubtotal.Size = new System.Drawing.Size(228, 111);
             this.gruposubtotal.TabIndex = 2;
             this.gruposubtotal.TabStop = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(76, 48);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(20, 17);
+            this.label15.TabIndex = 83;
+            this.label15.Text = "%";
+            // 
+            // txtIvaPArametros
+            // 
+            this.txtIvaPArametros.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pARAMETROSBindingSource, "VALORIVA", true));
+            this.txtIvaPArametros.Location = new System.Drawing.Point(36, 45);
+            this.txtIvaPArametros.Name = "txtIvaPArametros";
+            this.txtIvaPArametros.Size = new System.Drawing.Size(34, 22);
+            this.txtIvaPArametros.TabIndex = 82;
+            // 
+            // pARAMETROSBindingSource
+            // 
+            this.pARAMETROSBindingSource.DataMember = "PARAMETROS";
+            this.pARAMETROSBindingSource.DataSource = this.grisGrisDataSet;
             // 
             // txtTotalFactura
             // 
@@ -325,14 +430,6 @@
             this.groupBox4.Size = new System.Drawing.Size(292, 129);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
-            // 
-            // txtNumeroFactura
-            // 
-            this.txtNumeroFactura.Enabled = false;
-            this.txtNumeroFactura.Location = new System.Drawing.Point(103, 92);
-            this.txtNumeroFactura.Name = "txtNumeroFactura";
-            this.txtNumeroFactura.Size = new System.Drawing.Size(85, 22);
-            this.txtNumeroFactura.TabIndex = 7;
             // 
             // label5
             // 
@@ -473,16 +570,6 @@
             this.txtcedulaCliente.Size = new System.Drawing.Size(237, 22);
             this.txtcedulaCliente.TabIndex = 69;
             // 
-            // grisGrisDataSet
-            // 
-            this.grisGrisDataSet.DataSetName = "GrisGrisDataSet";
-            this.grisGrisDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sERVICIOBindingSource
-            // 
-            this.sERVICIOBindingSource.DataMember = "SERVICIO";
-            this.sERVICIOBindingSource.DataSource = this.grisGrisDataSet;
-            // 
             // sERVICIOTableAdapter
             // 
             this.sERVICIOTableAdapter.ClearBeforeFill = true;
@@ -505,6 +592,10 @@
             this.tableAdapterManager.SERVICIOTableAdapter = this.sERVICIOTableAdapter;
             this.tableAdapterManager.TIPOCENTROEDUCACIONTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ProyectoPropietarios.GrisGrisDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // pARAMETROSTableAdapter
+            // 
+            this.pARAMETROSTableAdapter.ClearBeforeFill = true;
             // 
             // sERVICIOBindingNavigator
             // 
@@ -538,6 +629,31 @@
             this.sERVICIOBindingNavigator.Text = "bindingNavigator1";
             this.sERVICIOBindingNavigator.Visible = false;
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -570,16 +686,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
@@ -602,26 +711,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // sERVICIOBindingNavigatorSaveItem
             // 
@@ -647,110 +738,6 @@
             this.sERVICIODataGridView.RowTemplate.Height = 24;
             this.sERVICIODataGridView.Size = new System.Drawing.Size(384, 231);
             this.sERVICIODataGridView.TabIndex = 80;
-            // 
-            // gbServicios
-            // 
-            this.gbServicios.BackColor = System.Drawing.Color.Transparent;
-            this.gbServicios.Controls.Add(this.CantidadIngresada);
-            this.gbServicios.Controls.Add(this.label14);
-            this.gbServicios.Controls.Add(this.label13);
-            this.gbServicios.Controls.Add(this.btnCerraragregar);
-            this.gbServicios.Controls.Add(this.txtServicioSeleccionado);
-            this.gbServicios.Controls.Add(this.btnAgregarDetalle);
-            this.gbServicios.Controls.Add(this.sERVICIODataGridView);
-            this.gbServicios.Location = new System.Drawing.Point(736, 153);
-            this.gbServicios.Name = "gbServicios";
-            this.gbServicios.Size = new System.Drawing.Size(425, 399);
-            this.gbServicios.TabIndex = 81;
-            this.gbServicios.TabStop = false;
-            this.gbServicios.Text = "Servicios";
-            this.gbServicios.Visible = false;
-            // 
-            // btnAgregarDetalle
-            // 
-            this.btnAgregarDetalle.Location = new System.Drawing.Point(124, 345);
-            this.btnAgregarDetalle.Name = "btnAgregarDetalle";
-            this.btnAgregarDetalle.Size = new System.Drawing.Size(90, 40);
-            this.btnAgregarDetalle.TabIndex = 82;
-            this.btnAgregarDetalle.Text = "Agregar";
-            this.btnAgregarDetalle.UseVisualStyleBackColor = true;
-            this.btnAgregarDetalle.Click += new System.EventHandler(this.btnAgregarDetalle_Click);
-            // 
-            // btnCerraragregar
-            // 
-            this.btnCerraragregar.Location = new System.Drawing.Point(220, 345);
-            this.btnCerraragregar.Name = "btnCerraragregar";
-            this.btnCerraragregar.Size = new System.Drawing.Size(90, 40);
-            this.btnCerraragregar.TabIndex = 83;
-            this.btnCerraragregar.Text = "Cerrar";
-            this.btnCerraragregar.UseVisualStyleBackColor = true;
-            this.btnCerraragregar.Click += new System.EventHandler(this.btnCerraragregar_Click);
-            // 
-            // txtServicioSeleccionado
-            // 
-            this.txtServicioSeleccionado.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sERVICIOBindingSource, "NOMBRESERVICIO", true));
-            this.txtServicioSeleccionado.Enabled = false;
-            this.txtServicioSeleccionado.Location = new System.Drawing.Point(144, 33);
-            this.txtServicioSeleccionado.Name = "txtServicioSeleccionado";
-            this.txtServicioSeleccionado.Size = new System.Drawing.Size(139, 22);
-            this.txtServicioSeleccionado.TabIndex = 8;
-            // 
-            // txtPrecioSeleccionado
-            // 
-            this.txtPrecioSeleccionado.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sERVICIOBindingSource, "PRECIOSERVICIO", true));
-            this.txtPrecioSeleccionado.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.txtPrecioSeleccionado.Location = new System.Drawing.Point(550, 65);
-            this.txtPrecioSeleccionado.Name = "txtPrecioSeleccionado";
-            this.txtPrecioSeleccionado.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtPrecioSeleccionado.Size = new System.Drawing.Size(100, 22);
-            this.txtPrecioSeleccionado.TabIndex = 10;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(71, 36);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 17);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "Servicio:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(71, 73);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(68, 17);
-            this.label14.TabIndex = 84;
-            this.label14.Text = "Cantidad:";
-            // 
-            // CantidadIngresada
-            // 
-            this.CantidadIngresada.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.CantidadIngresada.Location = new System.Drawing.Point(145, 70);
-            this.CantidadIngresada.Name = "CantidadIngresada";
-            this.CantidadIngresada.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.CantidadIngresada.Size = new System.Drawing.Size(100, 22);
-            this.CantidadIngresada.TabIndex = 85;
-            // 
-            // btnCalcularTotal
-            // 
-            this.btnCalcularTotal.Location = new System.Drawing.Point(541, 104);
-            this.btnCalcularTotal.Name = "btnCalcularTotal";
-            this.btnCalcularTotal.Size = new System.Drawing.Size(109, 48);
-            this.btnCalcularTotal.TabIndex = 2;
-            this.btnCalcularTotal.Text = "Calcular Total";
-            this.btnCalcularTotal.UseVisualStyleBackColor = true;
-            this.btnCalcularTotal.Click += new System.EventHandler(this.btnCalcularTotal_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -784,46 +771,84 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Visible = false;
             // 
-            // iDSERVICIOSpinEdit
+            // gbServicios
             // 
-            this.iDSERVICIOSpinEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sERVICIOBindingSource, "IDSERVICIO", true));
-            this.iDSERVICIOSpinEdit.EditValue = new decimal(new int[] {
+            this.gbServicios.BackColor = System.Drawing.Color.Transparent;
+            this.gbServicios.Controls.Add(this.CantidadIngresada);
+            this.gbServicios.Controls.Add(this.label14);
+            this.gbServicios.Controls.Add(this.label13);
+            this.gbServicios.Controls.Add(this.btnCerraragregar);
+            this.gbServicios.Controls.Add(this.txtServicioSeleccionado);
+            this.gbServicios.Controls.Add(this.btnAgregarDetalle);
+            this.gbServicios.Controls.Add(this.sERVICIODataGridView);
+            this.gbServicios.Location = new System.Drawing.Point(736, 153);
+            this.gbServicios.Name = "gbServicios";
+            this.gbServicios.Size = new System.Drawing.Size(425, 399);
+            this.gbServicios.TabIndex = 81;
+            this.gbServicios.TabStop = false;
+            this.gbServicios.Text = "Servicios";
+            this.gbServicios.Visible = false;
+            // 
+            // CantidadIngresada
+            // 
+            this.CantidadIngresada.EditValue = new decimal(new int[] {
             0,
             0,
             0,
             0});
-            this.iDSERVICIOSpinEdit.Location = new System.Drawing.Point(550, 37);
-            this.iDSERVICIOSpinEdit.Name = "iDSERVICIOSpinEdit";
-            this.iDSERVICIOSpinEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.CantidadIngresada.Location = new System.Drawing.Point(145, 70);
+            this.CantidadIngresada.Name = "CantidadIngresada";
+            this.CantidadIngresada.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.iDSERVICIOSpinEdit.Size = new System.Drawing.Size(100, 22);
-            this.iDSERVICIOSpinEdit.TabIndex = 11;
+            this.CantidadIngresada.Size = new System.Drawing.Size(100, 22);
+            this.CantidadIngresada.TabIndex = 85;
             // 
-            // pARAMETROSBindingSource
+            // label14
             // 
-            this.pARAMETROSBindingSource.DataMember = "PARAMETROS";
-            this.pARAMETROSBindingSource.DataSource = this.grisGrisDataSet;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(71, 73);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(68, 17);
+            this.label14.TabIndex = 84;
+            this.label14.Text = "Cantidad:";
             // 
-            // pARAMETROSTableAdapter
+            // label13
             // 
-            this.pARAMETROSTableAdapter.ClearBeforeFill = true;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(71, 36);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(62, 17);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Servicio:";
             // 
-            // txtIvaPArametros
+            // btnCerraragregar
             // 
-            this.txtIvaPArametros.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pARAMETROSBindingSource, "VALORIVA", true));
-            this.txtIvaPArametros.Location = new System.Drawing.Point(36, 45);
-            this.txtIvaPArametros.Name = "txtIvaPArametros";
-            this.txtIvaPArametros.Size = new System.Drawing.Size(34, 22);
-            this.txtIvaPArametros.TabIndex = 82;
+            this.btnCerraragregar.Location = new System.Drawing.Point(220, 345);
+            this.btnCerraragregar.Name = "btnCerraragregar";
+            this.btnCerraragregar.Size = new System.Drawing.Size(90, 40);
+            this.btnCerraragregar.TabIndex = 83;
+            this.btnCerraragregar.Text = "Cerrar";
+            this.btnCerraragregar.UseVisualStyleBackColor = true;
+            this.btnCerraragregar.Click += new System.EventHandler(this.btnCerraragregar_Click);
             // 
-            // label15
+            // txtServicioSeleccionado
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(76, 48);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(20, 17);
-            this.label15.TabIndex = 83;
-            this.label15.Text = "%";
+            this.txtServicioSeleccionado.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.sERVICIOBindingSource, "NOMBRESERVICIO", true));
+            this.txtServicioSeleccionado.Enabled = false;
+            this.txtServicioSeleccionado.Location = new System.Drawing.Point(144, 33);
+            this.txtServicioSeleccionado.Name = "txtServicioSeleccionado";
+            this.txtServicioSeleccionado.Size = new System.Drawing.Size(139, 22);
+            this.txtServicioSeleccionado.TabIndex = 8;
+            // 
+            // btnAgregarDetalle
+            // 
+            this.btnAgregarDetalle.Location = new System.Drawing.Point(124, 345);
+            this.btnAgregarDetalle.Name = "btnAgregarDetalle";
+            this.btnAgregarDetalle.Size = new System.Drawing.Size(90, 40);
+            this.btnAgregarDetalle.TabIndex = 82;
+            this.btnAgregarDetalle.Text = "Agregar";
+            this.btnAgregarDetalle.UseVisualStyleBackColor = true;
+            this.btnAgregarDetalle.Click += new System.EventHandler(this.btnAgregarDetalle_Click);
             // 
             // btnNueva
             // 
@@ -836,38 +861,14 @@
             this.btnNueva.UseVisualStyleBackColor = false;
             this.btnNueva.Click += new System.EventHandler(this.btnNueva_Click);
             // 
-            // CantidadDetalle
+            // txtNumeroFactura
             // 
-            this.CantidadDetalle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.CantidadDetalle.HeaderText = "CANT";
-            this.CantidadDetalle.Name = "CantidadDetalle";
-            this.CantidadDetalle.Width = 74;
-            // 
-            // DescripcionGrid
-            // 
-            this.DescripcionGrid.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.DescripcionGrid.HeaderText = "DESCRIPCION";
-            this.DescripcionGrid.Name = "DescripcionGrid";
-            this.DescripcionGrid.Width = 129;
-            // 
-            // VunitarioDetalle
-            // 
-            this.VunitarioDetalle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.VunitarioDetalle.HeaderText = "V UNIT";
-            this.VunitarioDetalle.Name = "VunitarioDetalle";
-            this.VunitarioDetalle.Width = 82;
-            // 
-            // VtotalDetalle
-            // 
-            this.VtotalDetalle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.VtotalDetalle.HeaderText = "V TOTAL";
-            this.VtotalDetalle.Name = "VtotalDetalle";
-            this.VtotalDetalle.Width = 96;
-            // 
-            // IdProducto
-            // 
-            this.IdProducto.HeaderText = "IdProducto";
-            this.IdProducto.Name = "IdProducto";
+            this.txtNumeroFactura.Enabled = false;
+            this.txtNumeroFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroFactura.Location = new System.Drawing.Point(103, 85);
+            this.txtNumeroFactura.Name = "txtNumeroFactura";
+            this.txtNumeroFactura.Size = new System.Drawing.Size(76, 30);
+            this.txtNumeroFactura.TabIndex = 12;
             // 
             // Factura
             // 
@@ -894,28 +895,28 @@
             this.Load += new System.EventHandler(this.Factura_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iDSERVICIOSpinEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sERVICIOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grisGrisDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPrecioSeleccionado.Properties)).EndInit();
             this.grupodetalle.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GridDetalles)).EndInit();
             this.gruposubtotal.ResumeLayout(false);
             this.gruposubtotal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIvaPArametros.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pARAMETROSBindingSource)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.grupoBuscarCliente.ResumeLayout(false);
             this.grupoBuscarCliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grisGrisDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sERVICIOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sERVICIOBindingNavigator)).EndInit();
             this.sERVICIOBindingNavigator.ResumeLayout(false);
             this.sERVICIOBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sERVICIODataGridView)).EndInit();
             this.gbServicios.ResumeLayout(false);
             this.gbServicios.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtServicioSeleccionado.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPrecioSeleccionado.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadIngresada.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iDSERVICIOSpinEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pARAMETROSBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIvaPArametros.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtServicioSeleccionado.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -940,7 +941,6 @@
         private System.Windows.Forms.Button btnCrearfactura;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtDireccionObtenida;
-        private System.Windows.Forms.TextBox txtNumeroFactura;
         private System.Windows.Forms.Button btnAgregarServicio;
         private System.Windows.Forms.DataGridView GridDetalles;
         private System.Windows.Forms.TextBox txtTotalFactura;
@@ -998,5 +998,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn VunitarioDetalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn VtotalDetalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdProducto;
+        private System.Windows.Forms.TextBox txtNumeroFactura;
     }
 }
