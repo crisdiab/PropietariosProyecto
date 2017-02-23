@@ -274,3 +274,4 @@ C:\Users\crist\OneDrive\Documents\GitHub\PropietariosProyecto\ProyectoPropietari
 C:\Users\crist\OneDrive\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.BuscarProfesional.resources
 C:\Users\crist\OneDrive\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.ModificarRepresentante.resources
 C:\Users\crist\OneDrive\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.buscarPaciente.resources
+C:\Users\crist\OneDrive\Documents\GitHub\PropietariosProyecto\ProyectoPropietarios\ProyectoPropietarios\obj\Debug\ProyectoPropietarios.AsignarProfesional.resources

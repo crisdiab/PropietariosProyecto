@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsignarProfesional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignarProfesional.Designer.cs">
+      <DependentUpon>AsignarProfesional.cs</DependentUpon>
+    </Compile>
     <Compile Include="buscarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,6 +281,9 @@
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Validaciones.cs" />
+    <EmbeddedResource Include="AsignarProfesional.resx">
+      <DependentUpon>AsignarProfesional.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AsignarServicio.resx">
       <DependentUpon>AsignarServicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -577,6 +586,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\anularFact1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asignar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

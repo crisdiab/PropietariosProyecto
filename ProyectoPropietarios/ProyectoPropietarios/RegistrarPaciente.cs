@@ -256,7 +256,7 @@ namespace ProyectoPropietarios
                         #region creacion del paciente
                         string crearPaciente = "insert into PACIENTE VALUES('"+idRepresentante+ "','" + idCentroEduc + "','" + txtNombrePaciente.Text+ "','" +txtCedula.Text  + "',"+
                             "'" +txtEdad.Text + "','" + txtEncargadoDECE.Text+ "','" + txtNref1.Text+ "','" +txtTelref1.Text + "','" + txtNref2.Text+ "','" +txttelref2.Text +"',"+
-                            "'Activo','" + fecha+"')";
+                            "'Activo','" + fecha+"','No')";
 
                         consulta.counsultaTodoTipo(crearPaciente);
                         #endregion

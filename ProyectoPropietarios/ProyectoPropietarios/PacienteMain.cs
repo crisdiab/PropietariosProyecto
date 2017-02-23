@@ -59,5 +59,12 @@ namespace ProyectoPropietarios
             bp.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AsignarProfesional ap = new AsignarProfesional();
+            ap.Show();
+            this.Hide();
+        }
     }
 }
