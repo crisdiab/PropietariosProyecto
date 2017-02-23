@@ -63,8 +63,8 @@ namespace ProyectoPropietarios
             }else
             {
 
-                int Total = 0;
-                Total = Convert.ToInt32(CantidadIngresada.Text) * Convert.ToInt32(txtPrecioSeleccionado.Text);
+                Double Total = 0;
+                Total = Convert.ToInt32(CantidadIngresada.Text) * Convert.ToDouble(txtPrecioSeleccionado.Text);
 
                 GridDetalles.Rows.Add(CantidadIngresada.Text, txtServicioSeleccionado.Text, txtPrecioSeleccionado.Text, Total,iDSERVICIOSpinEdit.Text);
             }

@@ -103,6 +103,16 @@ namespace ProyectoPropietarios.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anularFact1 {
+            get {
+                object obj = ResourceManager.GetObject("anularFact1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ayuda {
             get {
                 object obj = ResourceManager.GetObject("ayuda", resourceCulture);
@@ -486,6 +496,26 @@ namespace ProyectoPropietarios.Properties {
         internal static System.Drawing.Bitmap seguimiento {
             get {
                 object obj = ResourceManager.GetObject("seguimiento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap servicio {
+            get {
+                object obj = ResourceManager.GetObject("servicio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap servicioMod {
+            get {
+                object obj = ResourceManager.GetObject("servicioMod", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

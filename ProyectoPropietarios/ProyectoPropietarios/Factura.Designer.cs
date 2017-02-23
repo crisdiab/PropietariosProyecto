@@ -62,6 +62,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtNumeroFactura = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -104,7 +105,6 @@
             this.txtServicioSeleccionado = new DevExpress.XtraEditors.TextEdit();
             this.btnAgregarDetalle = new System.Windows.Forms.Button();
             this.btnNueva = new System.Windows.Forms.Button();
-            this.txtNumeroFactura = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iDSERVICIOSpinEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sERVICIOBindingSource)).BeginInit();
@@ -152,11 +152,13 @@
             0,
             0,
             0});
-            this.iDSERVICIOSpinEdit.Location = new System.Drawing.Point(550, 37);
+            this.iDSERVICIOSpinEdit.Location = new System.Drawing.Point(640, 37);
             this.iDSERVICIOSpinEdit.Name = "iDSERVICIOSpinEdit";
+            this.iDSERVICIOSpinEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iDSERVICIOSpinEdit.Properties.Appearance.Options.UseFont = true;
             this.iDSERVICIOSpinEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.iDSERVICIOSpinEdit.Size = new System.Drawing.Size(100, 22);
+            this.iDSERVICIOSpinEdit.Size = new System.Drawing.Size(10, 22);
             this.iDSERVICIOSpinEdit.TabIndex = 11;
             // 
             // sERVICIOBindingSource
@@ -177,11 +179,11 @@
             0,
             0,
             0});
-            this.txtPrecioSeleccionado.Location = new System.Drawing.Point(550, 65);
+            this.txtPrecioSeleccionado.Location = new System.Drawing.Point(640, 65);
             this.txtPrecioSeleccionado.Name = "txtPrecioSeleccionado";
             this.txtPrecioSeleccionado.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtPrecioSeleccionado.Size = new System.Drawing.Size(100, 22);
+            this.txtPrecioSeleccionado.Size = new System.Drawing.Size(10, 22);
             this.txtPrecioSeleccionado.TabIndex = 10;
             // 
             // label8
@@ -430,6 +432,15 @@
             this.groupBox4.Size = new System.Drawing.Size(292, 129);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
+            // 
+            // txtNumeroFactura
+            // 
+            this.txtNumeroFactura.Enabled = false;
+            this.txtNumeroFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroFactura.Location = new System.Drawing.Point(103, 85);
+            this.txtNumeroFactura.Name = "txtNumeroFactura";
+            this.txtNumeroFactura.Size = new System.Drawing.Size(76, 30);
+            this.txtNumeroFactura.TabIndex = 12;
             // 
             // label5
             // 
@@ -860,15 +871,6 @@
             this.btnNueva.Text = "Nueva";
             this.btnNueva.UseVisualStyleBackColor = false;
             this.btnNueva.Click += new System.EventHandler(this.btnNueva_Click);
-            // 
-            // txtNumeroFactura
-            // 
-            this.txtNumeroFactura.Enabled = false;
-            this.txtNumeroFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroFactura.Location = new System.Drawing.Point(103, 85);
-            this.txtNumeroFactura.Name = "txtNumeroFactura";
-            this.txtNumeroFactura.Size = new System.Drawing.Size(76, 30);
-            this.txtNumeroFactura.TabIndex = 12;
             // 
             // Factura
             // 

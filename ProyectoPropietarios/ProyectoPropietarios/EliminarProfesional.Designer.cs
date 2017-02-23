@@ -409,7 +409,7 @@
             // 
             this.btnGuardar.BackgroundImage = global::ProyectoPropietarios.Properties.Resources.guardar;
             this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardar.Location = new System.Drawing.Point(199, 281);
+            this.btnGuardar.Location = new System.Drawing.Point(205, 281);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(80, 60);
             this.btnGuardar.TabIndex = 26;

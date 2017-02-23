@@ -12,6 +12,7 @@ namespace ProyectoPropietarios
 {
     public partial class EliminarFactura : Form
     {
+        ConsultasBaseDatos consulta = new ConsultasBaseDatos();
         public EliminarFactura()
         {
             InitializeComponent();
@@ -65,12 +66,28 @@ namespace ProyectoPropietarios
         {
             try
             {
-                this.buscarfacturaTableAdapter.Fill(this.grisGrisDataSet.buscarfactura, numfactToolStripTextBox.Text);
+                this.buscarfacturaTableAdapter.Fill(this.grisGrisDataSet.buscarfactura,Convert.ToInt32( numfactToolStripTextBox.Text));
             }
             catch (System.Exception ex)
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            string actualizarFact = "UPDATE FACTURA SET ESTADOFACTURA = '" + eSTADOFACTURAComboBox.Text + "' WHERE IDFACTURA = '" + iDFACTURASpinEdit.Text + "' ";
+
+            consulta.counsultaTodoTipo(actualizarFact);
+            MessageBox.Show("Factura Anulada correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void EliminarFactura_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'grisGrisDataSet.FACTURA' Puede moverla o quitarla según sea necesario.
+            this.fACTURATableAdapter.Fill(this.grisGrisDataSet.FACTURA);
 
         }
     }

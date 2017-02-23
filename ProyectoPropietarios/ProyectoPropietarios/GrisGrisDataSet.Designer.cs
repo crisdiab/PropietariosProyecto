@@ -2064,7 +2064,7 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public FACTURARow AddFACTURARow(REPRESENTANTERow parentREPRESENTANTERowByFK__FACTURA__IDREPRE__2E1BDC42, string NUMEROFACTURA, System.DateTime FECHAFACTURA, double SUBTOTALFACTURA, double VALORIVA, double TOTALFACTURA, string ESTADOFACTURA) {
+            public FACTURARow AddFACTURARow(REPRESENTANTERow parentREPRESENTANTERowByFK__FACTURA__IDREPRE__2E1BDC42, int NUMEROFACTURA, System.DateTime FECHAFACTURA, double SUBTOTALFACTURA, double VALORIVA, double TOTALFACTURA, string ESTADOFACTURA) {
                 FACTURARow rowFACTURARow = ((FACTURARow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2124,7 +2124,7 @@ namespace ProyectoPropietarios {
                 base.Columns.Add(this.columnIDFACTURA);
                 this.columnIDREPRESENTANTE = new global::System.Data.DataColumn("IDREPRESENTANTE", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIDREPRESENTANTE);
-                this.columnNUMEROFACTURA = new global::System.Data.DataColumn("NUMEROFACTURA", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnNUMEROFACTURA = new global::System.Data.DataColumn("NUMEROFACTURA", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNUMEROFACTURA);
                 this.columnFECHAFACTURA = new global::System.Data.DataColumn("FECHAFACTURA", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFECHAFACTURA);
@@ -2144,7 +2144,6 @@ namespace ProyectoPropietarios {
                 this.columnIDFACTURA.AllowDBNull = false;
                 this.columnIDFACTURA.ReadOnly = true;
                 this.columnIDFACTURA.Unique = true;
-                this.columnNUMEROFACTURA.MaxLength = 50;
                 this.columnESTADOFACTURA.MaxLength = 20;
             }
             
@@ -5705,7 +5704,7 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public buscarfacturaRow AddbuscarfacturaRow(int IDREPRESENTANTE, string NUMEROFACTURA, System.DateTime FECHAFACTURA, double SUBTOTALFACTURA, double VALORIVA, double TOTALFACTURA, string ESTADOFACTURA) {
+            public buscarfacturaRow AddbuscarfacturaRow(int IDREPRESENTANTE, int NUMEROFACTURA, System.DateTime FECHAFACTURA, double SUBTOTALFACTURA, double VALORIVA, double TOTALFACTURA, string ESTADOFACTURA) {
                 buscarfacturaRow rowbuscarfacturaRow = ((buscarfacturaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -5762,7 +5761,7 @@ namespace ProyectoPropietarios {
                 base.Columns.Add(this.columnIDFACTURA);
                 this.columnIDREPRESENTANTE = new global::System.Data.DataColumn("IDREPRESENTANTE", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIDREPRESENTANTE);
-                this.columnNUMEROFACTURA = new global::System.Data.DataColumn("NUMEROFACTURA", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnNUMEROFACTURA = new global::System.Data.DataColumn("NUMEROFACTURA", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNUMEROFACTURA);
                 this.columnFECHAFACTURA = new global::System.Data.DataColumn("FECHAFACTURA", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFECHAFACTURA);
@@ -5780,7 +5779,6 @@ namespace ProyectoPropietarios {
                 this.columnIDFACTURA.AllowDBNull = false;
                 this.columnIDFACTURA.ReadOnly = true;
                 this.columnIDFACTURA.Unique = true;
-                this.columnNUMEROFACTURA.MaxLength = 50;
                 this.columnESTADOFACTURA.MaxLength = 20;
             }
             
@@ -6065,7 +6063,7 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public buscarFechaFacturaRow AddbuscarFechaFacturaRow(int IDREPRESENTANTE, string NUMEROFACTURA, System.DateTime FECHAFACTURA, double SUBTOTALFACTURA, double VALORIVA, double TOTALFACTURA, string ESTADOFACTURA) {
+            public buscarFechaFacturaRow AddbuscarFechaFacturaRow(int IDREPRESENTANTE, int NUMEROFACTURA, System.DateTime FECHAFACTURA, double SUBTOTALFACTURA, double VALORIVA, double TOTALFACTURA, string ESTADOFACTURA) {
                 buscarFechaFacturaRow rowbuscarFechaFacturaRow = ((buscarFechaFacturaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -6122,7 +6120,7 @@ namespace ProyectoPropietarios {
                 base.Columns.Add(this.columnIDFACTURA);
                 this.columnIDREPRESENTANTE = new global::System.Data.DataColumn("IDREPRESENTANTE", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIDREPRESENTANTE);
-                this.columnNUMEROFACTURA = new global::System.Data.DataColumn("NUMEROFACTURA", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnNUMEROFACTURA = new global::System.Data.DataColumn("NUMEROFACTURA", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNUMEROFACTURA);
                 this.columnFECHAFACTURA = new global::System.Data.DataColumn("FECHAFACTURA", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFECHAFACTURA);
@@ -6140,7 +6138,6 @@ namespace ProyectoPropietarios {
                 this.columnIDFACTURA.AllowDBNull = false;
                 this.columnIDFACTURA.ReadOnly = true;
                 this.columnIDFACTURA.Unique = true;
-                this.columnNUMEROFACTURA.MaxLength = 50;
                 this.columnESTADOFACTURA.MaxLength = 20;
             }
             
@@ -7145,10 +7142,10 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string NUMEROFACTURA {
+            public int NUMEROFACTURA {
                 get {
                     try {
-                        return ((string)(this[this.tableFACTURA.NUMEROFACTURAColumn]));
+                        return ((int)(this[this.tableFACTURA.NUMEROFACTURAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'NUMEROFACTURA\' de la tabla \'FACTURA\' es DBNull.", e);
@@ -9108,10 +9105,10 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string NUMEROFACTURA {
+            public int NUMEROFACTURA {
                 get {
                     try {
-                        return ((string)(this[this.tablebuscarfactura.NUMEROFACTURAColumn]));
+                        return ((int)(this[this.tablebuscarfactura.NUMEROFACTURAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'NUMEROFACTURA\' de la tabla \'buscarfactura\' es DBNull.", e);
@@ -9331,10 +9328,10 @@ namespace ProyectoPropietarios {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string NUMEROFACTURA {
+            public int NUMEROFACTURA {
                 get {
                     try {
-                        return ((string)(this[this.tablebuscarFechaFactura.NUMEROFACTURAColumn]));
+                        return ((int)(this[this.tablebuscarFechaFactura.NUMEROFACTURAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'NUMEROFACTURA\' de la tabla \'buscarFechaFactura\' es DBNull" +
@@ -11759,7 +11756,7 @@ SELECT IDDETALLERECIBO, IDRECIBO, IDSERVICIO, CANTIDAD, PRECIOUNITARIO, TOTAL FR
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_IDREPRESENTANTE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDREPRESENTANTE", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDREPRESENTANTE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDREPRESENTANTE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NUMEROFACTURA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NUMEROFACTURA", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NUMEROFACTURA", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NUMEROFACTURA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NUMEROFACTURA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NUMEROFACTURA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_FECHAFACTURA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FECHAFACTURA", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FECHAFACTURA", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FECHAFACTURA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SUBTOTALFACTURA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SUBTOTALFACTURA", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -11776,7 +11773,7 @@ SELECT IDDETALLERECIBO, IDRECIBO, IDSERVICIO, CANTIDAD, PRECIOUNITARIO, TOTAL FR
 SELECT IDFACTURA, IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA, VALORIVA, TOTALFACTURA, ESTADOFACTURA FROM FACTURA WHERE (IDFACTURA = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDREPRESENTANTE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDREPRESENTANTE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NUMEROFACTURA", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NUMEROFACTURA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NUMEROFACTURA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NUMEROFACTURA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FECHAFACTURA", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FECHAFACTURA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SUBTOTALFACTURA", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SUBTOTALFACTURA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VALORIVA", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VALORIVA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -11788,7 +11785,7 @@ SELECT IDFACTURA, IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA,
 SELECT IDFACTURA, IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA, VALORIVA, TOTALFACTURA, ESTADOFACTURA FROM FACTURA WHERE (IDFACTURA = @IDFACTURA)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDREPRESENTANTE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDREPRESENTANTE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NUMEROFACTURA", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NUMEROFACTURA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NUMEROFACTURA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NUMEROFACTURA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FECHAFACTURA", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FECHAFACTURA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SUBTOTALFACTURA", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SUBTOTALFACTURA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VALORIVA", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VALORIVA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -11798,7 +11795,7 @@ SELECT IDFACTURA, IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA,
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_IDREPRESENTANTE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDREPRESENTANTE", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDREPRESENTANTE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDREPRESENTANTE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NUMEROFACTURA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NUMEROFACTURA", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NUMEROFACTURA", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NUMEROFACTURA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NUMEROFACTURA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NUMEROFACTURA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_FECHAFACTURA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FECHAFACTURA", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FECHAFACTURA", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FECHAFACTURA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SUBTOTALFACTURA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SUBTOTALFACTURA", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -11887,7 +11884,7 @@ SELECT IDFACTURA, IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_IDFACTURA, global::System.Nullable<int> Original_IDREPRESENTANTE, string Original_NUMEROFACTURA, global::System.Nullable<global::System.DateTime> Original_FECHAFACTURA, global::System.Nullable<double> Original_SUBTOTALFACTURA, global::System.Nullable<double> Original_VALORIVA, global::System.Nullable<double> Original_TOTALFACTURA, string Original_ESTADOFACTURA) {
+        public virtual int Delete(int Original_IDFACTURA, global::System.Nullable<int> Original_IDREPRESENTANTE, global::System.Nullable<int> Original_NUMEROFACTURA, global::System.Nullable<global::System.DateTime> Original_FECHAFACTURA, global::System.Nullable<double> Original_SUBTOTALFACTURA, global::System.Nullable<double> Original_VALORIVA, global::System.Nullable<double> Original_TOTALFACTURA, string Original_ESTADOFACTURA) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_IDFACTURA));
             if ((Original_IDREPRESENTANTE.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
@@ -11897,13 +11894,13 @@ SELECT IDFACTURA, IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA,
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((Original_NUMEROFACTURA == null)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+            if ((Original_NUMEROFACTURA.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_NUMEROFACTURA.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_NUMEROFACTURA));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             if ((Original_FECHAFACTURA.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
@@ -11965,18 +11962,18 @@ SELECT IDFACTURA, IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> IDREPRESENTANTE, string NUMEROFACTURA, global::System.Nullable<global::System.DateTime> FECHAFACTURA, global::System.Nullable<double> SUBTOTALFACTURA, global::System.Nullable<double> VALORIVA, global::System.Nullable<double> TOTALFACTURA, string ESTADOFACTURA) {
+        public virtual int Insert(global::System.Nullable<int> IDREPRESENTANTE, global::System.Nullable<int> NUMEROFACTURA, global::System.Nullable<global::System.DateTime> FECHAFACTURA, global::System.Nullable<double> SUBTOTALFACTURA, global::System.Nullable<double> VALORIVA, global::System.Nullable<double> TOTALFACTURA, string ESTADOFACTURA) {
             if ((IDREPRESENTANTE.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((int)(IDREPRESENTANTE.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((NUMEROFACTURA == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            if ((NUMEROFACTURA.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(NUMEROFACTURA.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(NUMEROFACTURA));
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             if ((FECHAFACTURA.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(FECHAFACTURA.Value));
@@ -12030,7 +12027,7 @@ SELECT IDFACTURA, IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA,
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
                     global::System.Nullable<int> IDREPRESENTANTE, 
-                    string NUMEROFACTURA, 
+                    global::System.Nullable<int> NUMEROFACTURA, 
                     global::System.Nullable<global::System.DateTime> FECHAFACTURA, 
                     global::System.Nullable<double> SUBTOTALFACTURA, 
                     global::System.Nullable<double> VALORIVA, 
@@ -12038,7 +12035,7 @@ SELECT IDFACTURA, IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA,
                     string ESTADOFACTURA, 
                     int Original_IDFACTURA, 
                     global::System.Nullable<int> Original_IDREPRESENTANTE, 
-                    string Original_NUMEROFACTURA, 
+                    global::System.Nullable<int> Original_NUMEROFACTURA, 
                     global::System.Nullable<global::System.DateTime> Original_FECHAFACTURA, 
                     global::System.Nullable<double> Original_SUBTOTALFACTURA, 
                     global::System.Nullable<double> Original_VALORIVA, 
@@ -12051,11 +12048,11 @@ SELECT IDFACTURA, IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA,
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((NUMEROFACTURA == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            if ((NUMEROFACTURA.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(NUMEROFACTURA.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(NUMEROFACTURA));
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             if ((FECHAFACTURA.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(FECHAFACTURA.Value));
@@ -12096,13 +12093,13 @@ SELECT IDFACTURA, IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA,
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
-            if ((Original_NUMEROFACTURA == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+            if ((Original_NUMEROFACTURA.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_NUMEROFACTURA.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_NUMEROFACTURA));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             if ((Original_FECHAFACTURA.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
@@ -12165,7 +12162,7 @@ SELECT IDFACTURA, IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> IDREPRESENTANTE, string NUMEROFACTURA, global::System.Nullable<global::System.DateTime> FECHAFACTURA, global::System.Nullable<double> SUBTOTALFACTURA, global::System.Nullable<double> VALORIVA, global::System.Nullable<double> TOTALFACTURA, string ESTADOFACTURA, int Original_IDFACTURA, global::System.Nullable<int> Original_IDREPRESENTANTE, string Original_NUMEROFACTURA, global::System.Nullable<global::System.DateTime> Original_FECHAFACTURA, global::System.Nullable<double> Original_SUBTOTALFACTURA, global::System.Nullable<double> Original_VALORIVA, global::System.Nullable<double> Original_TOTALFACTURA, string Original_ESTADOFACTURA) {
+        public virtual int Update(global::System.Nullable<int> IDREPRESENTANTE, global::System.Nullable<int> NUMEROFACTURA, global::System.Nullable<global::System.DateTime> FECHAFACTURA, global::System.Nullable<double> SUBTOTALFACTURA, global::System.Nullable<double> VALORIVA, global::System.Nullable<double> TOTALFACTURA, string ESTADOFACTURA, int Original_IDFACTURA, global::System.Nullable<int> Original_IDREPRESENTANTE, global::System.Nullable<int> Original_NUMEROFACTURA, global::System.Nullable<global::System.DateTime> Original_FECHAFACTURA, global::System.Nullable<double> Original_SUBTOTALFACTURA, global::System.Nullable<double> Original_VALORIVA, global::System.Nullable<double> Original_TOTALFACTURA, string Original_ESTADOFACTURA) {
             return this.Update(IDREPRESENTANTE, NUMEROFACTURA, FECHAFACTURA, SUBTOTALFACTURA, VALORIVA, TOTALFACTURA, ESTADOFACTURA, Original_IDFACTURA, Original_IDREPRESENTANTE, Original_NUMEROFACTURA, Original_FECHAFACTURA, Original_SUBTOTALFACTURA, Original_VALORIVA, Original_TOTALFACTURA, Original_ESTADOFACTURA, Original_IDFACTURA);
         }
     }
@@ -16806,20 +16803,20 @@ SELECT IDCENTRO, NOMBRETIPOCENTRO FROM TIPOCENTROEDUCACION WHERE (IDCENTRO = @ID
             this._commandCollection[0].CommandText = "dbo.buscarfactura";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@numfact", global::System.Data.SqlDbType.Char, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@numfact", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(GrisGrisDataSet.buscarfacturaDataTable dataTable, string numfact) {
+        public virtual int Fill(GrisGrisDataSet.buscarfacturaDataTable dataTable, global::System.Nullable<int> numfact) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((numfact == null)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            if ((numfact.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(numfact.Value));
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(numfact));
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -16832,13 +16829,13 @@ SELECT IDCENTRO, NOMBRETIPOCENTRO FROM TIPOCENTROEDUCACION WHERE (IDCENTRO = @ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual GrisGrisDataSet.buscarfacturaDataTable GetData(string numfact) {
+        public virtual GrisGrisDataSet.buscarfacturaDataTable GetData(global::System.Nullable<int> numfact) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((numfact == null)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            if ((numfact.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(numfact.Value));
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(numfact));
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             GrisGrisDataSet.buscarfacturaDataTable dataTable = new GrisGrisDataSet.buscarfacturaDataTable();
             this.Adapter.Fill(dataTable);

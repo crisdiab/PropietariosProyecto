@@ -223,6 +223,7 @@
             this.label1.Size = new System.Drawing.Size(122, 31);
             this.label1.TabIndex = 16;
             this.label1.Text = "Servicios";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label7
             // 

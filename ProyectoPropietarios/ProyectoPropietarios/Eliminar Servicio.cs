@@ -31,5 +31,26 @@ namespace ProyectoPropietarios
             md.Show();
             this.Hide();
         }
+
+        private void sERVICIOBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void Eliminar_Servicio_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'grisGrisDataSet.SERVICIO' Puede moverla o quitarla según sea necesario.
+            this.sERVICIOTableAdapter.Fill(this.grisGrisDataSet.SERVICIO);
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.sERVICIOBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.grisGrisDataSet);
+            MessageBox.Show("Servicio actualizado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
