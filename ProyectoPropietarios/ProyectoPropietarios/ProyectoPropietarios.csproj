@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="buscarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buscarPaciente.Designer.cs">
+      <DependentUpon>buscarPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuscarProfesional.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +280,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ayuda.resx">
       <DependentUpon>Ayuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buscarPaciente.resx">
+      <DependentUpon>buscarPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarProfesional.resx">
       <DependentUpon>BuscarProfesional.cs</DependentUpon>

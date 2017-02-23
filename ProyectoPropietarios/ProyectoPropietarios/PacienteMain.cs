@@ -53,6 +53,11 @@ namespace ProyectoPropietarios
             this.Hide();
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            buscarPaciente bp = new buscarPaciente();
+            bp.Show();
+            this.Hide();
+        }
     }
 }

@@ -240,7 +240,7 @@ namespace ProyectoPropietarios
                         int idCentro = Convert.ToInt32(filaTipocentro["IDCENTRO"].ToString().Trim());
 
                         int otro = idCentro + idCentro;
-                        MessageBox.Show(otro.ToString(), "fua", MessageBoxButtons.OK);
+                        
                         #endregion
                         #region crear centro educativo y obtener el id creado
                         string crearCentro = "insert into CENTROEDUCACION VALUES('"+idCentro+"','"+txtUEducativa.Text+"')";
